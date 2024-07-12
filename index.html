@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Syllabus</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+  <!-- <nav>
+      <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#grading">Grading</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav> -->
+    <header>
+      <h1>INTRO TO CREATIVE CODING</h1>
+      <!-- <img src="bann.jpg" alt="Course Banner" class="banner shadow">
+
+        <div class="header-content">
+
+            <p>Instructors: Ahmad Moussa & Hussein Massalkhi</p>
+        </div> -->
+
+    </header>
+<div class="containercontainer">
+
+
+    <div class="overview">
+      <div class="side-block">
+        <div class="week-element shadow backcol1" data-tilt>
+          <h2 class="week-element-h2">WEEK 1</h2>
+          <p class="week-element-p">Intro to P5JS & the Canvas</p>
+        </div>
+        <div class="week-element shadow backcol2" data-tilt>
+          <h2 class="week-element-h2">WEEK 2</h2>
+          <p class="week-element-p">Animation & Interactivity</p>
+        </div>
+        <div class="week-element shadow backcol3" data-tilt>
+          <h2 class="week-element-h2">WEEK 3</h2>
+          <p class="week-element-p">Generative Art</p>
+        </div>
+        <div class="week-element shadow backcol4" data-tilt>
+          <h2 class="week-element-h2">WEEK 4</h2>
+          <p class="week-element-p">Final Project</p>
+        </div>
+      </div>
+      <div class="container-syllabus shadow backcol5">
+        <h2 class="title">WEEK 1 SYLLABUS</h2>
+        <p>The first week we will have a first look at P5JS</p>
+      </div>
+      <div class="container-homework shadow backcol6">
+        <h2 class="title">SELF-STUDY</h2>
+      </div>
+    </div>
+    </div>
+    <!-- <footer>
+        <p>&copy; 2024 Gorilla Sun</p>
+    </footer> -->
+    <script type="text/javascript" src="min.tilt.js"></script>
+
+    <script type="text/javascript">
+      let contentArray = [
+      `
+      <h2 class="week-element-h2">WEEK 1</h2>
+      <p class="week-element-p">Intro to P5JS - The Canvas - Simple drawing functions - Making Patterns</p>
+      <ul class="week-element-p">
+        <li>Session 1:
+          <ul class="week-element-p">
+            <li>Intro to P5</li>
+            <li>Creating a Canvas</li>
+          </ul>
+        </li>
+
+        <li>Session 2:
+          <ul class="week-element-p">
+            <li>Drawing and Styling Functions</li>
+          </ul>
+        </li>
+        <li>Extra Session</li>
+        <li>Session 3:
+          <ul class="week-element-p">
+            <li>Creating a Grid</li>
+            <li>Ten Print Pattern</li>
+          </ul>
+        </li>
+      </ul>
+      `,
+      `
+      <h2 class="week-element-h2">WEEK 2</h2>
+      <p class="week-element-p">Animation & Interactivity</p>
+      `,
+      `
+      <h2 class="week-element-h2">WEEK 3</h2>
+      <p class="week-element-p">Generative Art</p>
+      `,
+      `
+      <h2 class="week-element-h2">WEEK 4</h2>
+      <p class="week-element-p">Final Project</p>
+      `
+      ]
+
+      // Select all divs with class 'list-div'
+        const listDivs = document.getElementsByClassName('week-element');
+        // Select the main div
+        const mainDiv = document.getElementsByClassName('container-syllabus')[0];
+
+        console.log(listDivs)
+        // Loop through each div and add a click event listener
+
+        for(let n = 0; n < listDivs.length; n++){
+          let div = listDivs[n]
+          div.addEventListener('click', function() {
+              // Update the content of the main div with the index of the clicked div
+              mainDiv.innerHTML = contentArray[n];
+          });
+        }
+
+    </script>
+</body>
+
+</html>

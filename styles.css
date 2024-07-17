@@ -329,13 +329,12 @@ header h1 {
 }
 
 .syllabus-tag {
-
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
   font-family: Rubik;
   margin: 0;
-  padding: 0px 8px;
-  border-radius: 5px;
+  padding: 2px 10px;
+  border-radius: 3px;
   color: white;
 }
 
@@ -502,10 +501,77 @@ code {
   border-radius: 0 0 10px 10px;
   padding: 10px 20px;
   overflow: scroll;
+
+  font-size: 16px;
+  font-family: Rubik;
+}
+
+.syllabus-text-container ul, ol {
+  margin: 0;
+
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+}
+
+.syllabus-text-container h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+}
+
+.syllabus-text-container p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.syllabus-text-container img {
+  object-fit: cover;
+  max-height: 300px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.homework-text {
+  margin: 0;
+
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+  overflow: scroll;
+
+  font-size: 16px;
+  font-family: Rubik;
+}
+
+.homework-text ul, ol {
+  margin: 0;
+
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+}
+
+.homework-text h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.homework-text p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.homework-text img {
+  object-fit: cover;
+  max-height: 300px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+code {
+  font-size: 14px !important;
 }
 
 .syllabus-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   font-family: Rubik;
   margin: auto;

@@ -98,17 +98,18 @@
       const mainDivText = document.getElementsByClassName('syllabus-text-container')[0];
 
 
-      displayContent = async function(content, n){
+      displayContent = async function(item, content, n){
         console.log(content)
         console.log(courseContent[""+Object.keys(courseContent)[n]]["content"])
 
-
-        let cont = await getMDFile(relativeUrl + "course_content/week1/" + content + "/main.md")
+        console.log(item)
+        let cont = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/main.md")
         let contHTML = await converter.makeHtml(cont);
 
         document.getElementsByClassName('syllabus-text-container')[0].innerHTML = contHTML;
 
-        let cont2 = await getMDFile(relativeUrl + "course_content/week1/" + content + "/secondary.md")
+        console.log(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
+        let cont2 = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
         let contHTML2 = await converter.makeHtml(cont2);
 
         document.getElementById('homework-text').innerHTML = contHTML2;
@@ -126,7 +127,6 @@
         hljs.highlightAll()
       }
 
-      let selected = 0
       courseItems.forEach(
         function(item, i) {
 
@@ -154,7 +154,7 @@
 
               </div>
               <div class="syllabus-tags">
-                ${contentTags.map(tag => `<div class="syllabus-tag backcolblack" style="cursor: pointer;" onclick="displayContent('${tag}', '${i}')" id="${tag}">${tag.split("_").join(" ").toUpperCase()}</div>`).join('')}
+                ${contentTags.map(tag => `<div class="syllabus-tag backcolblack" style="cursor: pointer;" onclick="displayContent('${item}', '${tag}', '${i}')" id="${tag}">${tag.split("_").join(" ").toUpperCase()}</div>`).join('')}
               </div>
 
             </div>
@@ -171,7 +171,6 @@
         if(i==0){
           courseItemElement.click()
           document.getElementsByClassName('syllabus-tag')[0].click()
-          selected = 0
         }
     });
 

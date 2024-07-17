@@ -100,15 +100,49 @@ body {
 
 header {
     position: relative;
-    text-align: center;
-    color: black;
+
     display: flex;
-    background-color: black;
-    margin: 10px;
+    margin: 20px;
     margin-bottom: 0;
-    margin-bottom: 0px;
-    border-radius: 20px;
-    padding: 10px 20px;
+
+}
+
+.header-container {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.header-container-left {
+  flex: 70%;
+  display: flex;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+  padding: 0px 20px;
+}
+
+.header-container-right {
+  flex: 1 1 30%;
+  background-color: #FE76B4;
+  border-radius: 20px;
+  padding: 0px 20px;
+  color: black;
+  width: 100%;
+  margin: 0;
+
+}
+.header-container-right p {
+  color: black;
+}
+
+header p {
+  color: white;
+}
+
+header a {
+  color: white;
 }
 
 .banner {
@@ -262,6 +296,12 @@ header h1 {
   margin: 0;
 }
 
+@media only screen and (max-width: 1000px) {
+    .container-homework {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 800px) {
   .side-block {
     max-width: 38px;
@@ -296,9 +336,6 @@ header h1 {
       line-height: 50px;
   }
 
-  .container-homework {
-      display: none;
-  }
 }
 
 .container-content {
@@ -531,6 +568,11 @@ code {
   width: 100%;
 }
 
+.syllabus-text-container iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+
 .homework-text {
   margin: 0;
 
@@ -562,6 +604,11 @@ code {
 .homework-text img {
   object-fit: cover;
   max-height: 300px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.homework-text iframe {
   border-radius: 10px;
   width: 100%;
 }

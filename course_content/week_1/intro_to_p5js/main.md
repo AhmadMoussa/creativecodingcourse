@@ -39,6 +39,6 @@ In this example:
 
 And here's an interactive version of the code for you to explore:
 
-![Embed](https://openprocessing.org/sketch/1574623)
+<iframe src="https://openprocessing.org/sketch/1574623/embed/?plusEmbedHash=9088ce66&userID=272186&plusEmbedTitle=true&show=sketch" width="100%" height="400"></iframe>
 
 P5.js allows for quick iteration and exploration of visual ideas, making it a powerful tool for creative coding.

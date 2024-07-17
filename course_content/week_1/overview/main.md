@@ -1,6 +1,10 @@
+![How to Approach Creative Coding](https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/course_content/week_1/overview/picover.jpg)
+
+This is a short course about creative coding with P5JS. The material provided here is supplementary to the live sessions, but can also be explored as a standalone learning resource.
+
 ## Overview for Week 1
 
-This is a short course about P5JS that serves the purpose of being overvieable. Here you can find all course relevant material.
+Here's a quick overview of the topics that we'll tackle throughout the first week of the course:
 
 - **Intro to P5JS:** A first look at what P5JS is, and a showcase of some of the things that can be done with it.
 - **Flow of a P5 Program:** An overview of the two main functions in P5JS, the setup() and draw() functions.

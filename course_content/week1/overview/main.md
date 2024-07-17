@@ -1,3 +1,16 @@
+## Overview for Week 1
+
+This is a short course about P5JS that serves the purpose of being overvieable. Here you can find all course relevant material.
+
+- **Intro to P5JS:** A first look at what P5JS is, and a showcase of some of the things that can be done with it.
+- **Flow of a P5 Program:** An overview of the two main functions in P5JS, the setup() and draw() functions.
+- **Creating the Canvas:** An overview of how to create and customize the canvas in P5JS, including setting its size and background color.
+- **Drawing Functions:** Some of the drawing functions that P5JS provides for you to use and draw shapes to the canvas, such as line(), rect(), ellipse(), and more.
+- **Creating a Grid:** Techniques for creating a grid layout on the canvas, including loops and coordinate systems.
+- **Patterns with Grids:** Exploring how to create patterns and designs using grid layouts, incorporating repetition and variation.
+- **Circle Packing Example:** A step-by-step example of circle packing, demonstrating how to fill a canvas with non-overlapping circles of varying sizes.
+
+
 ## What is Creative Coding?
 
 Creative coding is a practice that involves using computer programming as a medium for artistic expression. Unlike traditional programming, which focuses primarily on functionality and problem-solving, creative coding emphasizes aesthetics, experimentation, and the creation of visual, auditory, or interactive experiences. Here are some key aspects of creative coding:
@@ -17,15 +30,3 @@ Creative coding is a practice that involves using computer programming as a medi
 7. **Cross-disciplinary Nature**: Creative coding often intersects with other fields such as music, architecture, dance, and science, leading to cross-disciplinary projects that push the boundaries of traditional art forms.
 
 Overall, creative coding is about harnessing the power of code to push creative boundaries and explore new forms of digital expression.
-
-## Overview for Week 1
-
-This is a short course about P5JS that serves the purpose of being overvieable. Here you can find all course relevant material.
-
-- **Intro to P5JS:** A first look at what P5JS is, and a showcase of some of the things that can be done with it.
-- **Flow of a P5 Program:** An overview of the two main functions in P5JS, the setup() and draw() function.
-- **Creating the Canvas:** An over
-- **Drawing Functions:** Some of the drawing functions that P5JS provides for you to use and draw shapes to the Canvas.
-- **Creating a Grid:**
-- **Patterns with Grids:**
-- **Circle Packing Example:**

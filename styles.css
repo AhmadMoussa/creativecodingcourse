@@ -1,75 +1,114 @@
-/* #FE76B4, #FFC548, #00B487, #6DD0F0, #7659FF, #F23F3A */
+/*
+#FE76B4, #FFC548, #00B487, #6DD0F0, #7659FF, #F23F3A
+
+["D6EF49","06C4DA","E8BDF5","FFFFFF","FFA66A","232522","FF54BC"]
+
+
+#F6BCD2, #CC2D55, #E9473A, #F5971B, #FDC00D,
+#335E4A, #10955E, #8FC14E, #9DBFAE, #DEDCDD,
+#0290A8, #1CB8D1, #418FCD, #3F55A1, #617D89
+*/
 
 .backcol1 {
-  background-color: #FE76B4
+  background-color: #E9473A;
 }
 
 .backcol2 {
-  background-color: #FFC548
+  background-color: #FDC00D;
 }
 
 .backcol3 {
-  background-color: #00B487
+  background-color: #10955E;
 }
 
 .backcol4 {
-  background-color: #6DD0F0
+  background-color: #418FCD;
 }
 
 .backcol5 {
-  background-color: #7659FF
+  background-color: #0290A8;
 }
 
 .backcol6 {
-  background-color: #F23F3A
+  background-color: #DEDCDD;
+}
+
+.backcolblack {
+  background-color: #000000;
+}
+
+.border1 {
+  background-color: #E9473A;
+  /* border: 2px solid #E9473A; */
+}
+
+.border2 {
+  background-color: #FDC00D;
+  /* border: 2px solid #FDC00D; */
+}
+
+.border3 {
+  background-color: #10955E;
+  /* border: 2px solid #10955E; */
+}
+
+.border4 {
+  background-color: #418FCD;
+  /* border: 2px solid #418FCD; */
+}
+
+html {
+  --s: 100px;
+  --c1: #9DBFAE;
+  --c2: #DEDCDD;
+  --c3: #0290A8;
+
+  --_g: var(--c3) 0 120deg,#0000 0;
+  background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                          var(--c1) 0 calc(500%/6),var(--c2) 0);
+  background-size: calc(1.732*var(--s)) var(--s);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+
     padding: 0;
     line-height: 1.6;
 
-    background-color: #ffffff;
-    opacity: 1;
+     /* background-color: rgb(255,255,255,.15); */
+    height: 100vh;
+    /* opacity: 1;
     background-size: 40px 40px;
     background-image: repeating-linear-gradient(45deg, #000000 0, #000000 4px, #ffffff 0, #ffffff 50%);
-
-
+     */
 }
 
 .containercontainer {
-  height: 800px;
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   align-content: stretch;
 }
 
-.content {
-    position: relative;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-
-
-}
-
-header, nav, footer {
-    position: relative;
-    z-index: 1;
-}
-
-
 header {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
     display: flex;
+    background-color: black;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 .banner {
@@ -80,6 +119,7 @@ header {
     max-height: 400px;
     object-fit: cover;
     border-radius: 10px;
+
 
     /* background-color: #FFC548;
 opacity: 0.9;
@@ -103,108 +143,43 @@ background: linear-gradient(135deg, #7659FF55 25%, transparent 25%) -26px 0/ 52p
 
 header h1 {
 
-    margin: 0;
-    font-size: 4.5rem;
+    margin: auto;
+    font-size: 2.8rem;
     font-family: Rubik;
-    color: #000;
+    color: white;
     line-height: 80px;
-    margin: 0 20px;
 }
 
-header p {
-  margin: 0;
-  font-size: 20px;
-  color: #fff;
-}
-
-nav {
-    position: sticky;
-    top: 10px;
-    background-color: rgba(255, 255, 255, 0.65); /* Semi-transparent */
-    backdrop-filter: blur(3px);
-    color: #fff;
-    padding: 0.5rem;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-    max-height: 40px;
-    height: 40px;
-
-    padding: auto;
-
-    max-width: 800px;
-    margin: auto;
-    border-radius: 10px;
-    display: flex;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #000;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-nav ul li a:hover {
-    color: #ffdd57;
-}
-
-nav:hover {
-    background-color: rgba(255, 190, 120, 0.9); /* Less transparent on hover */
-}
-
-.content {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
-}
 
 .overview {
   display: flex;
   padding: 20px;
-  gap: 10px;
+  padding-top: 10px;
+  margin: 0;
+
+  gap: 20px;
 
   flex: 1;
+  min-height: 0; /* https://stackoverflow.com/questions/63006826/set-attribute-to-html-tag-without-a-value */
+}
 
+.overview:last-child {
+  margin-right: 10px;
 }
 
 .side-block {
   flex: 20%;
   display: flex;
   flex-direction: column;
-  align: stretch;
-  gap: 10px;
+  max-width: 220px;
+}
+
+.side-block .week-element:last-child {
+    margin-bottom: 0px;
+}
+
+.side-block .week-element:first-child {
+    margin-top: 0px;
 }
 
 .week-element {
@@ -212,16 +187,71 @@ footer {
   color: black;
   height: 100%;
   border-radius: 10px;
-  padding: 10px 20px;
-  flex-direction: column;
+  padding: 0;
+  flex-direction: row;
   z-index: 5;
+
+  margin: 6px 0px;
+  position: relative;
+  max-width: 220px;
+  min-width: 180px;
+  overflow: hidden;
+
 }
 
+
+.decoration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+
+
 .week-element-h2 {
-  font-size: 30px;
+  writing-mode:vertical-rl;
+  transform: rotate(-180deg);
+  font-size: 24px;
   font-weight: bold;
   font-family: Rubik;
   margin: 0;
+  margin: auto;
+}
+
+.week-element-number {
+  position:absolute;#
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: black;
+  border-radius: 1000px;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  color: white;
+  font-family: Rubik;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.week-element-list {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Rubik;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
 }
 
 .week-element-p {
@@ -232,19 +262,121 @@ footer {
   margin: 0;
 }
 
+@media only screen and (max-width: 800px) {
+  .side-block {
+    max-width: 38px;
+  }
+
+  .week-element {
+    max-width: 38px;
+    min-width: 38px;
+  }
+  .week-element-number {
+    display: none;
+  }
+
+  .decoration {
+    display: none;
+  }
+
+  .text-tag-container {
+    display: none;
+    max-width: 0;
+  }
+
+  .divider{
+    display: none;
+  }
+
+  header h1 {
+      margin: auto;
+      font-size: 2rem;
+      font-family: Rubik;
+      color: white;
+      line-height: 50px;
+  }
+
+  .container-homework {
+      display: none;
+  }
+}
+
+.container-content {
+  max-width: 500px;
+}
+
+.container-heading {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.container-text {
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  overflow: auto;
+}
+
+.syllabus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.syllabus-tag {
+
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: 0;
+  padding: 0px 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+.syllabus-tag-text {
+
+}
+
 .container-syllabus {
   flex: 50%;
-  background-color: #fffbe6;
   border-radius: 10px;
-  padding: 10px 20px;
   z-index: 5;
+
+  background-color: #fef9c6;
+  position: relative;
+
+  overflow-y: auto;
+
 }
+
+.container-text {
+  font-family: Rubik;
+  font-size: 16px;
+}
+
+pre {
+    padding: 0;
+    border-radius: 10px;
+}
+
+code {
+    padding: 8px;
+    border-radius: 10px;
+}
+
 .container-homework {
   flex: 30%;
-  background-color: #fffbe6;
+
   border-radius: 10px;
-  padding: 10px 20px;
   z-index: 5;
+
+  overflow-y: auto;
 }
 
 .title {
@@ -255,7 +387,7 @@ footer {
 }
 
 .shadow {
-  box-shadow:
+  /* box-shadow:
     2.5px 2.6px 2.6px -11px rgba(0, 0, 0, 0.028),
     5.9px 6px 6.1px -11px rgba(0, 0, 0, 0.041),
     10.6px 10.8px 10.9px -11px rgba(0, 0, 0, 0.051),
@@ -263,21 +395,120 @@ footer {
     29.1px 29.6px 29.9px -11px rgba(0, 0, 0, 0.069),
     50.9px 51.8px 52.2px -11px rgba(0, 0, 0, 0.082),
     110px 112px 113px -11px rgba(0, 0, 0, 0.11)
-  ;
+  ; */
+
+  box-shadow: 8px 8px black;
 }
 
-.shadow-pink {
-  box-shadow:
-    2.5px 2.6px 2.6px -11px rgba(254, 118, 180, 0.028),
-    5.9px 6px 6.1px -11px rgba(254, 118, 180, 0.041),
-    10.6px 10.8px 10.9px -11px rgba(254, 118, 180, 0.051),
-    17.7px 18px 18.1px -11px rgba(254, 118, 180, 0.059),
-    29.1px 29.6px 29.9px -11px rgba(254, 118, 180, 0.069),
-    50.9px 51.8px 52.2px -11px rgba(254, 118, 180, 0.082),
-    110px 112px 113px -11px rgba(254, 118, 180, 0.11)
-  ;
-}
+
 
 .hover-glow {
 
+}
+
+.divider {
+  width: 2.5px;
+  min-width: 2.5px;
+  background-color: black;
+}
+
+.title-tag-container {
+  display: flex;
+  padding: auto;
+}
+
+.text-tag-container {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  padding: 10px;
+  margin-top: auto;
+  font-family: Rubik;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+
+
+/*  SYLLABUS CARD  */
+.syllabus-title-container {
+  margin: 0;
+
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+  background-color: #fef9c6;
+
+  position: sticky;
+  top: 0;
+}
+
+.syllabus-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: auto;
+  text-align: left;
+  color: #000;
+}
+
+/*  HOMEWORK CARD  */
+.homework-title-container {
+  margin: 0;
+
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+  background-color: #DEDCDD;
+
+  position: sticky;
+  top: 0;
+}
+
+.homework-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: auto;
+  text-align: left;
+  color: #000;
+}
+
+.homework-text {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Rubik;
+  padding: 10px 20px;
+  text-align: left;
+  color: #000;
+}
+
+.syllabus-decoration {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+}
+
+
+
+.syllabus-text-container {
+  margin: 0;
+
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+  overflow: scroll;
+}
+
+.syllabus-text {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: auto;
+
+  color: #000;
 }

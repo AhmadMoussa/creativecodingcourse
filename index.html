@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Creative Coding Course</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Syllabus</title>
-    <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/srcery.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+<script src="./courseContent.js"></script>
 
 </head>
 <body>
@@ -21,110 +26,167 @@
           <li><a href="#contact">Contact</a></li>
       </ul>
   </nav> -->
-    <header>
-      <h1>INTRO TO CREATIVE CODING</h1>
-      <!-- <img src="bann.jpg" alt="Course Banner" class="banner shadow">
 
-        <div class="header-content">
-
-            <p>Instructors: Ahmad Moussa & Hussein Massalkhi</p>
-        </div> -->
-
-    </header>
 <div class="containercontainer">
+  <header>
+    <h1>CREATIVE CODING MINI COURSE</h1>
+    <!-- <img src="bann.jpg" alt="Course Banner" class="banner shadow">
 
+      <div class="header-content">
+
+          <p>Instructors: Ahmad Moussa & Hussein Massalkhi</p>
+      </div> -->
+
+  </header>
 
     <div class="overview">
-      <div class="side-block">
-        <div class="week-element shadow backcol1" data-tilt>
-          <h2 class="week-element-h2">WEEK 1</h2>
-          <p class="week-element-p">Intro to P5JS & the Canvas</p>
-        </div>
-        <div class="week-element shadow backcol2" data-tilt>
-          <h2 class="week-element-h2">WEEK 2</h2>
-          <p class="week-element-p">Animation & Interactivity</p>
-        </div>
-        <div class="week-element shadow backcol3" data-tilt>
-          <h2 class="week-element-h2">WEEK 3</h2>
-          <p class="week-element-p">Generative Art</p>
-        </div>
-        <div class="week-element shadow backcol4" data-tilt>
-          <h2 class="week-element-h2">WEEK 4</h2>
-          <p class="week-element-p">Final Project</p>
-        </div>
-      </div>
-      <div class="container-syllabus shadow backcol5">
-        <h2 class="title">WEEK 1 SYLLABUS</h2>
-        <p>The first week we will have a first look at P5JS</p>
-      </div>
+      <div class="side-block" id="side-block"></div>
+      <div class="container-syllabus shadow"></div>
       <div class="container-homework shadow backcol6">
-        <h2 class="title">SELF-STUDY</h2>
+        <div class="homework-title-container backcol6">
+          <h2 class="homework-title">Self Study</h2>
+
+        </div>
+        <div class="homework-text" id="homework-text">
+
+        </div>
       </div>
     </div>
-    </div>
+
     <!-- <footer>
         <p>&copy; 2024 Gorilla Sun</p>
     </footer> -->
     <script type="text/javascript" src="min.tilt.js"></script>
 
     <script type="text/javascript">
-      let contentArray = [
-      `
-      <h2 class="week-element-h2">WEEK 1</h2>
-      <p class="week-element-p">Intro to P5JS - The Canvas - Simple drawing functions - Making Patterns</p>
-      <ul class="week-element-p">
-        <li>Session 1:
-          <ul class="week-element-p">
-            <li>Intro to P5</li>
-            <li>Creating a Canvas</li>
-          </ul>
-        </li>
 
-        <li>Session 2:
-          <ul class="week-element-p">
-            <li>Drawing and Styling Functions</li>
-          </ul>
-        </li>
-        <li>Extra Session</li>
-        <li>Session 3:
-          <ul class="week-element-p">
-            <li>Creating a Grid</li>
-            <li>Ten Print Pattern</li>
-          </ul>
-        </li>
-      </ul>
-      `,
-      `
-      <h2 class="week-element-h2">WEEK 2</h2>
-      <p class="week-element-p">Animation & Interactivity</p>
-      `,
-      `
-      <h2 class="week-element-h2">WEEK 3</h2>
-      <p class="week-element-p">Generative Art</p>
-      `,
-      `
-      <h2 class="week-element-h2">WEEK 4</h2>
-      <p class="week-element-p">Final Project</p>
-      `
-      ]
+    async function getMDFile(filePath){
+      return await fetch(filePath)
+        .then(response => {
+          if (!response.ok) {
+            console.log('response', response)
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(markdown => {
+          // The markdown content is now stored in the `markdown` variable as a string
 
-      // Select all divs with class 'list-div'
-        const listDivs = document.getElementsByClassName('week-element');
-        // Select the main div
-        const mainDiv = document.getElementsByClassName('container-syllabus')[0];
+          // You can now use the markdown content in your application
+          // For example, you could insert it into an element on your page
 
-        console.log(listDivs)
-        // Loop through each div and add a click event listener
+          return markdown
 
-        for(let n = 0; n < listDivs.length; n++){
-          let div = listDivs[n]
-          div.addEventListener('click', function() {
-              // Update the content of the main div with the index of the clicked div
-              mainDiv.innerHTML = contentArray[n];
-          });
-        }
+        })
+        .catch(error => {
+          console.error('There has been a problem with your fetch operation:', error);
+      });
+    }
 
     </script>
+
+    <script type="text/javascript">
+
+      const relativeUrl = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/"
+      var converter = new showdown.Converter()
+
+      let sideBlock = document.getElementById("side-block")
+      console.log(sideBlock)
+      let courseItems = Object.keys(courseContent)
+
+      const mainDiv = document.getElementsByClassName('container-syllabus')[0];
+      const mainDivText = document.getElementsByClassName('syllabus-text-container')[0];
+
+
+      displayContent = async function(content, n){
+        console.log(content)
+        console.log(courseContent[""+Object.keys(courseContent)[n]]["content"])
+
+
+        let cont = await getMDFile(relativeUrl + "course_content/week1/" + content + "/main.md")
+        let contHTML = await converter.makeHtml(cont);
+
+        document.getElementsByClassName('syllabus-text-container')[0].innerHTML = contHTML;
+
+        let cont2 = await getMDFile(relativeUrl + "course_content/week1/" + content + "/secondary.md")
+        let contHTML2 = await converter.makeHtml(cont2);
+
+        document.getElementById('homework-text').innerHTML += contHTML2;
+
+        //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
+        let q = (n+1) | 0
+
+        let otherElements = document.getElementsByClassName("syllabus-tag")
+        for(let el of otherElements){
+          el.classList.remove('border'+q)
+        }
+        let highlightElement = document.getElementById(content)
+        highlightElement.classList.add('border'+q)
+
+        hljs.highlightAll()
+      }
+
+      let selected = 0
+      courseItems.forEach(
+        function(item, i) {
+
+        let courseItemElement = document.createElement('div')
+        courseItemElement.classList.add("week-element", "shadow", "backcol"+(i+1))
+        courseItemElement.innerHTML = `
+          <div class="week-element-number">${i+1}</div>
+          <div class="title-tag-container">
+            <h2 class="week-element-h2">${item.split("_").join(" ").toUpperCase()}</h2>
+          </div>
+          <div class="divider"></div>
+          <div class="text-tag-container">
+            ${courseContent[item].description}
+          </div>
+          <div class="decoration"></div>
+        `
+
+        let contentTags = Object.keys(courseContent[""+item]["content"])
+
+        courseItemElement.addEventListener('click', function() {
+            mainDiv.innerHTML = `
+            <div class="syllabus-title-container">
+              <h2 class="syllabus-title">${item.split("_").join(" ").toUpperCase()}</h2>
+              <div class="syllabus-decoration backcol${i+1}">
+
+              </div>
+              <div class="syllabus-tags">
+                ${contentTags.map(tag => `<div class="syllabus-tag backcolblack" style="cursor: pointer;" onclick="displayContent('${tag}', '${i}')" id="${tag}">${tag.split("_").join(" ").toUpperCase()}</div>`).join('')}
+              </div>
+
+            </div>
+            <div class="syllabus-text-container">
+
+            </div>
+            `;
+
+            document.getElementById("overview").click()
+        });
+
+        sideBlock.append(courseItemElement)
+
+        if(i==0){
+          courseItemElement.click()
+          document.getElementsByClassName('syllabus-tag')[0].click()
+          selected = 0
+        }
+    });
+
+    VanillaTilt.init(document.querySelectorAll(".week-element"));
+
+
+    // <ul class="week-element-list">
+    //   <li class="week-element-p">Intro to P5JS</li>
+    //   <li class="week-element-p">Drawing Functions</li>
+    //   <li class="week-element-p">Grid Systems</li>
+    //   <li class="week-element-p">Making Patterns</li>
+    //   <li class="week-element-p">Interactivity</li>
+    // </ul>
+    </script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>

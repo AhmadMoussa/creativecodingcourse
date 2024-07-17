@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/srcery.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script src="./showdown-youtube.js"></script>
 <script src="./courseContent.js"></script>
 
 </head>
@@ -88,7 +89,7 @@
     <script type="text/javascript">
 
       const relativeUrl = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/"
-      var converter = new showdown.Converter()
+      var converter = new showdown.Converter({extensions: ['youtube']});
 
       let sideBlock = document.getElementById("side-block")
       console.log(sideBlock)

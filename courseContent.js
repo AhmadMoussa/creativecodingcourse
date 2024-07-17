@@ -3,7 +3,7 @@ let courseContent = {
     description: "Intro to Creative Coding with P5JS. Drawing Shapes & Patterns.",
     content: {
       overview: '',
-      p5js_history: '',
+      creative_code_history: '',
       intro_to_p5js: '',
       flow_of_a_p5_program: '',
       creating_the_canvas: ``,

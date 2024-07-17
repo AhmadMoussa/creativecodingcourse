@@ -527,7 +527,7 @@ code {
 .syllabus-text-container img {
   object-fit: cover;
   max-height: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -546,7 +546,7 @@ code {
   margin: 0;
 
   border-radius: 0 0 10px 10px;
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 
 .homework-text h2, h3 {
@@ -562,7 +562,7 @@ code {
 .homework-text img {
   object-fit: cover;
   max-height: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
 }
 

@@ -111,7 +111,7 @@
         let cont2 = await getMDFile(relativeUrl + "course_content/week1/" + content + "/secondary.md")
         let contHTML2 = await converter.makeHtml(cont2);
 
-        document.getElementById('homework-text').innerHTML += contHTML2;
+        document.getElementById('homework-text').innerHTML = contHTML2;
 
         //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
         let q = (n+1) | 0

@@ -12,42 +12,24 @@ let courseContent = {
       creating_a_grid: ``,
       making_patterns_with_grids: ``,
       circle_packing: ``,
-    },
-    content2: {
-
     }
   },
   week_2: {
     description: "Interactivity & Animation. A First Look at Generative Art.",
     content: {
-      overview: ``,
-      interactivity: ``,
-      animation: ``,
-    },
-    content2: {
-
+      overview: '',
     }
   },
   project: {
     description: "Overview & Info about the Course Project",
     content: {
-      overview: ``,
-      genart2: ``,
-      animation: ``,
-    },
-    content2: {
-
+      overview: '',
     }
   },
   gallery: {
     description: "Showcase of the Submitted Course Projects",
     content: {
-      overview: ``,
-      genart: ``,
-      animation: ``,
-    },
-    content2: {
-
+      overview: '',
     }
   },
 }

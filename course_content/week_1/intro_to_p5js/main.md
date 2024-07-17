@@ -14,7 +14,7 @@ P5.js is a JavaScript library designed to make coding accessible and inclusive f
 - **Animation**: Built-in functions to create animations by continuously drawing frames.
 
 ### Basic Example:
-Here's a simple P5.js sketch that draws a circle in the center of the canvas and changes its color based on mouse position:
+Here's a simple P5.js sketch, just to give you an idea of what a P5 program looks like. Here we simply draw a circle in the center of the canvas and changes its color based on mouse position:
 
 ```javascript
 function setup() {
@@ -34,7 +34,11 @@ function draw() {
 ```
 
 In this example:
-- `setup()` initializes the canvas size.
-- `draw()` continuously updates the canvas, mapping the mouse position to RGB values to change the circle's color.
+- The setup function `setup()` initializes the canvas size.
+- The draw `draw()` function continuously updates the canvas, mapping the mouse position to RGB values to change the circle's color.
+
+And here's an interactive version of the code for you to explore:
+
+![Embed](https://openprocessing.org/sketch/1574623)
 
 P5.js allows for quick iteration and exploration of visual ideas, making it a powerful tool for creative coding.

@@ -1,10 +1,16 @@
 let courseContent = {
-  week_1: {
-    description: "Intro to Creative Coding with P5JS. Drawing Shapes & Patterns.",
+  intro: {
+    description: "Course Overview",
     content: {
       overview: '',
       creative_code_history: '',
       intro_to_p5js: '',
+    }
+  },
+  week_1: {
+    description: "First Look at P5JS: Drawing Shapes & Patterns",
+    content: {
+      overview: '',
       flow_of_a_p5_program: '',
       creating_the_canvas: ``,
       p5_drawing_functions: ``,
@@ -15,19 +21,19 @@ let courseContent = {
     }
   },
   week_2: {
-    description: "Interactivity & Animation. A First Look at Generative Art.",
+    description: "Interactivity, Animation, and a First Look at Generative Art",
     content: {
       overview: '',
     }
   },
   project: {
-    description: "Overview & Info about the Course Project",
+    description: "Course Project Overview & Info",
     content: {
       overview: '',
     }
   },
   gallery: {
-    description: "Showcase of the Submitted Course Projects",
+    description: "Course Projects Showcase",
     content: {
       overview: '',
     }

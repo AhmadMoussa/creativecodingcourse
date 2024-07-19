@@ -1,87 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gorilla's Creative Coding Course</title>
+    <title>Creative Coding Course</title>
 
-    <meta property="title" content="Gorilla's Creative Coding Course" />
-    <meta property="description" content="Everything that you need to know to get started creative coding with p5js." />
-    <meta property="url" content="https://ahmadmoussa.github.io/creativecodingcourse/" />
-    <meta property="image" content="https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/course_content/project/overview/banner.png" />
-
-    <meta property="og:title" content="Gorilla's Creative Coding Course">
-    <meta property="og:type" content="page" />
-    <meta property="og:description" content="Everything that you need to know to get started creative coding with p5js.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/course_content/project/overview/banner.png">
-    <meta property="og:url" content="https://ahmadmoussa.github.io/creativecodingcourse/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="og:author" content="Gorilla Sun">
-    <meta name="author" content="Gorilla Sun">
-
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/bolt-solid.svg">
-        
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-faces.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles-sidebar.css">
+    <link rel="stylesheet" href="./styles/styles-main-layout.css">
+    <link rel="stylesheet" href="./styles/styles-content-container.css">
+    <link rel="stylesheet" href="./styles/styles-item-cards.css">
+    <link rel="stylesheet" href="./styles/styles-media-queries.css">
+    <link rel="stylesheet" href="./styles/styles-side-container.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/srcery.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
-    <script src="./showdown-youtube.js"></script>
-<script src="./courseContent.js"></script>
+
+    <script src="./libs/min.tilt.js"></script>
+    <script src="./libs/showdown-youtube.js"></script>
+    <script src="./courseContent.js"></script>
+
 
 </head>
 <body>
-  <!-- <nav>
-      <ul>
-          <li><a href="#description">Description</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#grading">Grading</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-  </nav> -->
 
-<div class="containercontainer">
-  <header>
-    <div class="header-container">
-      <div class="header-container-left">
-        <h1>CREATIVE CODING MINI COURSE</h1>
-      </div>
-      <div class="header-container-right">
-        <p>Please view this page on a desktop for a good experience - <b>not yet mobile optimized!</b></p>
-        <p>Made by <b><a href="https://www.gorillasun.de">Gorilla Sun</a></b>, with love! (All rights reserved - for now.)</p>
+<div class="backdiv">
+
+</div>
+<div class="pageview">
+  <div class="sidebar">
+    <div class="topsidebar">
+      <div class="backbutton">
+        SCROLL
       </div>
     </div>
-    <!-- <img src="bann.jpg" alt="Course Banner" class="banner shadow">
+    <div class="side-block" id="side-block"></div>
+  </div>
 
-      <div class="header-content">
 
-          <p>Instructors: Ahmad Moussa & Hussein Massalkhi</p>
-      </div> -->
+  <div class="overview">
+    <div class="overview-left">
+      <div class="container-syllabus"></div>
+    </div>
+    <div class="overview-right">
 
-  </header>
 
-    <div class="overview">
-      <div class="side-block" id="side-block"></div>
-      <div class="container-syllabus shadow"></div>
-      <div class="container-homework shadow backcol6">
+      <div class="container-homework backcol6">
         <div class="homework-title-container backcol6">
           <h2 class="homework-title">Self Study</h2>
-
         </div>
-        <div class="homework-text" id="homework-text">
-
-        </div>
+        <div class="homework-text" id="homework-text"></div>
       </div>
-    </div>
 
-    <!-- <footer>
-        <p>&copy; 2024 Gorilla Sun</p>
-    </footer> -->
-    <script type="text/javascript" src="min.tilt.js"></script>
+
+      <div class="info-container">
+        <p>Please view this page on a desktop for a good experience - <b>not yet mobile optimized!</b></p>
+
+        <p>A creative coding mini course made by <b><a href="https://www.gorillasun.de">Gorilla Sun</a></b>, with love! <b>&copy; 2024 Gorilla Sun </b></p>
+      </div>
+
+    </div>
+  </div>
+
+
 
     <script type="text/javascript">
 
@@ -140,7 +129,7 @@
         document.getElementById('homework-text').innerHTML = contHTML2;
 
         //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
-        let q = (n+1) | 0
+        let q = ((n|0)+1) | 0
 
         let otherElements = document.getElementsByClassName("syllabus-tag")
         for(let el of otherElements){
@@ -156,7 +145,7 @@
         function(item, i) {
 
         let courseItemElement = document.createElement('div')
-        courseItemElement.classList.add("week-element", "shadow", "backcol"+(i+1))
+        courseItemElement.classList.add("week-element", "backcol"+(i+1))
         courseItemElement.innerHTML = `
           <div class="week-element-number">${i+1}</div>
           <div class="title-tag-container">

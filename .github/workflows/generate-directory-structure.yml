@@ -1,4 +1,4 @@
-name: Generate Directory Structure
+name: Generate Directory Structure JSON
 
 on:
   push:
@@ -8,22 +8,42 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate-directory-structure:
+  generate-structure:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    
     - name: Generate directory structure
       run: |
-        echo "Directory Structure:" > directory_structure.txt
-        tree -L 3 -I 'node_modules|.git' >> directory_structure.txt
+        python << EOF
+        import os
+        import json
+
+        def get_directory_structure(rootdir):
+            dir = {}
+            rootdir = rootdir.rstrip(os.sep)
+            start = rootdir.rfind(os.sep) + 1
+            for path, dirs, files in os.walk(rootdir):
+                folders = path[start:].split(os.sep)
+                subdir = dict.fromkeys(files)
+                parent = reduce(dict.get, folders[:-1], dir)
+                parent[folders[-1]] = subdir
+            return dir
+
+        structure = get_directory_structure('.')
+        with open('directory_structure.json', 'w') as f:
+            json.dump(structure, f, indent=2)
+        EOF
 
     - name: Commit and push if changed
       run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        git add directory_structure.txt
-        git commit -m "Update directory structure" -a || echo "No changes to commit"
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+        git add directory_structure.json
+        git commit -m "Update directory structure JSON" || exit 0
         git push

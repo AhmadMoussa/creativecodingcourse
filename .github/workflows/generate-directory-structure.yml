@@ -23,6 +23,7 @@ jobs:
         python << EOF
         import os
         import json
+        from functools import reduce
 
         def get_directory_structure(rootdir):
             dir = {}

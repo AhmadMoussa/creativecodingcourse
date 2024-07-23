@@ -1,85 +1,91 @@
-The `createCanvas()` function in P5.js is used to create a drawing canvas within a web page or an HTML5 canvas element. This canvas serves as the area where you can draw shapes, images, text, and create interactive elements using P5.js functions.
+## Creating the Canvas with createCanvas()
 
-### Syntax
+**Imagine you want to draw on a computer.** To do this, you need a digital canvas. In p5.js, the `createCanvas()` function helps you create this canvas.
 
-The `createCanvas()` function in P5.js has two main forms:
+### What does `createCanvas()` do?
 
-1. **Basic Form**:
-   ```javascript
-   createCanvas(width, height);
-   ```
-   - **Parameters**:
-     - `width`: Specifies the width of the canvas in pixels.
-     - `height`: Specifies the height of the canvas in pixels.
+* **Creates a canvas:** It makes a special area on your webpage where you can draw. This area is like a digital whiteboard.
+* **Sets the size:** You can tell the canvas how big you want it to be by giving it a width and a height. For example, `createCanvas(400, 300)` makes a canvas 400 pixels wide and 300 pixels tall.
+* **Puts it on the page:** The canvas is then placed on your webpage so you can see it.
 
-2. **Additional Options**:
-   ```javascript
-   createCanvas(width, height, renderer);
-   ```
-   - **Parameters**:
-     - `width`, `height`: Same as in the basic form.
-     - `renderer` (optional): Specifies the renderer to use. Default is P2D, which stands for 2D rendering. Other options include WEBGL for WebGL-based 3D rendering.
-
-### Usage
-
-Here’s how you typically use `createCanvas()` in a P5.js sketch:
+**Example:**
 
 ```javascript
 function setup() {
-  createCanvas(400, 400); // Creates a canvas 400 pixels wide and 400 pixels high
-}
-
-function draw() {
-  background(220); // Clears the canvas with a light gray background
-  ellipse(mouseX, mouseY, 50, 50); // Draws a circle at the current mouse position
+  createCanvas(400, 300);
 }
 ```
 
-### Explanation
+This code will create a canvas that is 400 pixels wide and 300 pixels tall when your program starts. Of course, these values are entirely up to you, you can make a square canvas, where the width and height are equal, or a rectangular canvas where one of the dimensions is larger than the other - it entirely depends on what kind of artwork you are making.
 
-- **Creating the Canvas**: In the `setup()` function, `createCanvas(400, 400)` creates an HTML5 `<canvas>` element with a width of 400 pixels and a height of 400 pixels. This canvas is automatically inserted into the web page where your P5.js sketch is running.
+If we run this code we won't actually see anything yet because the canvas is blank, we need to still give it a color! Just like a painter would prepare their canvas with a certain color before getting started with their artwork - this is where the `background()` function comes in.
 
-- **Canvas Size**: The dimensions specified in `createCanvas()` define the size of the drawing area where all subsequent drawing operations (like `ellipse()`, `rect()`, etc.) will take place.
+### The `background()` Function
 
-- **Canvas Position**: By default, the canvas is created at the top-left corner of the web page or container where your P5.js sketch is embedded. You can position it using CSS if needed.
+* **Colors the canvas:** It fills the entire canvas with a solid color.
+* **Refreshes the canvas:** If you're making an animation, `background()` is used in the `draw()` function to clear the canvas before drawing new things. This prevents old drawings from piling up.
 
-### Additional Options
-
-- **Renderer**: If you specify a renderer (e.g., `WEBGL`), you can create WebGL-based 2D or 3D graphics. WebGL offers accelerated graphics rendering using the GPU, suitable for complex visualizations and interactive 3D content.
+**Example:**
 
 ```javascript
 function setup() {
-  createCanvas(400, 400, WEBGL); // Creates a WebGL canvas
+  createCanvas(400, 300);
 }
 
 function draw() {
-  background(220); // Clears the canvas with a light gray background
-  rotateX(frameCount * 0.01); // Rotates the coordinate system around the X axis
-  rotateY(frameCount * 0.01); // Rotates the coordinate system around the Y axis
-  box(100); // Draws a 3D box with a size of 100 pixels
+  background(220); // Light grey background
+  // Your drawing code goes here
 }
 ```
 
-### Resizing the Canvas
+In this example:
+* `createCanvas(400, 300)` creates a canvas 400 pixels wide and 300 pixels tall.
+* `background(220)` fills the canvas with a light grey color before drawing anything else.
 
-You can resize the canvas dynamically by calling `resizeCanvas()` within your P5.js sketch. This function allows you to change the canvas dimensions during runtime based on user interactions or other events.
+So, `background()` is like painting the entire canvas with a single color before you start drawing your masterpiece! - and you can change this color by using different numbers. For example, `background(0)` is black, and `background(255)` is white. You can also use color names like `background('red')`, and even use RGB and HEXADECIMAL values as well: `background(255,0,0)` would color the canvas red, and `background('#000000')` would color the canvas black.
+
+Of course when we are making a static sketch, we can also just leave the `background()` function inside of the `setup()` function, and we can disregard the `draw()` function entirely. 
+
+
+### Filling the Entire Window
+
+Sometimes you might want the canvas to fill out the entire size of the browser window, or the webpage that it lives in. To do this, you can use the `windowWidth` and `windowHeight` values that browser window provides, and are equal to its dimensions:
 
 ```javascript
 function setup() {
-  createCanvas(400, 400);
-}
-
-function draw() {
-  background(220);
-}
-
-function keyPressed() {
-  if (key === 'r') {
-    resizeCanvas(600, 400); // Resizes the canvas to 600x400 pixels when 'r' key is pressed
-  }
+  createCanvas(windowWidth, windowHeight);
 }
 ```
 
-### Summary
+This will basically make the canvas fill the entire width and height of your browser window.
 
-The `createCanvas()` function in P5.js is fundamental for setting up the drawing area where you create visual content. Understanding how to specify dimensions and optionally use different renderers like WebGL expands the possibilities for creating interactive and visually engaging sketches.
+### Making Your Canvas Flexible
+
+Sometimes you might want your canvas to resize along with the browser window when it changes dimensions, there's two useful function for this, namely `windowResized` and `resizeCanvas`. In p5.js, the `windowResized()` is automatically called whenever the browser window's size changes, we can us it to call the other function `resizeCanvas()` which then changes the dimensions of our canvas accordingly.
+
+**Example:**
+
+```javascript
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+    background(220);
+    // Your drawing code here
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
+```
+
+In this example:
+* `createCanvas(windowWidth, windowHeight)` makes the canvas fill the entire window when the sketch starts.
+* `windowResized()` checks if the window size has changed.
+* `resizeCanvas(windowWidth, windowHeight)` changes the canvas size to match the new window size.
+
+**So, `windowResized()` and `resizeCanvas()` work together to make your canvas adaptable to different screen sizes.** 
+
+
+

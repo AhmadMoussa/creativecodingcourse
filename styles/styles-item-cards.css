@@ -16,7 +16,6 @@
   max-height: 180px;
   min-height: 180px;
   overflow: hidden;
-
 }
 
 
@@ -33,16 +32,27 @@
   border-radius: 100%;
 }
 
+.title-tag-container {
 
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .week-element-h2 {
   writing-mode:vertical-rl;
   transform: rotate(-180deg);
+  width: 32px;
   font-size: 24px;
   font-weight: bold;
   font-family: Rubik;
-  margin: 0;
+
   margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .week-element-number {

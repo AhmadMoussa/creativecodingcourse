@@ -1,0 +1,24 @@
+
+
+.container-homework {
+  flex: 30%;
+
+  border-radius: 10px;
+  z-index: 5;
+
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.container-syllabus::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.info-container {
+  background-color: #FE76B4;
+  border-radius: 10px;
+  z-index: 5;
+  padding: 0 20px;
+  font-family: Rubik;
+}

@@ -1,0 +1,83 @@
+
+.week-element {
+  display: flex;
+  color: black;
+  height: 100%;
+
+  border-radius: 10px;
+  padding: 0;
+  flex-direction: row;
+  z-index: 5;
+
+  position: relative;
+  max-width: 220px;
+  min-width: 180px;
+
+  max-height: 180px;
+  min-height: 180px;
+  overflow: hidden;
+
+}
+
+
+.decoration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+
+
+.week-element-h2 {
+  writing-mode:vertical-rl;
+  transform: rotate(-180deg);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: 0;
+  margin: auto;
+}
+
+.week-element-number {
+  position:absolute;#
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: black;
+  border-radius: 1000px;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  color: white;
+  font-family: Rubik;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.week-element-list {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Rubik;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.week-element-p {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Rubik;
+  margin: 0;
+}

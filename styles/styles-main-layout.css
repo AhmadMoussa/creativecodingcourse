@@ -1,0 +1,30 @@
+.overview {
+
+
+  display: flex;
+  gap: 12px;
+  flex: 1;
+
+  padding: 20px 20px 20px 0;
+  padding-left: 0;
+  min-height: 0; /* https://stackoverflow.com/questions/63006826/set-attribute-to-html-tag-without-a-value */
+}
+
+.overview:last-child {
+  margin-right: 10px;
+}
+
+.overview-left {
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 0;
+}
+
+.overview-right {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

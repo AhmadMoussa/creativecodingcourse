@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creative Coding Course</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-faces.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles-sidebar.css">
+    <link rel="stylesheet" href="./styles/styles-main-layout.css">
+    <link rel="stylesheet" href="./styles/styles-content-container.css">
+    <link rel="stylesheet" href="./styles/styles-item-cards.css">
+    <link rel="stylesheet" href="./styles/styles-media-queries.css">
+    <link rel="stylesheet" href="./styles/styles-side-container.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/srcery.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+
+    <script src="./libs/min.tilt.js"></script>
+    <script src="./libs/showdown-youtube.js"></script>
+    <script src="./courseContent.js"></script>
+
+
+</head>
+<body>
+
+<div class="backdiv">
+
+</div>
+<div class="pageview">
+  <div class="sidebar">
+    <div class="topsidebar">
+      <div class="backbutton">
+        SCROLL
+      </div>
+    </div>
+    <div class="side-block" id="side-block"></div>
+  </div>
+
+
+  <div class="overview">
+    <div class="overview-left">
+      <div class="container-syllabus"></div>
+    </div>
+    <div class="overview-right">
+
+
+      <div class="container-homework backcol6">
+        <div class="homework-title-container backcol6">
+          <h2 class="homework-title">Self Study</h2>
+        </div>
+        <div class="homework-text" id="homework-text"></div>
+      </div>
+
+
+      <div class="info-container">
+        <p>Please view this page on a desktop for a good experience - <b>not yet mobile optimized!</b></p>
+
+        <p>A creative coding mini course made by <b><a href="https://www.gorillasun.de">Gorilla Sun</a></b>, with love! <b>&copy; 2024 Gorilla Sun </b></p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <script type="text/javascript">
+
+    async function getMDFile(filePath){
+      return await fetch(filePath)
+        .then(response => {
+          if (!response.ok) {
+            console.log('response', response)
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(markdown => {
+          // The markdown content is now stored in the `markdown` variable as a string
+
+          // You can now use the markdown content in your application
+          // For example, you could insert it into an element on your page
+
+          return markdown
+
+        })
+        .catch(error => {
+          console.error('There has been a problem with your fetch operation:', error);
+      });
+    }
+
+    </script>
+
+    <script type="text/javascript">
+
+      const relativeUrl = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/"
+      var converter = new showdown.Converter({extensions: ['youtube']});
+
+      let sideBlock = document.getElementById("side-block")
+      console.log(sideBlock)
+      let courseItems = Object.keys(courseContent)
+
+      const mainDiv = document.getElementsByClassName('container-syllabus')[0];
+      const mainDivText = document.getElementsByClassName('syllabus-text-container')[0];
+
+
+      displayContent = async function(item, content, n){
+        console.log(content)
+        console.log(courseContent[""+Object.keys(courseContent)[n]]["content"])
+
+        console.log(item)
+        let cont = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/main.md")
+        let contHTML = await converter.makeHtml(cont);
+
+        document.getElementsByClassName('syllabus-text-container')[0].innerHTML = contHTML;
+
+        console.log(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
+        let cont2 = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
+        let contHTML2 = await converter.makeHtml(cont2);
+
+        document.getElementById('homework-text').innerHTML = contHTML2;
+
+        //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
+        let q = ((n|0)+1) | 0
+
+        let otherElements = document.getElementsByClassName("syllabus-tag")
+        for(let el of otherElements){
+          el.classList.remove('border'+q)
+        }
+        let highlightElement = document.getElementById(content)
+        highlightElement.classList.add('border'+q)
+
+        hljs.highlightAll()
+      }
+
+      courseItems.forEach(
+        function(item, i) {
+
+        let courseItemElement = document.createElement('div')
+        courseItemElement.classList.add("week-element", "backcol"+(i+1))
+        courseItemElement.innerHTML = `
+          <div class="week-element-number">${i+1}</div>
+          <div class="title-tag-container">
+            <h2 class="week-element-h2">${item.split("_").join(" ").toUpperCase()}</h2>
+          </div>
+          <div class="divider"></div>
+          <div class="text-tag-container">
+            ${courseContent[item].description}
+          </div>
+          <div class="decoration"></div>
+        `
+
+        let contentTags = Object.keys(courseContent[""+item]["content"])
+
+        courseItemElement.addEventListener('click', function() {
+            mainDiv.innerHTML = `
+            <div class="syllabus-title-container">
+              <h2 class="syllabus-title">${item.split("_").join(" ").toUpperCase()}</h2>
+              <div class="syllabus-decoration backcol${i+1}">
+
+              </div>
+              <div class="syllabus-tags">
+                ${contentTags.map(tag => `<div class="syllabus-tag backcolblack" style="cursor: pointer;" onclick="displayContent('${item}', '${tag}', '${i}')" id="${tag}">${tag.split("_").join(" ").toUpperCase()}</div>`).join('')}
+              </div>
+
+            </div>
+            <div class="syllabus-text-container">
+
+            </div>
+            `;
+
+            document.getElementById("overview").click()
+        });
+
+        sideBlock.append(courseItemElement)
+
+        if(i==0){
+          courseItemElement.click()
+          document.getElementsByClassName('syllabus-tag')[0].click()
+        }
+    });
+
+    VanillaTilt.init(document.querySelectorAll(".week-element"));
+
+
+    // <ul class="week-element-list">
+    //   <li class="week-element-p">Intro to P5JS</li>
+    //   <li class="week-element-p">Drawing Functions</li>
+    //   <li class="week-element-p">Grid Systems</li>
+    //   <li class="week-element-p">Making Patterns</li>
+    //   <li class="week-element-p">Interactivity</li>
+    // </ul>
+    </script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>

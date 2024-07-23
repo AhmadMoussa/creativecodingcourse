@@ -1,79 +1,9 @@
 {
   ".": {
+    "directory_structure.json": null,
     "bolt-solid.svg": null,
     "courseContent.js": null,
     "index.html": null,
-    "course_content": {
-      "intro": {
-        "overview": {
-          "secondary.md": null,
-          "main.md": null,
-          "picover.jpg": null
-        },
-        "intro_to_p5js": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "creative_code_history": {
-          "secondary.md": null,
-          "main.md": null
-        }
-      },
-      "gallery": {
-        "overview": {
-          "secondary.md": null,
-          "main.md": null
-        }
-      },
-      "project": {
-        "overview": {
-          "secondary.md": null,
-          "banner.png": null,
-          "main.md": null
-        }
-      },
-      "week_2": {
-        "overview": {
-          "secondary.md": null,
-          "main.md": null
-        }
-      },
-      "week_1": {
-        "creating_a_grid": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "the_drawing_stack": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "overview": {
-          "secondary.md": null,
-          "main.md": null,
-          "picover.jpg": null
-        },
-        "p5_drawing_functions": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "creating_the_canvas": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "flow_of_a_p5_program": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "making_patterns_with_grids": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "circle_packing": {
-          "secondary.md": null,
-          "main.md": null
-        }
-      }
-    },
     ".github": {
       "workflows": {
         "generate-directory-structure.yml": null
@@ -188,9 +118,6 @@
         "pre-push.sample": null
       },
       "objects": {
-        "f2": {
-          "ef4b0617bc5387cbf4c7aee66b58dcbaf7983a": null
-        },
         "bb": {
           "b395261cf60c854971a479cdd59a99bfc78b17": null
         },
@@ -198,8 +125,7 @@
           "5d90897487aaf55121fd3551db6b8b1f36aae4": null
         },
         "a8": {
-          "432e46de1c9e38e112970dacc7a7b097321a62": null,
-          "b8add55e1485f5e990a93ba2c881a1426511d0": null
+          "432e46de1c9e38e112970dacc7a7b097321a62": null
         },
         "c0": {
           "bb02fe64b1557d16863f1b976910530d7dbdfa": null
@@ -209,7 +135,6 @@
           "29cb3c84b45b5367b04ba871e54149842fb5c9": null
         },
         "a3": {
-          "a88b2a637c66413629d071dccb0cf0413805cc": null,
           "3ecc93bac2556d102e18a3519a89a347d2aadf": null
         },
         "d3": {
@@ -218,22 +143,11 @@
         "12": {
           "96c2c7694057eb54926dd337134938d5651f37": null
         },
-        "58": {
-          "c574fb33adf30f28873e68ff93b9fb9bdef893": null
-        },
         "e6": {
-          "9de29bb2d1d6434b8b29ae775ad8c2e48c5391": null,
           "d4b348b4be6b23ec054f3925ac92d3007ec7a9": null
         },
-        "c2": {
-          "d1f089b6a534ebba53404cbe0030dbe03203bc": null
-        },
         "3a": {
-          "d6af2649e21c1a1abea57b698877a7906637d5": null,
           "17a977b2722ed07d663af949352ecb8e6b3aaa": null
-        },
-        "ad": {
-          "e7ca2a8db2862ac765f46da532c38aaa2e021b": null
         },
         "a6": {
           "e2c0d36b969106c807f4d33654c83efb389f70": null
@@ -244,11 +158,8 @@
         "6e": {
           "f03c19c7727fc4caf496eed69f9b00738a812b": null
         },
-        "97": {
-          "fb726e7c8a8c5dfdff74fdefda808c07c5143a": null
-        },
-        "a9": {
-          "1765eb6c7560d6c299f8a2d0e616493ab84067": null
+        "fd": {
+          "f2b9a5cdf12218e5085d87c60ebb037f50ff68": null
         },
         "42": {
           "ef80b541522b1a6298f44e82afe1bbe5185269": null
@@ -259,32 +170,22 @@
         "5b": {
           "190f907500cc5a1a1112e7c23cafc463592111": null
         },
-        "50": {
-          "ecbdd0298f21260f823ff04a12e6d873e44dc8": null
-        },
         "f3": {
           "62533c611fa7357fd8f132a7fea3569f09de4a": null
         },
         "info": {},
-        "af": {
-          "27ae7eac237a90afd326dc5dfd56da2e320814": null
-        },
-        "05": {
-          "ffa240ce658713591a36ff2ce71b7569b55582": null
-        },
         "b2": {
           "a510446e4529449592e86d05b7cd823fc17d17": null
         },
+        "e0": {
+          "30a701e642f28de98cf923e7744ffd9d7e8d2a": null
+        },
         "61": {
           "9b8c09385638d04f34d460f57cbb9ca69cc81d": null,
-          "734fccfef8a4e31fa18626838599b39d43017d": null,
           "6fab0caa00f6d507fcfb58ea2ea7cdbee52697": null
         },
         "9d": {
           "a641ddb71b5d60f6225579c23ddef0fd32d0a3": null
-        },
-        "cd": {
-          "e982c4fc4452fa3492cdcc825d6be632a789e8": null
         },
         "fc": {
           "9835d67fa432d21c7c17e6909fdae863af1c1d": null
@@ -314,93 +215,36 @@
         "b4": {
           "864860ec4b7245da50a442f8ddfc8714112b9d": null
         },
-        "fe": {
-          "2e7bbe13fd278704c1398b74dec5a82c498ada": null
-        },
         "6b": {
           "d523ca3a394d7636e8175b593d5971a5d4f97d": null
         },
-        "32": {
-          "79f460732a8d98b597fba870ab7bcbe37f644d": null
-        },
         "pack": {},
-        "43": {
-          "64aaf62637dc90bed809ff034ff6d953e263f3": null
-        },
         "76": {
           "51bf7a306666ea8f1dacab0119ec7342fbff00": null
         },
         "f0": {
-          "ddfb42a5d0246b64a176392e0f69e1953a5302": null,
           "28bce2864bd0e614215482fc0555c6555b83e8": null
         },
         "4e": {
           "15a880ac4aace2e3a3a26173d21c124dddb083": null
         },
-        "ce": {
-          "0009978cdbd1eb9f28f061cc08ef3fcdb2385e": null
-        },
-        "8f": {
-          "3b55ec319395a9dfe5ffa779e239c14514fa78": null
-        },
-        "a2": {
-          "1154c68711bf74df841dc3d33fe1eee15709a8": null
-        },
-        "dd": {
-          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null,
-          "2c73f7a5a1aaad36fd528a27091c3c76ed25f3": null
-        },
-        "89": {
-          "81abda68afd1be1ec7efbd77ab2480f67fe7a5": null
-        },
-        "9a": {
-          "646c1bbc0a278bf764f4003005f5b3c2fe58c8": null
-        },
-        "cc": {
-          "393d027e660af82f0d4c04b1d8b8e02e2d2796": null
-        },
-        "c8": {
-          "dd3acd24ddd5919676d80c50338bdb87efb7fb": null
+        "bf": {
+          "2fa1b9631c5db47cb390326bdf3b24f4ce2b99": null
         },
         "f4": {
           "8a0fa3f2ff6bd15b795b23a212d6a223ae4e19": null
         },
-        "99": {
-          "afc836bf839eef8ef87c7a0eccd59c7782aebe": null
-        },
-        "22": {
-          "1364a0213a329997670968ab42ad08907fda87": null
-        },
         "e9": {
           "45a5abc1173c0071c371aaf62a610dd4d47e0a": null
         },
-        "1a": {
-          "912fb0e4558c513e8f99e86c866e9d6e344d08": null
-        },
-        "ba": {
-          "5525f8c4393ae26d834d5c4cea76695b7c07a0": null
-        },
         "9b": {
-          "9bb3b48ce11732224dc9c78a8cef85f2051050": null,
-          "94b830f01520ae0c211fbcb3393d14c582ec56": null
-        },
-        "53": {
-          "c5ca9c1e96ff2853bc564f2bf886525ec0bfb9": null
+          "9bb3b48ce11732224dc9c78a8cef85f2051050": null
         },
         "a0": {
           "0d2d9e3a1c22e1838ac471e95513e3d5900bd3": null
         },
         "ff": {
           "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
-        },
-        "36": {
-          "bc70f320af7d0d6df6c4695d9196a02844b042": null
-        },
-        "04": {
-          "3b22030ff85f2975b3fe37b73fe4e382917e47": null
-        },
-        "de": {
-          "c6b048496a4e907a8291bebeab6f31d0ec29e9": null
         },
         "fa": {
           "f8379de53a8c708ef4f99d83ba29eef74bb848": null
@@ -416,15 +260,6 @@
         },
         "6d": {
           "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null
-        },
-        "55": {
-          "e54fa7a0a58383596056268859a198fba9f597": null
-        },
-        "c1": {
-          "b4a140b46633194a6d5d987ab04f8a8afab70d": null
-        },
-        "1e": {
-          "32c5899667b2e06ecadf3d0ff0c1344affba0a": null
         }
       },
       "branches": {}

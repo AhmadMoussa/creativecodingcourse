@@ -4,7 +4,7 @@
 
 This is a short course about creative coding with P5JS. The material provided here is supplementary to the live sessions, but can also be explored as a standalone learning resource.
 
-## Overview for Week 1
+### Overview for Week 1
 
 Here's a quick overview of the topics that we'll tackle throughout the first week of the course:
 
@@ -17,7 +17,7 @@ Here's a quick overview of the topics that we'll tackle throughout the first wee
 - **Circle Packing Example:** A step-by-step example of circle packing, demonstrating how to fill a canvas with non-overlapping circles of varying sizes.
 
 
-## What is Creative Coding?
+### What is Creative Coding?
 
 Creative coding is a practice that involves using computer programming as a medium for artistic expression. Unlike traditional programming, which focuses primarily on functionality and problem-solving, creative coding emphasizes aesthetics, experimentation, and the creation of visual, auditory, or interactive experiences. Here are some key aspects of creative coding:
 

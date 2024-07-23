@@ -1,6 +1,6 @@
 ## A Creative Coding Mini Course 
 
-![How to Approach Creative Coding](https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/course_content/week_1/01_overview/picover.jpg)
+![How to Approach Creative Coding](https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/course_content/01_intro/01_overview/picover.jpg)
 
 This is a short course about creative coding with P5JS. The material provided here is supplementary to the live sessions, but can also be explored as a standalone learning resource.
 

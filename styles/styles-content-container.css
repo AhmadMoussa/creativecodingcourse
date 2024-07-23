@@ -21,14 +21,17 @@
 
 
 
-pre {
+pre > code {
     padding: 0;
     border-radius: 10px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 code {
-    padding: 8px;
-    border-radius: 10px;
+    padding: 0;
+    border-radius: 4px;
+    font-size: 18px;
 }
 
 
@@ -100,6 +103,9 @@ code {
   font-size: 18px;
   font-family: Rubik;
 
+  max-width: 680px;
+
+
   height: 100%;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
@@ -116,20 +122,84 @@ code {
   padding: 10px 20px;
 }
 
-.syllabus-text-container h2, h3 {
+.syllabus-text-container h2 {
   margin-top: 20px;
   margin-bottom: 5px;
 
-  font-size: 30px;
+  font-size: 28px;
   font-family: Rubik;
   font-weight: bold;
+
+
+  text-transform: uppercase;
 }
+
+.syllabus-text-container h3 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+
+  font-size: 24px;
+  font-family: Rubik;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 
 .syllabus-text-container p {
   margin-top: 10px;
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 20px;
+
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
 }
+
+
+
+
+strong, b,
+*[style*="font-weight: bold"],
+*[style*="font-weight:bold"] {
+  background: linear-gradient(to right, #ff69b4, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255, 105, 180, 0.1),
+               0 0 10px rgba(65, 105, 225, 0.1);
+}
+
+
+
+.syllabus-text-container ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+
+  font-family: Rubik;
+
+
+  list-style-type: "+  ";
+
+}
+
+.syllabus-text-container li {
+    margin-bottom: .5em;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: Rubik;
+    margin-bottom: 20px;
+}
+
+/* .syllabus-text-container li:before {
+    content: "+";
+    margin-right: 8px;
+    margin-left: -16px;
+} */
+
+
 
 
 .syllabus-text-container img {
@@ -137,6 +207,8 @@ code {
   max-height: 300px;
   border-radius: 10px;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .syllabus-text-container iframe {

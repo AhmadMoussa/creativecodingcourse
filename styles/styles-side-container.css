@@ -9,14 +9,93 @@
   overflow-y: auto;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+  background-color: #DEDCDD;
 }
 
-.container-syllabus::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
+
+.container-homework h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+  font-size: 28px;
+  font-family: Rubik;
+  font-weight: bold;
+
+
+  text-transform: uppercase;
+}
+
+.container-homework h3 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+
+  font-size: 24px;
+  font-family: Rubik;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.container-homework p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+
+
+
+
+.container-homework ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+
+  font-family: Rubik;
+
+
+  list-style-type: "+  ";
+
+}
+
+.container-homework li {
+    margin-bottom: .5em;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: Rubik;
+    margin-bottom: 20px;
+}
+
+/* .syllabus-text-container li:before {
+    content: "+";
+    margin-right: 8px;
+    margin-left: -16px;
+} */
+
+
+
+
+.container-homework img {
+  object-fit: cover;
+  max-height: 300px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-homework iframe {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .info-container {
-  background-color: #FE76B4;
+  background-color: #617D89;
   border-radius: 10px;
   z-index: 5;
   padding: 0 20px;

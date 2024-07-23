@@ -16,22 +16,30 @@
 }
 
 .backcol2 {
-  background-color: #FDC00D;
+  background-color: #F5971B;
 }
 
 .backcol3 {
-  background-color: #10955E;
+  background-color: #FDC00D;
 }
 
 .backcol4 {
-  background-color: #418FCD;
+  background-color: #8FC14E;
 }
 
 .backcol5 {
-  background-color: #0290A8;
+  background-color: #10955E;
 }
 
 .backcol6 {
+  background-color: #0290A8;
+}
+
+.backcol7 {
+  background-color: #3F55A1;
+}
+
+.backcol8 {
   background-color: #DEDCDD;
 }
 
@@ -239,11 +247,6 @@ header h1 {
   background-color: black;
 }
 
-.title-tag-container {
-  display: flex;
-  padding: auto;
-}
-
 .text-tag-container {
   display: flex;
   flex-direction: column;
@@ -342,10 +345,6 @@ header h1 {
 .homework-text iframe {
   border-radius: 10px;
   width: 100%;
-}
-
-code {
-  font-size: 14px !important;
 }
 
 .syllabus-text {

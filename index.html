@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="font-faces.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./styles/font-faces.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/styles-sidebar.css">
     <link rel="stylesheet" href="./styles/styles-main-layout.css">
@@ -26,7 +26,9 @@
 
     <script src="./libs/min.tilt.js"></script>
     <script src="./libs/showdown-youtube.js"></script>
-    <script src="./courseContent.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
 
 
 </head>
@@ -61,7 +63,7 @@
       </div>
 
 
-      <div class="info-container">
+      <div class="info-container animated-background">
         <p>Please view this page on a desktop for a good experience - <b>not yet mobile optimized!</b></p>
 
         <p>A creative coding mini course made by <b><a href="https://www.gorillasun.de">Gorilla Sun</a></b>, with love! <b>&copy; 2024 Gorilla Sun </b></p>
@@ -72,7 +74,41 @@
 
 
 
+
+    <!-- <script type="module" src="githubFetcher.js"></script> -->
+
     <script type="text/javascript">
+
+    // you need to configure a github action that generates the directory structure
+
+    let courseContentFilePath = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/directory_structure.json"
+
+    async function getDirectoryStructure(filePath){
+      return await fetch(filePath)
+        .then(response => {
+          if (!response.ok) {
+            console.log('response', response)
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(jsonFile => {
+
+          return jsonFile
+
+        })
+        .catch(error => {
+          console.error('There has been a problem with your fetch operation:', error);
+      });
+    }
+
+
+
+    </script>
+
+    <script type="text/javascript">
+
+
 
     async function getMDFile(filePath){
       return await fetch(filePath)
@@ -100,96 +136,153 @@
     </script>
 
     <script type="text/javascript">
+    hljs.configure({ languages: ['javascript'], cssSelector: 'code' });;
+    hljs.highlightAll();
 
-      const relativeUrl = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/"
-      var converter = new showdown.Converter({extensions: ['youtube']});
+      async function loadInterface(){
 
-      let sideBlock = document.getElementById("side-block")
-      console.log(sideBlock)
-      let courseItems = Object.keys(courseContent)
+        const relativeUrl = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/"
 
-      const mainDiv = document.getElementsByClassName('container-syllabus')[0];
-      const mainDivText = document.getElementsByClassName('syllabus-text-container')[0];
+        let courseContent = JSON.parse(await getDirectoryStructure(courseContentFilePath))["."]["course_content"]
+        console.log("fetched content",  courseContent)
 
 
-      displayContent = async function(item, content, n){
-        console.log(content)
-        console.log(courseContent[""+Object.keys(courseContent)[n]]["content"])
+        var converter = new showdown.Converter({extensions: ['youtube']});
 
-        console.log(item)
-        let cont = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/main.md")
-        let contHTML = await converter.makeHtml(cont);
+        let sideBlock = document.getElementById("side-block")
+        let courseItems = Object.keys(courseContent)
+        console.log("course items", courseItems)
 
-        document.getElementsByClassName('syllabus-text-container')[0].innerHTML = contHTML;
-
-        console.log(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
-        let cont2 = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
-        let contHTML2 = await converter.makeHtml(cont2);
-
-        document.getElementById('homework-text').innerHTML = contHTML2;
-
-        //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
-        let q = ((n|0)+1) | 0
-
-        let otherElements = document.getElementsByClassName("syllabus-tag")
-        for(let el of otherElements){
-          el.classList.remove('border'+q)
-        }
-        let highlightElement = document.getElementById(content)
-        highlightElement.classList.add('border'+q)
-
-        hljs.highlightAll()
-      }
-
-      courseItems.forEach(
-        function(item, i) {
-
-        let courseItemElement = document.createElement('div')
-        courseItemElement.classList.add("week-element", "backcol"+(i+1))
-        courseItemElement.innerHTML = `
-          <div class="week-element-number">${i+1}</div>
-          <div class="title-tag-container">
-            <h2 class="week-element-h2">${item.split("_").join(" ").toUpperCase()}</h2>
-          </div>
-          <div class="divider"></div>
-          <div class="text-tag-container">
-            ${courseContent[item].description}
-          </div>
-          <div class="decoration"></div>
-        `
-
-        let contentTags = Object.keys(courseContent[""+item]["content"])
-
-        courseItemElement.addEventListener('click', function() {
-            mainDiv.innerHTML = `
-            <div class="syllabus-title-container">
-              <h2 class="syllabus-title">${item.split("_").join(" ").toUpperCase()}</h2>
-              <div class="syllabus-decoration backcol${i+1}">
-
-              </div>
-              <div class="syllabus-tags">
-                ${contentTags.map(tag => `<div class="syllabus-tag backcolblack" style="cursor: pointer;" onclick="displayContent('${item}', '${tag}', '${i}')" id="${tag}">${tag.split("_").join(" ").toUpperCase()}</div>`).join('')}
-              </div>
-
-            </div>
-            <div class="syllabus-text-container">
-
-            </div>
-            `;
-
-            document.getElementById("overview").click()
+        courseItems.sort((a, b) => {
+            // Extract the leading numbers
+            let numA = parseInt(a.split('_')[0], 10);
+            let numB = parseInt(b.split('_')[0], 10);
+            // Compare the numbers
+            return numA - numB;
         });
+        console.log(courseItems)
 
-        sideBlock.append(courseItemElement)
-
-        if(i==0){
-          courseItemElement.click()
-          document.getElementsByClassName('syllabus-tag')[0].click()
+        let courseItemInfos = []
+        for(let item of courseItems){
+          courseItemInfos.push(
+            await converter.makeHtml(
+              await getMDFile(relativeUrl + "course_content/" + item + "/info.md")
+            )
+          )
         }
+
+        console.log(courseItemInfos)
+
+        const mainDiv = document.getElementsByClassName('container-syllabus')[0];
+        const mainDivText = document.getElementsByClassName('syllabus-text-container')[0];
+
+
+        displayContent = async function(item, content, n){
+          console.log(content)
+          console.log("course content",courseContent[""+Object.keys(courseContent)[n]]["content"])
+
+          console.log("hi",item, content, n)
+          let cont = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/main.md")
+          let contHTML = await converter.makeHtml(cont);
+
+          document.getElementsByClassName('syllabus-text-container')[0].innerHTML = contHTML;
+
+          console.log(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
+          let cont2 = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
+          let contHTML2 = await converter.makeHtml(cont2);
+
+          document.getElementById('homework-text').innerHTML = contHTML2;
+
+          //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
+          let q = ((n|0)+1) | 0
+
+          let otherElements = document.getElementsByClassName("syllabus-tag")
+          for(let el of otherElements){
+            el.classList.remove('border'+q)
+          }
+          let highlightElement = document.getElementById(content)
+          highlightElement.classList.add('border'+q)
+
+
+          hljs.highlightAll()
+
+          //anchors.add();
+
+        }
+
+
+
+        courseItems.forEach(
+          function(item, i) {
+
+          let courseItemElement = document.createElement('div')
+          courseItemElement.classList.add("week-element", "backcol"+(i+1))
+          courseItemElement.innerHTML = `
+            <div class="week-element-number">${i+1}</div>
+            <div class="title-tag-container">
+              <h2 class="week-element-h2 underline">${item.split("_").slice(1).join(" ").toUpperCase()}</h2>
+            </div>
+            <div class="divider"></div>
+            <div class="text-tag-container">
+              ${courseItemInfos[i]}
+            </div>
+            <div class="decoration"></div>
+          `
+
+          let contentTags = Object.keys(courseContent[""+item])
+          console.log("contentTags", contentTags)
+
+
+          function startsWithNumber(label) {
+              return /^\d+_/.test(label);
+          }
+
+          // Filter the array to include only labels that start with a leading number
+          contentTags = contentTags.filter(startsWithNumber);
+
+          contentTags.sort((a, b) => {
+              // Extract the leading numbers
+              let numA = parseInt(a.split('_')[0], 10);
+              let numB = parseInt(b.split('_')[0], 10);
+              // Compare the numbers
+              return numA - numB;
+          });
+
+
+          courseItemElement.addEventListener('click', function() {
+              mainDiv.innerHTML = `
+              <div class="syllabus-title-container">
+                <h2 class="syllabus-title">${item.split("_").slice(1).join(" ").toUpperCase()}</h2>
+                <div class="syllabus-decoration backcol${i+1}">
+
+                </div>
+                <div class="syllabus-tags">
+                  ${contentTags.map(tag => `<div class="syllabus-tag backcolblack" style="cursor: pointer;" onclick="displayContent('${item}', '${tag}', '${i}')" id="${tag}">${tag.split("_").slice(1).join(" ").toUpperCase()}</div>`).join('')}
+                </div>
+
+              </div>
+              <div class="syllabus-text-container">
+
+              </div>
+              `;
+
+              document.getElementsByClassName("syllabus-tag")[0].click()
+          });
+
+          sideBlock.append(courseItemElement)
+
+          if(i==0){
+            courseItemElement.click()
+            document.getElementsByClassName('syllabus-tag')[0].click()
+          }
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".week-element"));
+    }
+
+    window.addEventListener("load", (event) => {
+      loadInterface()
     });
-
-    VanillaTilt.init(document.querySelectorAll(".week-element"));
-
 
     // <ul class="week-element-list">
     //   <li class="week-element-p">Intro to P5JS</li>

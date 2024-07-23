@@ -2,7 +2,6 @@
   ".": {
     "directory_structure.json": null,
     "bolt-solid.svg": null,
-    "courseContent.js": null,
     "index.html": null,
     "course_content": {
       "06_project": {
@@ -181,9 +180,6 @@
         "f2": {
           "ef4b0617bc5387cbf4c7aee66b58dcbaf7983a": null
         },
-        "b5": {
-          "ddf2bc8c7d21d1d5e718857576264174fc3439": null
-        },
         "bb": {
           "b395261cf60c854971a479cdd59a99bfc78b17": null
         },
@@ -199,6 +195,9 @@
         "84": {
           "22e542f9e7d9ec671ab0a626574e92bd76d31b": null,
           "29cb3c84b45b5367b04ba871e54149842fb5c9": null
+        },
+        "f5": {
+          "359a0b6f66bd939f8859bdaf32c4322d770c96": null
         },
         "a3": {
           "a88b2a637c66413629d071dccb0cf0413805cc": null,
@@ -241,6 +240,9 @@
         },
         "a9": {
           "1765eb6c7560d6c299f8a2d0e616493ab84067": null
+        },
+        "63": {
+          "dee0e9b7ea80558176d8ecc25999335cc0efc2": null
         },
         "42": {
           "ef80b541522b1a6298f44e82afe1bbe5185269": null
@@ -301,9 +303,6 @@
         "b4": {
           "864860ec4b7245da50a442f8ddfc8714112b9d": null
         },
-        "8e": {
-          "362fb7ab80f6fbcaf4ddb6a60d468b5c9f90f9": null
-        },
         "6b": {
           "d523ca3a394d7636e8175b593d5971a5d4f97d": null
         },
@@ -352,8 +351,8 @@
         "cf": {
           "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
         },
-        "1f": {
-          "7275e858964c84c902b8b112f35921bb110810": null
+        "99": {
+          "fe8e5b6a197a147fdb4661f18e427e79eb03e9": null
         },
         "22": {
           "1364a0213a329997670968ab42ad08907fda87": null
@@ -382,9 +381,6 @@
         },
         "04": {
           "3b22030ff85f2975b3fe37b73fe4e382917e47": null
-        },
-        "fa": {
-          "f8379de53a8c708ef4f99d83ba29eef74bb848": null
         },
         "23": {
           "70c24b28d7c8bfb489ef94f65aebe17fcb1fb8": null

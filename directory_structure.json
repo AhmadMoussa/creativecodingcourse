@@ -3,6 +3,64 @@
     "directory_structure.json": null,
     "bolt-solid.svg": null,
     "index.html": null,
+    "course_content": {
+      "05_EX_2": {
+        "info.md": null
+      },
+      "06_project": {
+        "info.md": null,
+        "overview": {
+          "main.md": null
+        }
+      },
+      "04_week_2": {
+        "info.md": null
+      },
+      "03_EX_1": {
+        "info.md": null
+      },
+      "02_week_1": {
+        "info.md": null,
+        "03_drawing_functions": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "01_flow_of_a_p5_program": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "04_the_drawing_stack": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "02_creating_the_canvas": {
+          "secondary.md": null,
+          "main.md": null
+        }
+      },
+      "01_intro": {
+        "info.md": null,
+        "01_overview": {
+          "secondary.md": null,
+          "main.md": null,
+          "picover.jpg": null
+        },
+        "02_creative_code_history": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "03_intro_to_p5js": {
+          "secondary.md": null,
+          "main.md": null
+        }
+      },
+      "07_gallery": {
+        "info.md": null,
+        "overview": {
+          "main.md": null
+        }
+      }
+    },
     ".github": {
       "workflows": {
         "generate-directory-structure.yml": null
@@ -17,6 +75,84 @@
       "styles-side-container.css": null,
       "styles.css": null,
       "styles-sidebar.css": null,
+      "Zodiak_Complete": {
+        "Fonts": {
+          "TTF": {
+            "Zodiak-VariableItalic.ttf": null,
+            "Zodiak-Variable.ttf": null
+          },
+          "WEB": {
+            "README.md": null,
+            "fonts": {
+              "Zodiak-Regular.eot": null,
+              "Zodiak-ThinItalic.ttf": null,
+              "Zodiak-Italic.ttf": null,
+              "Zodiak-Light.eot": null,
+              "Zodiak-Italic.woff": null,
+              "Zodiak-Regular.ttf": null,
+              "Zodiak-Thin.ttf": null,
+              "Zodiak-Black.ttf": null,
+              "Zodiak-ThinItalic.woff2": null,
+              "Zodiak-VariableItalic.woff": null,
+              "Zodiak-Variable.woff2": null,
+              "Zodiak-Italic.woff2": null,
+              "Zodiak-VariableItalic.ttf": null,
+              "Zodiak-Extrabold.woff2": null,
+              "Zodiak-Variable.woff": null,
+              "Zodiak-Regular.woff2": null,
+              "Zodiak-Bold.woff": null,
+              "Zodiak-LightItalic.woff": null,
+              "Zodiak-BlackItalic.woff": null,
+              "Zodiak-Variable.eot": null,
+              "Zodiak-LightItalic.woff2": null,
+              "Zodiak-ExtraboldItalic.eot": null,
+              "Zodiak-Thin.woff": null,
+              "Zodiak-Light.woff": null,
+              "Zodiak-LightItalic.eot": null,
+              "Zodiak-BoldItalic.woff2": null,
+              "Zodiak-ThinItalic.eot": null,
+              "Zodiak-Italic.eot": null,
+              "Zodiak-Extrabold.ttf": null,
+              "Zodiak-BlackItalic.woff2": null,
+              "Zodiak-Extrabold.eot": null,
+              "Zodiak-Thin.eot": null,
+              "Zodiak-Black.woff": null,
+              "Zodiak-ExtraboldItalic.woff": null,
+              "Zodiak-Black.eot": null,
+              "Zodiak-Thin.woff2": null,
+              "Zodiak-ThinItalic.woff": null,
+              "Zodiak-BoldItalic.ttf": null,
+              "Zodiak-Bold.ttf": null,
+              "Zodiak-ExtraboldItalic.ttf": null,
+              "Zodiak-BlackItalic.eot": null,
+              "Zodiak-LightItalic.ttf": null,
+              "Zodiak-VariableItalic.eot": null,
+              "Zodiak-BlackItalic.ttf": null,
+              "Zodiak-BoldItalic.woff": null,
+              "Zodiak-Black.woff2": null,
+              "Zodiak-Regular.woff": null,
+              "Zodiak-VariableItalic.woff2": null,
+              "Zodiak-Bold.eot": null,
+              "Zodiak-ExtraboldItalic.woff2": null,
+              "Zodiak-Extrabold.woff": null,
+              "Zodiak-Light.ttf": null,
+              "Zodiak-Light.woff2": null,
+              "Zodiak-Variable.ttf": null,
+              "Zodiak-BoldItalic.eot": null,
+              "Zodiak-Bold.woff2": null
+            },
+            "css": {
+              "zodiak.css": null
+            }
+          },
+          "OTF": {
+            "Zodiak-BoldItalic.otf": null
+          }
+        },
+        "License": {
+          "FFL.txt": null
+        }
+      },
       "Synonym": {
         "Fonts": {
           "WEB": {
@@ -117,143 +253,11 @@
         "pre-push.sample": null
       },
       "objects": {
-        "bb": {
-          "b395261cf60c854971a479cdd59a99bfc78b17": null
-        },
-        "74": {
-          "5d90897487aaf55121fd3551db6b8b1f36aae4": null
-        },
-        "a8": {
-          "432e46de1c9e38e112970dacc7a7b097321a62": null
-        },
-        "c0": {
-          "bb02fe64b1557d16863f1b976910530d7dbdfa": null
-        },
-        "84": {
-          "22e542f9e7d9ec671ab0a626574e92bd76d31b": null,
-          "29cb3c84b45b5367b04ba871e54149842fb5c9": null
-        },
-        "a3": {
-          "3ecc93bac2556d102e18a3519a89a347d2aadf": null
-        },
-        "d3": {
-          "f730269583701e8020a238791a1a505a1ba004": null
-        },
-        "12": {
-          "96c2c7694057eb54926dd337134938d5651f37": null
-        },
-        "e6": {
-          "d4b348b4be6b23ec054f3925ac92d3007ec7a9": null
-        },
-        "3a": {
-          "17a977b2722ed07d663af949352ecb8e6b3aaa": null
-        },
-        "a6": {
-          "e2c0d36b969106c807f4d33654c83efb389f70": null
-        },
-        "10": {
-          "11d19ee78402035812546f293fe4fee322744e": null
-        },
-        "6e": {
-          "f03c19c7727fc4caf496eed69f9b00738a812b": null
-        },
-        "42": {
-          "ef80b541522b1a6298f44e82afe1bbe5185269": null
-        },
-        "c4": {
-          "2bee5428c45844a2422052ab6917aaba425fe0": null
-        },
-        "5b": {
-          "190f907500cc5a1a1112e7c23cafc463592111": null
-        },
-        "f3": {
-          "62533c611fa7357fd8f132a7fea3569f09de4a": null
-        },
         "info": {},
-        "b2": {
-          "a510446e4529449592e86d05b7cd823fc17d17": null
-        },
-        "61": {
-          "9b8c09385638d04f34d460f57cbb9ca69cc81d": null,
-          "6fab0caa00f6d507fcfb58ea2ea7cdbee52697": null
-        },
-        "9d": {
-          "a641ddb71b5d60f6225579c23ddef0fd32d0a3": null
-        },
-        "fc": {
-          "9835d67fa432d21c7c17e6909fdae863af1c1d": null
-        },
-        "60": {
-          "1dcf00ccb01d25a6bc6f506f961d9e16638bca": null
-        },
-        "7e": {
-          "458ed79dba686cad246e0bd4d2b289465840fd": null
-        },
-        "b8": {
-          "0dab096b2ccfa9aebbca6febcca8afc71fd737": null,
-          "0bfbb33ee9a8e20aa61bb8dce83ffce51ccfcf": null
-        },
-        "09": {
-          "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null
-        },
-        "0e": {
-          "b795bf3361fd7190de217432f4fdc501c04022": null
-        },
-        "f1": {
-          "4ebbaa1be104faf2cb1f6182c3d2ffd606d562": null
-        },
-        "8c": {
-          "adb6d9559801438769de9d8699d264ad14d5e9": null
-        },
-        "b4": {
-          "864860ec4b7245da50a442f8ddfc8714112b9d": null
-        },
-        "6b": {
-          "d523ca3a394d7636e8175b593d5971a5d4f97d": null
-        },
-        "pack": {},
-        "76": {
-          "51bf7a306666ea8f1dacab0119ec7342fbff00": null
-        },
-        "f0": {
-          "28bce2864bd0e614215482fc0555c6555b83e8": null
-        },
-        "4e": {
-          "15a880ac4aace2e3a3a26173d21c124dddb083": null
-        },
-        "db": {
-          "74a989b030673d74c409d2f9efff948763b191": null
-        },
-        "bc": {
-          "f8cf9e9c6bd8325abdd917bf9bcacbd91067f3": null
-        },
-        "f4": {
-          "8a0fa3f2ff6bd15b795b23a212d6a223ae4e19": null
-        },
-        "e9": {
-          "45a5abc1173c0071c371aaf62a610dd4d47e0a": null
-        },
-        "9b": {
-          "9bb3b48ce11732224dc9c78a8cef85f2051050": null
-        },
-        "a0": {
-          "0d2d9e3a1c22e1838ac471e95513e3d5900bd3": null,
-          "eb72f8f83afa39c250e01e129622e46a1de76a": null
-        },
-        "ff": {
-          "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
-        },
-        "23": {
-          "70c24b28d7c8bfb489ef94f65aebe17fcb1fb8": null
-        },
-        "ea": {
-          "79d7f2160b53353438cb40be89ace713ad1f62": null
-        },
-        "52": {
-          "113c0313a0c137ff1bc727cadd2e218a60a872": null
-        },
-        "6d": {
-          "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null
+        "pack": {
+          "pack-539ab0173bf12817c2fee355d1669b413a5f4f4a.pack": null,
+          "pack-539ab0173bf12817c2fee355d1669b413a5f4f4a.rev": null,
+          "pack-539ab0173bf12817c2fee355d1669b413a5f4f4a.idx": null
         }
       },
       "branches": {}

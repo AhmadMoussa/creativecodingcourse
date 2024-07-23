@@ -1,23 +1,309 @@
 {
   ".": {
-    "directory_structure.json": null,
-    "bolt-solid.svg": null,
     "index.html": null,
-    "course_content": {
-      "03_exercises_1": {
-        "info.md": null
+    "bolt-solid.svg": null,
+    "directory_structure.json": null,
+    ".git": {
+      "description": null,
+      "config": null,
+      "index": null,
+      "HEAD": null,
+      "shallow": null,
+      "FETCH_HEAD": null,
+      "info": {
+        "exclude": null
       },
+      "branches": {},
+      "logs": {
+        "HEAD": null,
+        "refs": {
+          "remotes": {
+            "origin": {
+              "main": null
+            }
+          },
+          "heads": {
+            "main": null
+          }
+        }
+      },
+      "refs": {
+        "remotes": {
+          "origin": {
+            "main": null
+          }
+        },
+        "tags": {},
+        "heads": {
+          "main": null
+        }
+      },
+      "hooks": {
+        "update.sample": null,
+        "pre-receive.sample": null,
+        "pre-commit.sample": null,
+        "pre-applypatch.sample": null,
+        "post-update.sample": null,
+        "pre-push.sample": null,
+        "push-to-checkout.sample": null,
+        "applypatch-msg.sample": null,
+        "pre-rebase.sample": null,
+        "prepare-commit-msg.sample": null,
+        "sendemail-validate.sample": null,
+        "commit-msg.sample": null,
+        "fsmonitor-watchman.sample": null,
+        "pre-merge-commit.sample": null
+      },
+      "objects": {
+        "e6": {
+          "d4b348b4be6b23ec054f3925ac92d3007ec7a9": null
+        },
+        "0e": {
+          "b795bf3361fd7190de217432f4fdc501c04022": null
+        },
+        "a3": {
+          "a88b2a637c66413629d071dccb0cf0413805cc": null,
+          "3ecc93bac2556d102e18a3519a89a347d2aadf": null
+        },
+        "ba": {
+          "5525f8c4393ae26d834d5c4cea76695b7c07a0": null
+        },
+        "43": {
+          "64aaf62637dc90bed809ff034ff6d953e263f3": null
+        },
+        "7e": {
+          "458ed79dba686cad246e0bd4d2b289465840fd": null
+        },
+        "91": {
+          "c2fff17fccfe82789c9a120bc0aa964faaeed1": null
+        },
+        "8c": {
+          "adb6d9559801438769de9d8699d264ad14d5e9": null
+        },
+        "da": {
+          "116c053ec65d3cef0eb79c80e3e2f99b425a93": null
+        },
+        "09": {
+          "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null
+        },
+        "9d": {
+          "a641ddb71b5d60f6225579c23ddef0fd32d0a3": null
+        },
+        "e2": {
+          "88c723d2e4926358ee740d357ced570f754f0f": null
+        },
+        "f7": {
+          "3e8a75fb1d50e42fdf249dc5829352d5266b01": null
+        },
+        "info": {},
+        "fc": {
+          "9835d67fa432d21c7c17e6909fdae863af1c1d": null
+        },
+        "6b": {
+          "d523ca3a394d7636e8175b593d5971a5d4f97d": null
+        },
+        "3f": {
+          "42e4ce66f44ea7279c56ba86de84ee0da53f89": null,
+          "b23de57dc2fab88785956a6858bc4e379c4475": null
+        },
+        "61": {
+          "9b8c09385638d04f34d460f57cbb9ca69cc81d": null,
+          "734fccfef8a4e31fa18626838599b39d43017d": null,
+          "6fab0caa00f6d507fcfb58ea2ea7cdbee52697": null,
+          "c21eb664a4d42518f049d45429b2768d5b0bad": null
+        },
+        "8f": {
+          "3b55ec319395a9dfe5ffa779e239c14514fa78": null
+        },
+        "f3": {
+          "62533c611fa7357fd8f132a7fea3569f09de4a": null
+        },
+        "1f": {
+          "e83af20e00cf1b1fa91079bced8e48c81c05b4": null,
+          "a8f3f9c7cd58121be99aa938de48bf091c2a10": null
+        },
+        "b2": {
+          "a510446e4529449592e86d05b7cd823fc17d17": null
+        },
+        "c0": {
+          "bb02fe64b1557d16863f1b976910530d7dbdfa": null
+        },
+        "fa": {
+          "c5d8faaece8f423e3ba0abe0e64dc9037e4c6a": null
+        },
+        "0b": {
+          "e87020310dfb6a7fd9ed19426f3d4cbfb3d537": null,
+          "4296223b13ff905c1b894a96cb9f6940947f67": null
+        },
+        "52": {
+          "113c0313a0c137ff1bc727cadd2e218a60a872": null
+        },
+        "a2": {
+          "1154c68711bf74df841dc3d33fe1eee15709a8": null
+        },
+        "76": {
+          "51bf7a306666ea8f1dacab0119ec7342fbff00": null
+        },
+        "12": {
+          "96c2c7694057eb54926dd337134938d5651f37": null
+        },
+        "36": {
+          "bc70f320af7d0d6df6c4695d9196a02844b042": null
+        },
+        "23": {
+          "70c24b28d7c8bfb489ef94f65aebe17fcb1fb8": null
+        },
+        "97": {
+          "fb726e7c8a8c5dfdff74fdefda808c07c5143a": null
+        },
+        "b8": {
+          "0bfbb33ee9a8e20aa61bb8dce83ffce51ccfcf": null,
+          "0dab096b2ccfa9aebbca6febcca8afc71fd737": null
+        },
+        "dd": {
+          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null,
+          "2c73f7a5a1aaad36fd528a27091c3c76ed25f3": null
+        },
+        "a9": {
+          "1765eb6c7560d6c299f8a2d0e616493ab84067": null
+        },
+        "fb": {
+          "3456837f052d3ef8d816b5108136765ea34466": null
+        },
+        "74": {
+          "5d90897487aaf55121fd3551db6b8b1f36aae4": null
+        },
+        "ad": {
+          "e7ca2a8db2862ac765f46da532c38aaa2e021b": null
+        },
+        "84": {
+          "22e542f9e7d9ec671ab0a626574e92bd76d31b": null,
+          "29cb3c84b45b5367b04ba871e54149842fb5c9": null
+        },
+        "10": {
+          "11d19ee78402035812546f293fe4fee322744e": null
+        },
+        "f0": {
+          "28bce2864bd0e614215482fc0555c6555b83e8": null,
+          "ddfb42a5d0246b64a176392e0f69e1953a5302": null
+        },
+        "c1": {
+          "b4a140b46633194a6d5d987ab04f8a8afab70d": null
+        },
+        "6d": {
+          "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null
+        },
+        "22": {
+          "1364a0213a329997670968ab42ad08907fda87": null,
+          "a9059b703a6502a475da7ec10e07d92339ae2c": null
+        },
+        "04": {
+          "3b22030ff85f2975b3fe37b73fe4e382917e47": null
+        },
+        "d5": {
+          "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null,
+          "8f5cefeca721374e032a0e1682444aec589ca2": null
+        },
+        "ff": {
+          "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
+        },
+        "pack": {},
+        "4e": {
+          "15a880ac4aace2e3a3a26173d21c124dddb083": null
+        },
+        "f4": {
+          "8a0fa3f2ff6bd15b795b23a212d6a223ae4e19": null
+        },
+        "d3": {
+          "f730269583701e8020a238791a1a505a1ba004": null
+        },
+        "60": {
+          "1dcf00ccb01d25a6bc6f506f961d9e16638bca": null
+        },
+        "e9": {
+          "45a5abc1173c0071c371aaf62a610dd4d47e0a": null
+        },
+        "a6": {
+          "e2c0d36b969106c807f4d33654c83efb389f70": null
+        },
+        "f2": {
+          "ef4b0617bc5387cbf4c7aee66b58dcbaf7983a": null
+        },
+        "ea": {
+          "79d7f2160b53353438cb40be89ace713ad1f62": null
+        },
+        "1a": {
+          "912fb0e4558c513e8f99e86c866e9d6e344d08": null
+        },
+        "9b": {
+          "94b830f01520ae0c211fbcb3393d14c582ec56": null,
+          "9bb3b48ce11732224dc9c78a8cef85f2051050": null
+        },
+        "b4": {
+          "864860ec4b7245da50a442f8ddfc8714112b9d": null
+        },
+        "a0": {
+          "0d2d9e3a1c22e1838ac471e95513e3d5900bd3": null
+        },
+        "f6": {
+          "ee5be2d518c03afc222a10bf7839bd247a729f": null,
+          "db95174506e6c6bea65a4df331dc0121970045": null
+        },
+        "bb": {
+          "b395261cf60c854971a479cdd59a99bfc78b17": null
+        },
+        "ce": {
+          "0009978cdbd1eb9f28f061cc08ef3fcdb2385e": null
+        },
+        "c8": {
+          "dd3acd24ddd5919676d80c50338bdb87efb7fb": null
+        },
+        "f1": {
+          "4ebbaa1be104faf2cb1f6182c3d2ffd606d562": null
+        },
+        "5b": {
+          "190f907500cc5a1a1112e7c23cafc463592111": null
+        },
+        "a8": {
+          "432e46de1c9e38e112970dacc7a7b097321a62": null
+        },
+        "1e": {
+          "32c5899667b2e06ecadf3d0ff0c1344affba0a": null
+        },
+        "a5": {
+          "c219f96e4cea3f3ed2874fdb6e2b3e64c34010": null
+        },
+        "42": {
+          "ef80b541522b1a6298f44e82afe1bbe5185269": null,
+          "fae44e178536b7210f31fb2185a4993edfed6c": null
+        },
+        "cf": {
+          "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
+        },
+        "6e": {
+          "f03c19c7727fc4caf496eed69f9b00738a812b": null
+        },
+        "c4": {
+          "2bee5428c45844a2422052ab6917aaba425fe0": null
+        },
+        "3a": {
+          "d6af2649e21c1a1abea57b698877a7906637d5": null,
+          "17a977b2722ed07d663af949352ecb8e6b3aaa": null
+        }
+      }
+    },
+    "course_content": {
       "06_project": {
         "info.md": null,
         "overview": {
           "main.md": null
         }
       },
-      "05_exercises_2": {
-        "info.md": null
-      },
-      "04_week_2": {
-        "info.md": null
+      "07_gallery": {
+        "info.md": null,
+        "overview": {
+          "main.md": null
+        }
       },
       "02_week_1": {
         "info.md": null,
@@ -30,6 +316,10 @@
           "main.md": null,
           "picover.jpg": null
         },
+        "05_the_drawing_stack": {
+          "secondary.md": null,
+          "main.md": null
+        },
         "02_flow_of_a_p5_program": {
           "secondary.md": null,
           "main.md": null
@@ -37,19 +327,16 @@
         "04_drawing_functions": {
           "secondary.md": null,
           "main.md": null
-        },
-        "05_the_drawing_stack": {
-          "secondary.md": null,
-          "main.md": null
         }
+      },
+      "03_exercises_1": {
+        "info.md": null
+      },
+      "05_exercises_2": {
+        "info.md": null
       },
       "01_intro": {
         "info.md": null,
-        "01_overview": {
-          "secondary.md": null,
-          "main.md": null,
-          "picover.jpg": null
-        },
         "02_creative_code_history": {
           "secondary.md": null,
           "main.md": null
@@ -57,14 +344,20 @@
         "03_intro_to_p5js": {
           "secondary.md": null,
           "main.md": null
+        },
+        "01_overview": {
+          "secondary.md": null,
+          "main.md": null,
+          "picover.jpg": null
         }
       },
-      "07_gallery": {
-        "info.md": null,
-        "overview": {
-          "main.md": null
-        }
+      "04_week_2": {
+        "info.md": null
       }
+    },
+    "libs": {
+      "showdown-youtube.js": null,
+      "min.tilt.js": null
     },
     ".github": {
       "workflows": {
@@ -73,44 +366,25 @@
     },
     "styles": {
       "styles-item-cards.css": null,
-      "styles-main-layout.css": null,
-      "styles-media-queries.css": null,
-      "font-faces.css": null,
-      "styles-content-container.css": null,
-      "styles-side-container.css": null,
-      "styles.css": null,
       "styles-sidebar.css": null,
-      "Synonym": {
-        "Fonts": {
-          "WEB": {
-            "README.md": null,
-            "fonts": {
-              "Synonym-Regular.woff2": null,
-              "Synonym-Regular.eot": null,
-              "Synonym-Regular.woff": null,
-              "Synonym-Regular.ttf": null
-            },
-            "css": {
-              "synonym.css": null
-            }
-          },
-          "OTF": {
-            "Synonym-Regular.otf": null
-          }
-        },
+      "styles-media-queries.css": null,
+      "styles.css": null,
+      "styles-side-container.css": null,
+      "styles-content-container.css": null,
+      "styles-main-layout.css": null,
+      "font-faces.css": null,
+      "Amulya": {
         "License": {
           "FFL.txt": null
-        }
-      },
-      "Amulya": {
+        },
         "Fonts": {
           "WEB": {
             "README.md": null,
             "fonts": {
               "Amulya-Bold.ttf": null,
               "Amulya-Bold.woff2": null,
-              "Amulya-Bold.woff": null,
-              "Amulya-Bold.eot": null
+              "Amulya-Bold.eot": null,
+              "Amulya-Bold.woff": null
             },
             "css": {
               "amulya.css": null
@@ -119,308 +393,30 @@
           "OTF": {
             "Amulya-Bold.otf": null
           }
-        },
+        }
+      },
+      "Synonym": {
         "License": {
           "FFL.txt": null
+        },
+        "Fonts": {
+          "WEB": {
+            "README.md": null,
+            "fonts": {
+              "Synonym-Regular.eot": null,
+              "Synonym-Regular.ttf": null,
+              "Synonym-Regular.woff2": null,
+              "Synonym-Regular.woff": null
+            },
+            "css": {
+              "synonym.css": null
+            }
+          },
+          "OTF": {
+            "Synonym-Regular.otf": null
+          }
         }
       }
-    },
-    "libs": {
-      "showdown-youtube.js": null,
-      "min.tilt.js": null
-    },
-    ".git": {
-      "config": null,
-      "index": null,
-      "HEAD": null,
-      "shallow": null,
-      "FETCH_HEAD": null,
-      "description": null,
-      "refs": {
-        "heads": {
-          "main": null
-        },
-        "tags": {},
-        "remotes": {
-          "origin": {
-            "main": null
-          }
-        }
-      },
-      "info": {
-        "exclude": null
-      },
-      "logs": {
-        "HEAD": null,
-        "refs": {
-          "heads": {
-            "main": null
-          },
-          "remotes": {
-            "origin": {
-              "main": null
-            }
-          }
-        }
-      },
-      "hooks": {
-        "update.sample": null,
-        "pre-rebase.sample": null,
-        "pre-commit.sample": null,
-        "fsmonitor-watchman.sample": null,
-        "applypatch-msg.sample": null,
-        "pre-applypatch.sample": null,
-        "post-update.sample": null,
-        "pre-merge-commit.sample": null,
-        "sendemail-validate.sample": null,
-        "prepare-commit-msg.sample": null,
-        "pre-receive.sample": null,
-        "push-to-checkout.sample": null,
-        "commit-msg.sample": null,
-        "pre-push.sample": null
-      },
-      "objects": {
-        "e2": {
-          "88c723d2e4926358ee740d357ced570f754f0f": null
-        },
-        "f2": {
-          "ef4b0617bc5387cbf4c7aee66b58dcbaf7983a": null
-        },
-        "bb": {
-          "b395261cf60c854971a479cdd59a99bfc78b17": null
-        },
-        "48": {
-          "5f960bfae8f5e140452578bd4437bf1db06c68": null
-        },
-        "74": {
-          "5d90897487aaf55121fd3551db6b8b1f36aae4": null
-        },
-        "a8": {
-          "432e46de1c9e38e112970dacc7a7b097321a62": null
-        },
-        "c0": {
-          "bb02fe64b1557d16863f1b976910530d7dbdfa": null
-        },
-        "84": {
-          "22e542f9e7d9ec671ab0a626574e92bd76d31b": null,
-          "29cb3c84b45b5367b04ba871e54149842fb5c9": null
-        },
-        "a3": {
-          "a88b2a637c66413629d071dccb0cf0413805cc": null,
-          "3ecc93bac2556d102e18a3519a89a347d2aadf": null
-        },
-        "d3": {
-          "f730269583701e8020a238791a1a505a1ba004": null
-        },
-        "12": {
-          "96c2c7694057eb54926dd337134938d5651f37": null
-        },
-        "e6": {
-          "d4b348b4be6b23ec054f3925ac92d3007ec7a9": null
-        },
-        "3a": {
-          "d6af2649e21c1a1abea57b698877a7906637d5": null,
-          "17a977b2722ed07d663af949352ecb8e6b3aaa": null
-        },
-        "ad": {
-          "e7ca2a8db2862ac765f46da532c38aaa2e021b": null
-        },
-        "a6": {
-          "e2c0d36b969106c807f4d33654c83efb389f70": null
-        },
-        "10": {
-          "11d19ee78402035812546f293fe4fee322744e": null
-        },
-        "c3": {
-          "63ab65eb10fd582659ebe156fe342126afaddd": null
-        },
-        "d5": {
-          "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null,
-          "8f5cefeca721374e032a0e1682444aec589ca2": null
-        },
-        "6e": {
-          "f03c19c7727fc4caf496eed69f9b00738a812b": null
-        },
-        "97": {
-          "fb726e7c8a8c5dfdff74fdefda808c07c5143a": null
-        },
-        "a9": {
-          "1765eb6c7560d6c299f8a2d0e616493ab84067": null
-        },
-        "42": {
-          "ef80b541522b1a6298f44e82afe1bbe5185269": null
-        },
-        "c4": {
-          "2bee5428c45844a2422052ab6917aaba425fe0": null
-        },
-        "5b": {
-          "190f907500cc5a1a1112e7c23cafc463592111": null
-        },
-        "f3": {
-          "62533c611fa7357fd8f132a7fea3569f09de4a": null
-        },
-        "info": {},
-        "b2": {
-          "a510446e4529449592e86d05b7cd823fc17d17": null
-        },
-        "f6": {
-          "ee5be2d518c03afc222a10bf7839bd247a729f": null
-        },
-        "61": {
-          "c21eb664a4d42518f049d45429b2768d5b0bad": null,
-          "9b8c09385638d04f34d460f57cbb9ca69cc81d": null,
-          "734fccfef8a4e31fa18626838599b39d43017d": null,
-          "6fab0caa00f6d507fcfb58ea2ea7cdbee52697": null
-        },
-        "9d": {
-          "a641ddb71b5d60f6225579c23ddef0fd32d0a3": null
-        },
-        "fc": {
-          "9835d67fa432d21c7c17e6909fdae863af1c1d": null
-        },
-        "60": {
-          "1dcf00ccb01d25a6bc6f506f961d9e16638bca": null
-        },
-        "7e": {
-          "458ed79dba686cad246e0bd4d2b289465840fd": null
-        },
-        "b8": {
-          "0dab096b2ccfa9aebbca6febcca8afc71fd737": null,
-          "0bfbb33ee9a8e20aa61bb8dce83ffce51ccfcf": null
-        },
-        "09": {
-          "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null
-        },
-        "0e": {
-          "b795bf3361fd7190de217432f4fdc501c04022": null
-        },
-        "f1": {
-          "4ebbaa1be104faf2cb1f6182c3d2ffd606d562": null
-        },
-        "0b": {
-          "4296223b13ff905c1b894a96cb9f6940947f67": null,
-          "e87020310dfb6a7fd9ed19426f3d4cbfb3d537": null
-        },
-        "8c": {
-          "adb6d9559801438769de9d8699d264ad14d5e9": null
-        },
-        "b4": {
-          "864860ec4b7245da50a442f8ddfc8714112b9d": null
-        },
-        "6b": {
-          "d523ca3a394d7636e8175b593d5971a5d4f97d": null
-        },
-        "pack": {},
-        "43": {
-          "64aaf62637dc90bed809ff034ff6d953e263f3": null
-        },
-        "76": {
-          "51bf7a306666ea8f1dacab0119ec7342fbff00": null
-        },
-        "f0": {
-          "ddfb42a5d0246b64a176392e0f69e1953a5302": null,
-          "28bce2864bd0e614215482fc0555c6555b83e8": null
-        },
-        "4e": {
-          "15a880ac4aace2e3a3a26173d21c124dddb083": null
-        },
-        "ce": {
-          "0009978cdbd1eb9f28f061cc08ef3fcdb2385e": null
-        },
-        "8f": {
-          "3b55ec319395a9dfe5ffa779e239c14514fa78": null
-        },
-        "91": {
-          "c2fff17fccfe82789c9a120bc0aa964faaeed1": null
-        },
-        "38": {
-          "f3ca85a424d2c8afac2af00f03e190a9d8ef50": null
-        },
-        "a2": {
-          "1154c68711bf74df841dc3d33fe1eee15709a8": null
-        },
-        "da": {
-          "116c053ec65d3cef0eb79c80e3e2f99b425a93": null
-        },
-        "a5": {
-          "c219f96e4cea3f3ed2874fdb6e2b3e64c34010": null
-        },
-        "dd": {
-          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null,
-          "2c73f7a5a1aaad36fd528a27091c3c76ed25f3": null
-        },
-        "c8": {
-          "dd3acd24ddd5919676d80c50338bdb87efb7fb": null
-        },
-        "2a": {
-          "62d4a7bcd53a5b82e19073184492c81f5babaa": null
-        },
-        "f4": {
-          "8a0fa3f2ff6bd15b795b23a212d6a223ae4e19": null
-        },
-        "cf": {
-          "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
-        },
-        "99": {
-          "9b1ff90885ee24723ebd45761d7cce2e453aae": null
-        },
-        "1f": {
-          "e83af20e00cf1b1fa91079bced8e48c81c05b4": null
-        },
-        "22": {
-          "1364a0213a329997670968ab42ad08907fda87": null
-        },
-        "e9": {
-          "45a5abc1173c0071c371aaf62a610dd4d47e0a": null
-        },
-        "1a": {
-          "912fb0e4558c513e8f99e86c866e9d6e344d08": null
-        },
-        "ba": {
-          "5525f8c4393ae26d834d5c4cea76695b7c07a0": null
-        },
-        "9b": {
-          "9bb3b48ce11732224dc9c78a8cef85f2051050": null,
-          "94b830f01520ae0c211fbcb3393d14c582ec56": null
-        },
-        "a0": {
-          "0d2d9e3a1c22e1838ac471e95513e3d5900bd3": null
-        },
-        "ff": {
-          "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
-        },
-        "36": {
-          "bc70f320af7d0d6df6c4695d9196a02844b042": null
-        },
-        "04": {
-          "3b22030ff85f2975b3fe37b73fe4e382917e47": null
-        },
-        "fa": {
-          "c5d8faaece8f423e3ba0abe0e64dc9037e4c6a": null
-        },
-        "23": {
-          "70c24b28d7c8bfb489ef94f65aebe17fcb1fb8": null
-        },
-        "ea": {
-          "79d7f2160b53353438cb40be89ace713ad1f62": null
-        },
-        "52": {
-          "113c0313a0c137ff1bc727cadd2e218a60a872": null
-        },
-        "6d": {
-          "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null
-        },
-        "c1": {
-          "b4a140b46633194a6d5d987ab04f8a8afab70d": null
-        },
-        "1e": {
-          "32c5899667b2e06ecadf3d0ff0c1344affba0a": null
-        },
-        "3f": {
-          "b23de57dc2fab88785956a6858bc4e379c4475": null
-        }
-      },
-      "branches": {}
     }
   }
 }

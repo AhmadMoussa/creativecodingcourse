@@ -1,56 +1,72 @@
 {
   ".": {
-    "directory_structure.json": null,
-    "bolt-solid.svg": null,
     "index.html": null,
-    "course_content": {
-      "05_EX_2": {
-        "info.md": null
+    "bolt-solid.svg": null,
+    "directory_structure.json": null,
+    ".git": {
+      "description": null,
+      "config": null,
+      "index": null,
+      "HEAD": null,
+      "shallow": null,
+      "FETCH_HEAD": null,
+      "info": {
+        "exclude": null
       },
+      "branches": {},
+      "logs": {
+        "HEAD": null,
+        "refs": {
+          "remotes": {
+            "origin": {
+              "main": null
+            }
+          },
+          "heads": {
+            "main": null
+          }
+        }
+      },
+      "refs": {
+        "remotes": {
+          "origin": {
+            "main": null
+          }
+        },
+        "tags": {},
+        "heads": {
+          "main": null
+        }
+      },
+      "hooks": {
+        "update.sample": null,
+        "pre-receive.sample": null,
+        "pre-commit.sample": null,
+        "pre-applypatch.sample": null,
+        "post-update.sample": null,
+        "pre-push.sample": null,
+        "push-to-checkout.sample": null,
+        "applypatch-msg.sample": null,
+        "pre-rebase.sample": null,
+        "prepare-commit-msg.sample": null,
+        "sendemail-validate.sample": null,
+        "commit-msg.sample": null,
+        "fsmonitor-watchman.sample": null,
+        "pre-merge-commit.sample": null
+      },
+      "objects": {
+        "info": {},
+        "pack": {
+          "pack-ca3588291ac7676e90bfeccd41af2885e9962135.rev": null,
+          "pack-ca3588291ac7676e90bfeccd41af2885e9962135.idx": null,
+          "pack-ca3588291ac7676e90bfeccd41af2885e9962135.pack": null
+        }
+      }
+    },
+    "course_content": {
       "06_project": {
         "info.md": null,
         "overview": {
-          "main.md": null
-        }
-      },
-      "04_week_2": {
-        "info.md": null
-      },
-      "03_EX_1": {
-        "info.md": null
-      },
-      "02_week_1": {
-        "info.md": null,
-        "03_drawing_functions": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "01_flow_of_a_p5_program": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "04_the_drawing_stack": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "02_creating_the_canvas": {
-          "secondary.md": null,
-          "main.md": null
-        }
-      },
-      "01_intro": {
-        "info.md": null,
-        "01_overview": {
-          "secondary.md": null,
-          "main.md": null,
-          "picover.jpg": null
-        },
-        "02_creative_code_history": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "03_intro_to_p5js": {
-          "secondary.md": null,
           "main.md": null
         }
       },
@@ -59,7 +75,55 @@
         "overview": {
           "main.md": null
         }
+      },
+      "02_week_1": {
+        "info.md": null,
+        "04_the_drawing_stack": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "03_drawing_functions": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "01_flow_of_a_p5_program": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "02_creating_the_canvas": {
+          "secondary.md": null,
+          "main.md": null
+        }
+      },
+      "05_EX_2": {
+        "info.md": null
+      },
+      "01_intro": {
+        "info.md": null,
+        "02_creative_code_history": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "03_intro_to_p5js": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "01_overview": {
+          "secondary.md": null,
+          "main.md": null,
+          "picover.jpg": null
+        }
+      },
+      "03_EX_1": {
+        "info.md": null
+      },
+      "04_week_2": {
+        "info.md": null
       }
+    },
+    "libs": {
+      "showdown-youtube.js": null,
+      "min.tilt.js": null
     },
     ".github": {
       "workflows": {
@@ -68,122 +132,25 @@
     },
     "styles": {
       "styles-item-cards.css": null,
-      "styles-main-layout.css": null,
-      "styles-media-queries.css": null,
-      "font-faces.css": null,
-      "styles-content-container.css": null,
-      "styles-side-container.css": null,
-      "styles.css": null,
       "styles-sidebar.css": null,
-      "Zodiak_Complete": {
-        "Fonts": {
-          "TTF": {
-            "Zodiak-VariableItalic.ttf": null,
-            "Zodiak-Variable.ttf": null
-          },
-          "WEB": {
-            "README.md": null,
-            "fonts": {
-              "Zodiak-Regular.eot": null,
-              "Zodiak-ThinItalic.ttf": null,
-              "Zodiak-Italic.ttf": null,
-              "Zodiak-Light.eot": null,
-              "Zodiak-Italic.woff": null,
-              "Zodiak-Regular.ttf": null,
-              "Zodiak-Thin.ttf": null,
-              "Zodiak-Black.ttf": null,
-              "Zodiak-ThinItalic.woff2": null,
-              "Zodiak-VariableItalic.woff": null,
-              "Zodiak-Variable.woff2": null,
-              "Zodiak-Italic.woff2": null,
-              "Zodiak-VariableItalic.ttf": null,
-              "Zodiak-Extrabold.woff2": null,
-              "Zodiak-Variable.woff": null,
-              "Zodiak-Regular.woff2": null,
-              "Zodiak-Bold.woff": null,
-              "Zodiak-LightItalic.woff": null,
-              "Zodiak-BlackItalic.woff": null,
-              "Zodiak-Variable.eot": null,
-              "Zodiak-LightItalic.woff2": null,
-              "Zodiak-ExtraboldItalic.eot": null,
-              "Zodiak-Thin.woff": null,
-              "Zodiak-Light.woff": null,
-              "Zodiak-LightItalic.eot": null,
-              "Zodiak-BoldItalic.woff2": null,
-              "Zodiak-ThinItalic.eot": null,
-              "Zodiak-Italic.eot": null,
-              "Zodiak-Extrabold.ttf": null,
-              "Zodiak-BlackItalic.woff2": null,
-              "Zodiak-Extrabold.eot": null,
-              "Zodiak-Thin.eot": null,
-              "Zodiak-Black.woff": null,
-              "Zodiak-ExtraboldItalic.woff": null,
-              "Zodiak-Black.eot": null,
-              "Zodiak-Thin.woff2": null,
-              "Zodiak-ThinItalic.woff": null,
-              "Zodiak-BoldItalic.ttf": null,
-              "Zodiak-Bold.ttf": null,
-              "Zodiak-ExtraboldItalic.ttf": null,
-              "Zodiak-BlackItalic.eot": null,
-              "Zodiak-LightItalic.ttf": null,
-              "Zodiak-VariableItalic.eot": null,
-              "Zodiak-BlackItalic.ttf": null,
-              "Zodiak-BoldItalic.woff": null,
-              "Zodiak-Black.woff2": null,
-              "Zodiak-Regular.woff": null,
-              "Zodiak-VariableItalic.woff2": null,
-              "Zodiak-Bold.eot": null,
-              "Zodiak-ExtraboldItalic.woff2": null,
-              "Zodiak-Extrabold.woff": null,
-              "Zodiak-Light.ttf": null,
-              "Zodiak-Light.woff2": null,
-              "Zodiak-Variable.ttf": null,
-              "Zodiak-BoldItalic.eot": null,
-              "Zodiak-Bold.woff2": null
-            },
-            "css": {
-              "zodiak.css": null
-            }
-          },
-          "OTF": {
-            "Zodiak-BoldItalic.otf": null
-          }
-        },
-        "License": {
-          "FFL.txt": null
-        }
-      },
-      "Synonym": {
-        "Fonts": {
-          "WEB": {
-            "README.md": null,
-            "fonts": {
-              "Synonym-Regular.woff2": null,
-              "Synonym-Regular.eot": null,
-              "Synonym-Regular.woff": null,
-              "Synonym-Regular.ttf": null
-            },
-            "css": {
-              "synonym.css": null
-            }
-          },
-          "OTF": {
-            "Synonym-Regular.otf": null
-          }
-        },
-        "License": {
-          "FFL.txt": null
-        }
-      },
+      "styles-media-queries.css": null,
+      "styles.css": null,
+      "styles-side-container.css": null,
+      "styles-content-container.css": null,
+      "styles-main-layout.css": null,
+      "font-faces.css": null,
       "Amulya": {
+        "License": {
+          "FFL.txt": null
+        },
         "Fonts": {
           "WEB": {
             "README.md": null,
             "fonts": {
               "Amulya-Bold.ttf": null,
               "Amulya-Bold.woff2": null,
-              "Amulya-Bold.woff": null,
-              "Amulya-Bold.eot": null
+              "Amulya-Bold.eot": null,
+              "Amulya-Bold.woff": null
             },
             "css": {
               "amulya.css": null
@@ -192,75 +159,119 @@
           "OTF": {
             "Amulya-Bold.otf": null
           }
-        },
+        }
+      },
+      "Zodiak_Complete": {
         "License": {
           "FFL.txt": null
+        },
+        "Fonts": {
+          "TTF": {
+            "Zodiak-VariableItalic.ttf": null,
+            "Zodiak-Variable.ttf": null
+          },
+          "WEB": {
+            "README.md": null,
+            "fonts": {
+              "Zodiak-Black.woff2": null,
+              "Zodiak-VariableItalic.woff2": null,
+              "Zodiak-Regular.ttf": null,
+              "Zodiak-BoldItalic.ttf": null,
+              "Zodiak-Italic.eot": null,
+              "Zodiak-BoldItalic.woff2": null,
+              "Zodiak-Italic.ttf": null,
+              "Zodiak-Regular.eot": null,
+              "Zodiak-Light.ttf": null,
+              "Zodiak-Light.woff2": null,
+              "Zodiak-BlackItalic.ttf": null,
+              "Zodiak-ThinItalic.woff2": null,
+              "Zodiak-ThinItalic.ttf": null,
+              "Zodiak-LightItalic.woff2": null,
+              "Zodiak-ThinItalic.eot": null,
+              "Zodiak-Regular.woff": null,
+              "Zodiak-LightItalic.woff": null,
+              "Zodiak-Extrabold.eot": null,
+              "Zodiak-LightItalic.eot": null,
+              "Zodiak-Light.eot": null,
+              "Zodiak-BlackItalic.woff": null,
+              "Zodiak-Variable.eot": null,
+              "Zodiak-Extrabold.ttf": null,
+              "Zodiak-Regular.woff2": null,
+              "Zodiak-Italic.woff": null,
+              "Zodiak-ThinItalic.woff": null,
+              "Zodiak-Black.woff": null,
+              "Zodiak-Extrabold.woff": null,
+              "Zodiak-VariableItalic.ttf": null,
+              "Zodiak-Thin.woff": null,
+              "Zodiak-Bold.woff": null,
+              "Zodiak-BlackItalic.eot": null,
+              "Zodiak-Bold.ttf": null,
+              "Zodiak-Variable.ttf": null,
+              "Zodiak-Thin.woff2": null,
+              "Zodiak-ExtraboldItalic.woff": null,
+              "Zodiak-Black.eot": null,
+              "Zodiak-Thin.eot": null,
+              "Zodiak-VariableItalic.woff": null,
+              "Zodiak-Bold.woff2": null,
+              "Zodiak-ExtraboldItalic.eot": null,
+              "Zodiak-ExtraboldItalic.woff2": null,
+              "Zodiak-BoldItalic.eot": null,
+              "Zodiak-BoldItalic.woff": null,
+              "Zodiak-Thin.ttf": null,
+              "Zodiak-Italic.woff2": null,
+              "Zodiak-LightItalic.ttf": null,
+              "Zodiak-VariableItalic.eot": null,
+              "Zodiak-Bold.eot": null,
+              "Zodiak-Extrabold.woff2": null,
+              "Zodiak-ExtraboldItalic.ttf": null,
+              "Zodiak-Black.ttf": null,
+              "Zodiak-Light.woff": null,
+              "Zodiak-Variable.woff2": null,
+              "Zodiak-Variable.woff": null,
+              "Zodiak-BlackItalic.woff2": null
+            },
+            "css": {
+              "zodiak.css": null
+            }
+          },
+          "OTF": {
+            "Zodiak-BoldItalic.otf": null,
+            "Zodiak-Extrabold.otf": null,
+            "Zodiak-Thin.otf": null,
+            "Zodiak-BlackItalic.otf": null,
+            "Zodiak-Black.otf": null,
+            "Zodiak-Light.otf": null,
+            "Zodiak-ExtraboldItalic.otf": null,
+            "Zodiak-Italic.otf": null,
+            "Zodiak-Bold.otf": null,
+            "Zodiak-ThinItalic.otf": null,
+            "Zodiak-LightItalic.otf": null,
+            "Zodiak-Regular.otf": null
+          }
+        }
+      },
+      "Synonym": {
+        "License": {
+          "FFL.txt": null
+        },
+        "Fonts": {
+          "WEB": {
+            "README.md": null,
+            "fonts": {
+              "Synonym-Regular.eot": null,
+              "Synonym-Regular.ttf": null,
+              "Synonym-Regular.woff2": null,
+              "Synonym-Regular.woff": null
+            },
+            "css": {
+              "synonym.css": null
+            }
+          },
+          "OTF": {
+            "Synonym-Regular.otf": null
+          }
         }
       }
-    },
-    "libs": {
-      "showdown-youtube.js": null,
-      "min.tilt.js": null
-    },
-    ".git": {
-      "config": null,
-      "index": null,
-      "HEAD": null,
-      "shallow": null,
-      "FETCH_HEAD": null,
-      "description": null,
-      "refs": {
-        "heads": {
-          "main": null
-        },
-        "tags": {},
-        "remotes": {
-          "origin": {
-            "main": null
-          }
-        }
-      },
-      "info": {
-        "exclude": null
-      },
-      "logs": {
-        "HEAD": null,
-        "refs": {
-          "heads": {
-            "main": null
-          },
-          "remotes": {
-            "origin": {
-              "main": null
-            }
-          }
-        }
-      },
-      "hooks": {
-        "update.sample": null,
-        "pre-rebase.sample": null,
-        "pre-commit.sample": null,
-        "fsmonitor-watchman.sample": null,
-        "applypatch-msg.sample": null,
-        "pre-applypatch.sample": null,
-        "post-update.sample": null,
-        "pre-merge-commit.sample": null,
-        "sendemail-validate.sample": null,
-        "prepare-commit-msg.sample": null,
-        "pre-receive.sample": null,
-        "push-to-checkout.sample": null,
-        "commit-msg.sample": null,
-        "pre-push.sample": null
-      },
-      "objects": {
-        "info": {},
-        "pack": {
-          "pack-539ab0173bf12817c2fee355d1669b413a5f4f4a.pack": null,
-          "pack-539ab0173bf12817c2fee355d1669b413a5f4f4a.rev": null,
-          "pack-539ab0173bf12817c2fee355d1669b413a5f4f4a.idx": null
-        }
-      },
-      "branches": {}
     }
   }
 }

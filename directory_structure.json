@@ -65,12 +65,18 @@
           "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null,
           "391c471a6b2065906a1c8082d0c0dd9a6454b3": null
         },
+        "18": {
+          "3e147c07e6feca0051575bb8ba08329b68a68b": null
+        },
         "e2": {
           "88c723d2e4926358ee740d357ced570f754f0f": null
         },
         "info": {},
         "3f": {
           "b23de57dc2fab88785956a6858bc4e379c4475": null
+        },
+        "e4": {
+          "84dc1ea4818b837b45263d7e7b421054e211db": null
         },
         "31": {
           "6df0e418151778cd443a534e3a6471b8e7d504": null
@@ -111,11 +117,15 @@
         "57": {
           "f78cbffaaa0101ae0448bbad51971835a704ef": null
         },
+        "eb": {
+          "271fcbb6b5e0a195b1a54f5e626fcdb1d39e07": null
+        },
         "1d": {
           "179a3556e8831fc936fc34554e20fe125615ee": null
         },
         "dd": {
-          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null
+          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null,
+          "d0fc2bfc61dbd5ae49e9faa4d19284db490a44": null
         },
         "a9": {
           "1765eb6c7560d6c299f8a2d0e616493ab84067": null
@@ -123,12 +133,14 @@
         "8a": {
           "e426a3129a7c8dcef87044bb0fcab5bb94cc1c": null
         },
+        "ed": {
+          "42e38e4651ac5090016ca3ee37737128f838d2": null
+        },
         "74": {
-          "9ea9748bbdcdde5ff1f8fdfff40be9aa9bdea3": null,
           "a74b9cf96ef67a19a152c2e93f8a84ac0f924b": null
         },
-        "ef": {
-          "64173919f7c24ba1ad1c4f854adeccb9f7e39b": null
+        "d8": {
+          "4200fc27e57e55a2fa27a5f12df4859aacee56": null
         },
         "75": {
           "b6d594a0a0ad987bf2b2730cecb98153766a34": null
@@ -155,15 +167,15 @@
           "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null,
           "73c578b88c6f48c439d9dcf91f9cdce198d1a4": null
         },
-        "c3": {
-          "a7af704488ad03efc322a95cde74185a1c8b9c": null
-        },
         "ff": {
           "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
         },
         "pack": {},
         "5a": {
           "6912d4626b634f8e96b2cc8705d1b69fecc429": null
+        },
+        "82": {
+          "622f749a24c22bb9dfa36e611436f6fc1c58df": null
         },
         "d3": {
           "f730269583701e8020a238791a1a505a1ba004": null
@@ -172,10 +184,8 @@
           "21171bc1dd5abbdb6d97d46280ee045fb7cdaa": null
         },
         "7b": {
+          "8c6890baa84e693653f26371f75872d12468e2": null,
           "8fcae859d82270a8d5f77db82477dcfcd53b84": null
-        },
-        "5d": {
-          "deeda14aa0855781042c57c6ff81647118edcb": null
         },
         "1a": {
           "912fb0e4558c513e8f99e86c866e9d6e344d08": null
@@ -193,6 +203,10 @@
         "90": {
           "e52c592e5861e8d072cd1b80f537acb31643f3": null
         },
+        "ce": {
+          "4e94197c5c6fb084276a6e625e5a3183b68981": null,
+          "996a5b7501f3fb209c3b9efbbdec5a515a5517": null
+        },
         "2b": {
           "394e1527d244ee840ef70fd51231749cb0d794": null
         },
@@ -208,11 +222,17 @@
         "cf": {
           "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
         },
+        "00": {
+          "d6e181f92c8de4d6cd00c73499b16055ad5b99": null
+        },
         "c4": {
           "2bee5428c45844a2422052ab6917aaba425fe0": null
         },
         "3a": {
           "d6af2649e21c1a1abea57b698877a7906637d5": null
+        },
+        "54": {
+          "9b24b58aab89de81bc4863f2ae5376ebcf1542": null
         }
       }
     },
@@ -244,6 +264,17 @@
           "main.md": null
         },
         "02_creating_the_canvas": {
+          "secondary.md": null,
+          "main.md": null
+        }
+      },
+      "03_circle_packing": {
+        "info.md": null,
+        "01_explainer": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "02_variations": {
           "secondary.md": null,
           "main.md": null
         }

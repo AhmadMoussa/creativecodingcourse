@@ -55,14 +55,21 @@
         "pre-merge-commit.sample": null
       },
       "objects": {
+        "47": {
+          "786a6201320a0ca6e2b34a51d0161b5ecb0598": null
+        },
         "ba": {
           "5525f8c4393ae26d834d5c4cea76695b7c07a0": null
+        },
+        "11": {
+          "8145d82f86a6dbd303c03e0d648c67cf74a42a": null
         },
         "da": {
           "116c053ec65d3cef0eb79c80e3e2f99b425a93": null
         },
         "09": {
           "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null,
+          "f1ec7258ddb5fb12d8bd5c3433fc365a87dd3f": null,
           "391c471a6b2065906a1c8082d0c0dd9a6454b3": null
         },
         "e2": {
@@ -126,11 +133,9 @@
         "74": {
           "a74b9cf96ef67a19a152c2e93f8a84ac0f924b": null
         },
-        "ef": {
-          "64173919f7c24ba1ad1c4f854adeccb9f7e39b": null
-        },
         "75": {
-          "b6d594a0a0ad987bf2b2730cecb98153766a34": null
+          "b6d594a0a0ad987bf2b2730cecb98153766a34": null,
+          "cb298d31c3e0f7928334e89f290c9d9098421b": null
         },
         "84": {
           "c62494dab6595c7dab2a2f048df082cc03da88": null
@@ -141,9 +146,6 @@
         "f0": {
           "ddfb42a5d0246b64a176392e0f69e1953a5302": null
         },
-        "68": {
-          "2005bb45c4f43caeab489af8244b7439901a10": null
-        },
         "c1": {
           "b4a140b46633194a6d5d987ab04f8a8afab70d": null
         },
@@ -153,16 +155,23 @@
         "d0": {
           "9d8a86f3198631d5cc646a54adecddeab2cbac": null
         },
+        "ec": {
+          "3dc6eb38901b7f2b521bdb82d4be28c8db6239": null
+        },
         "d5": {
           "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null,
           "73c578b88c6f48c439d9dcf91f9cdce198d1a4": null
         },
         "ff": {
-          "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
+          "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null,
+          "02470d8cfd073c0291f3d300d4f2d59edfdb55": null
         },
         "pack": {},
         "5a": {
           "6912d4626b634f8e96b2cc8705d1b69fecc429": null
+        },
+        "82": {
+          "622f749a24c22bb9dfa36e611436f6fc1c58df": null
         },
         "d3": {
           "f730269583701e8020a238791a1a505a1ba004": null
@@ -172,9 +181,6 @@
         },
         "7b": {
           "8fcae859d82270a8d5f77db82477dcfcd53b84": null
-        },
-        "e5": {
-          "b22a4f0b09f89c71d5fe0fb8d43b852b59ed3e": null
         },
         "1a": {
           "912fb0e4558c513e8f99e86c866e9d6e344d08": null
@@ -192,8 +198,20 @@
         "90": {
           "e52c592e5861e8d072cd1b80f537acb31643f3": null
         },
+        "a1": {
+          "616319705cc4ed28e22a8106e33ddcf010a6cd": null
+        },
+        "ce": {
+          "4e94197c5c6fb084276a6e625e5a3183b68981": null
+        },
+        "f1": {
+          "e9c78082c0eff646d42b59c48aa17f478b4feb": null
+        },
         "2b": {
           "394e1527d244ee840ef70fd51231749cb0d794": null
+        },
+        "79": {
+          "a042c5a219aafb4840428afd266bfdc23e1ff6": null
         },
         "1e": {
           "32c5899667b2e06ecadf3d0ff0c1344affba0a": null
@@ -201,14 +219,14 @@
         "a5": {
           "c219f96e4cea3f3ed2874fdb6e2b3e64c34010": null
         },
-        "7d": {
-          "23b94b995c5fae05ca993d3c477f801f45873e": null
-        },
         "42": {
           "07a7a0500b3b82622941fc295187408987aeb6": null
         },
         "cf": {
           "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
+        },
+        "c2": {
+          "f56963449fde1ad8dc91fb24b468c131afc5c6": null
         },
         "c4": {
           "2bee5428c45844a2422052ab6917aaba425fe0": null
@@ -246,6 +264,17 @@
           "main.md": null
         },
         "02_creating_the_canvas": {
+          "secondary.md": null,
+          "main.md": null
+        }
+      },
+      "03_circle_packing": {
+        "info.md": null,
+        "02_aesthetic_variations": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "01_circle_packing_explanation": {
           "secondary.md": null,
           "main.md": null
         }

@@ -65,16 +65,7 @@
           "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null,
           "391c471a6b2065906a1c8082d0c0dd9a6454b3": null
         },
-        "18": {
-          "3e147c07e6feca0051575bb8ba08329b68a68b": null
-        },
-        "e2": {
-          "88c723d2e4926358ee740d357ced570f754f0f": null
-        },
         "info": {},
-        "3f": {
-          "b23de57dc2fab88785956a6858bc4e379c4475": null
-        },
         "e4": {
           "84dc1ea4818b837b45263d7e7b421054e211db": null
         },
@@ -94,6 +85,9 @@
         },
         "1f": {
           "e83af20e00cf1b1fa91079bced8e48c81c05b4": null
+        },
+        "38": {
+          "227dcf751b715c55c5ef2ee16f6977ddaa9a6f": null
         },
         "fa": {
           "0cbe0d8b1b94b5091189bccd05ed0bb3e7be55": null
@@ -124,8 +118,7 @@
           "179a3556e8831fc936fc34554e20fe125615ee": null
         },
         "dd": {
-          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null,
-          "d0fc2bfc61dbd5ae49e9faa4d19284db490a44": null
+          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null
         },
         "a9": {
           "1765eb6c7560d6c299f8a2d0e616493ab84067": null
@@ -163,6 +156,9 @@
         "d0": {
           "9d8a86f3198631d5cc646a54adecddeab2cbac": null
         },
+        "88": {
+          "5fecfc60921b382289ed3723a8925ffe98ada7": null
+        },
         "d5": {
           "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null,
           "73c578b88c6f48c439d9dcf91f9cdce198d1a4": null
@@ -172,6 +168,7 @@
         },
         "pack": {},
         "5a": {
+          "15b79b7cad3e1419290399859fb255ff6a4eb2": null,
           "6912d4626b634f8e96b2cc8705d1b69fecc429": null
         },
         "82": {
@@ -184,8 +181,10 @@
           "21171bc1dd5abbdb6d97d46280ee045fb7cdaa": null
         },
         "7b": {
-          "8c6890baa84e693653f26371f75872d12468e2": null,
           "8fcae859d82270a8d5f77db82477dcfcd53b84": null
+        },
+        "5d": {
+          "c83d5c516bcc8da4d53161b5d3eb5dc567ef53": null
         },
         "1a": {
           "912fb0e4558c513e8f99e86c866e9d6e344d08": null
@@ -204,8 +203,7 @@
           "e52c592e5861e8d072cd1b80f537acb31643f3": null
         },
         "ce": {
-          "4e94197c5c6fb084276a6e625e5a3183b68981": null,
-          "996a5b7501f3fb209c3b9efbbdec5a515a5517": null
+          "4e94197c5c6fb084276a6e625e5a3183b68981": null
         },
         "2b": {
           "394e1527d244ee840ef70fd51231749cb0d794": null
@@ -237,12 +235,6 @@
       }
     },
     "course_content": {
-      "06_project": {
-        "info.md": null,
-        "overview": {
-          "main.md": null
-        }
-      },
       "07_gallery": {
         "info.md": null,
         "overview": {

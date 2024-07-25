@@ -1,0 +1,357 @@
+
+
+/*
+#FE76B4, #FFC548, #00B487, #6DD0F0, #7659FF, #F23F3A
+
+["D6EF49","06C4DA","E8BDF5","FFFFFF","FFA66A","232522","FF54BC"]
+
+
+#F6BCD2, #CC2D55, #E9473A, #F5971B, #FDC00D,
+#335E4A, #10955E, #8FC14E, #9DBFAE, #DEDCDD,
+#0290A8, #1CB8D1, #418FCD, #3F55A1, #617D89
+*/
+
+.backcol1 {
+  background-color: #E9473A;
+}
+
+.backcol2 {
+  background-color: #F5971B;
+}
+
+.backcol3 {
+  background-color: #FDC00D;
+}
+
+.backcol4 {
+  background-color: #8FC14E;
+}
+
+.backcol5 {
+  background-color: #10955E;
+}
+
+.backcol6 {
+  background-color: #0290A8;
+}
+
+.backcol7 {
+  background-color: #3F55A1;
+}
+
+.backcol8 {
+  background-color: #DEDCDD;
+}
+
+.backcolblack {
+  background-color: #000000;
+}
+
+.border1 {
+  background-color: #E9473A;
+  /* border: 2px solid #E9473A; */
+}
+
+.border2 {
+  background-color: #FDC00D;
+  /* border: 2px solid #FDC00D; */
+}
+
+.border3 {
+  background-color: #10955E;
+  /* border: 2px solid #10955E; */
+}
+
+.border4 {
+  background-color: #418FCD;
+  /* border: 2px solid #418FCD; */
+}
+
+html {
+
+}
+
+.backdiv {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  resize: auto;
+
+  outline: 2px dashed salmon;
+  z-index: -2;
+}
+
+
+.backdiv::before {
+  --pattern-repeated: 40; /* squares per-row */
+  --pattern-color-1: #fffbe6;
+  --pattern-color-2: #262104;
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* a huge width is used to make sure the there's plenty of rows */
+  width: 10000%;
+
+  /* make the pattern way bigger than its container */
+  aspect-ratio: 1/1;
+
+  background:
+    repeating-conic-gradient(
+        var(--pattern-color-1) 0 90deg,
+        var(--pattern-color-2) 0 180deg)
+    0 0 /
+
+    /* for every 0 past the third from left devide by 100 by 10, so 10,000% has 3 extra zeros
+     * 100 / 10 / 10 = 1 and since "conic-gradient" means 4 squares (2 up, 2 down) per repeated patten,
+     * need double the pattern's size should be doubled manually so the exact number of "--pattern-repeated"
+     * columns would render, so 1% becomes 2%, which results in 10 columns in this demo.
+     */
+    calc(2%/var(--pattern-repeated)) calc(2%/var(--pattern-repeated)) round;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.pageview {
+  display: flex;
+  gap: 5px;
+  height: 100%;
+  width: 100%;
+
+  max-height: 880px;
+  max-width: 1600px;
+  background: #262104;
+  border-radius: 10px;
+}
+
+.title-container {
+  display: flex;
+  background-color: #262104;
+  border-radius: 10px;
+  padding: 0px 20px;
+}
+
+.title-container h1 {
+  color: #fffbe6;
+  font-family: Rubik;
+  font-size: 20px;
+}
+
+.header-container-right {
+  flex: 1 1 30%;
+  background-color: #FE76B4;
+  border-radius: 20px;
+  padding: 0px 20px;
+  color: black;
+  width: 100%;
+  margin: 0;
+
+}
+.header-container-right p {
+  color: black;
+}
+
+header p {
+  color: white;
+}
+
+header a {
+  color: white;
+}
+
+
+.header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 40px;
+
+}
+
+header h1 {
+
+    margin: auto;
+    font-size: 2.8rem;
+    font-family: Rubik;
+    color: white;
+    line-height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.syllabus-tag-text {
+
+}
+
+
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: 0;
+}
+
+.shadow {
+  /* box-shadow:
+    2.5px 2.6px 2.6px -11px rgba(0, 0, 0, 0.028),
+    5.9px 6px 6.1px -11px rgba(0, 0, 0, 0.041),
+    10.6px 10.8px 10.9px -11px rgba(0, 0, 0, 0.051),
+    17.7px 18px 18.1px -11px rgba(0, 0, 0, 0.059),
+    29.1px 29.6px 29.9px -11px rgba(0, 0, 0, 0.069),
+    50.9px 51.8px 52.2px -11px rgba(0, 0, 0, 0.082),
+    110px 112px 113px -11px rgba(0, 0, 0, 0.11)
+  ; */
+
+  box-shadow: 8px 8px pink;
+}
+
+
+
+.hover-glow {
+
+}
+
+.divider {
+  width: 2.5px;
+  min-width: 2.5px;
+  background-color: black;
+}
+
+.text-tag-container {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  padding: 10px;
+  margin-top: auto;
+  font-family: Rubik;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+
+
+
+/*  HOMEWORK CARD  */
+.homework-title-container {
+  margin: 0;
+
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+  background-color: #DEDCDD;
+
+  position: sticky;
+  top: 0;
+}
+
+.homework-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: auto;
+  text-align: left;
+  color: #000;
+}
+
+.homework-text {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Rubik;
+  padding: 10px 20px;
+  text-align: left;
+  color: #000;
+}
+
+.syllabus-decoration {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+}
+
+
+
+
+
+.homework-text {
+  margin: 0;
+
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+  overflow: scroll;
+
+  font-size: 16px;
+  font-family: Rubik;
+}
+
+.homework-text ul, ol {
+  margin: 0;
+
+  border-radius: 0 0 10px 10px;
+  padding: 0px 20px;
+}
+
+.homework-text h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.homework-text p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.homework-text img {
+  object-fit: cover;
+  max-height: 300px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.homework-text iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.syllabus-text {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Rubik;
+  margin: auto;
+
+  color: #000;
+}

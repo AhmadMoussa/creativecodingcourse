@@ -50,7 +50,9 @@
 
   <div class="overview">
     <div class="overview-left">
-      <div class="container-syllabus"></div>
+      <div class="container-syllabus">
+        
+      </div>
     </div>
     <div class="overview-right">
 
@@ -176,6 +178,8 @@
         const mainDiv = document.getElementsByClassName('container-syllabus')[0];
         const mainDivText = document.getElementsByClassName('syllabus-text-container')[0];
 
+        
+        
 
         displayContent = async function(item, content, n){
           console.log(content)
@@ -192,6 +196,74 @@
           let contHTML2 = await converter.makeHtml(cont2);
 
           document.getElementById('homework-text').innerHTML = contHTML2;
+          
+          
+          let replaceable = document.getElementsByClassName("toc-list")[0]
+          console.log('replaceable', replaceable)
+          if(replaceable){
+            replaceable.replaceWith()
+          }
+          const tocElement = document.createElement('div')
+          tocElement.classList.add("toc-list")
+          
+          
+          function addSmoothScrolling() {
+            document.querySelectorAll('.toc-list-item').forEach(item => {
+              item.addEventListener('click', () => {
+                console.log(item)
+                const targetId = item.getAttribute('data-target');
+      
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+              });
+            });
+          }
+          
+          
+          // Function to generate table of contents
+          function generateTOC(contentString) {
+            
+            
+            
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = contentString;
+            
+            // Get all headings
+            const headings = tempDiv.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            
+            
+            headings.forEach((heading, index) => {
+              // Create list item
+              const listItem = document.createElement('div');
+              listItem.className = 'toc-list-item';
+              
+              // Create link
+              const link = document.createElement('a');
+              link.textContent = heading.textContent;
+              
+              // Set id for the heading if it doesn't have one
+              if (!heading.id) {
+                heading.id = `heading-${index}`;
+              }
+              
+              // Set data attribute for scrolling
+              listItem.setAttribute('data-target', heading.id);
+              
+              // Set the height of the item based on the heading level
+              const headingLevel = parseInt(heading.tagName.charAt(1));
+        
+              
+              tocElement.appendChild(listItem);
+            });
+          }
+
+          generateTOC(contHTML);
+          document.getElementsByClassName('container-syllabus')[0].appendChild(tocElement) 
+          console.log(tocElement)
+          addSmoothScrolling()
 
           //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
           let q = ((n|0)+1) | 0
@@ -283,6 +355,8 @@
     window.addEventListener("load", (event) => {
       loadInterface()
     });
+    
+    
 
     // <ul class="week-element-list">
     //   <li class="week-element-p">Intro to P5JS</li>

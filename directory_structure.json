@@ -1,56 +1,199 @@
 {
   ".": {
-    "directory_structure.json": null,
-    "bolt-solid.svg": null,
     "index.html": null,
-    "course_content": {
-      "05_EX_2": {
-        "info.md": null
+    "bolt-solid.svg": null,
+    "directory_structure.json": null,
+    ".git": {
+      "description": null,
+      "config": null,
+      "index": null,
+      "HEAD": null,
+      "shallow": null,
+      "FETCH_HEAD": null,
+      "info": {
+        "exclude": null
       },
+      "branches": {},
+      "logs": {
+        "HEAD": null,
+        "refs": {
+          "remotes": {
+            "origin": {
+              "main": null
+            }
+          },
+          "heads": {
+            "main": null
+          }
+        }
+      },
+      "refs": {
+        "remotes": {
+          "origin": {
+            "main": null
+          }
+        },
+        "tags": {},
+        "heads": {
+          "main": null
+        }
+      },
+      "hooks": {
+        "update.sample": null,
+        "pre-receive.sample": null,
+        "pre-commit.sample": null,
+        "pre-applypatch.sample": null,
+        "post-update.sample": null,
+        "pre-push.sample": null,
+        "push-to-checkout.sample": null,
+        "applypatch-msg.sample": null,
+        "pre-rebase.sample": null,
+        "prepare-commit-msg.sample": null,
+        "sendemail-validate.sample": null,
+        "commit-msg.sample": null,
+        "fsmonitor-watchman.sample": null,
+        "pre-merge-commit.sample": null
+      },
+      "objects": {
+        "ba": {
+          "5525f8c4393ae26d834d5c4cea76695b7c07a0": null
+        },
+        "91": {
+          "c2fff17fccfe82789c9a120bc0aa964faaeed1": null
+        },
+        "da": {
+          "116c053ec65d3cef0eb79c80e3e2f99b425a93": null
+        },
+        "9d": {
+          "9e97830fad4a4934074e1907b4e91227fe2180": null
+        },
+        "e2": {
+          "88c723d2e4926358ee740d357ced570f754f0f": null
+        },
+        "info": {},
+        "3f": {
+          "b23de57dc2fab88785956a6858bc4e379c4475": null
+        },
+        "31": {
+          "6df0e418151778cd443a534e3a6471b8e7d504": null
+        },
+        "61": {
+          "9b8c09385638d04f34d460f57cbb9ca69cc81d": null,
+          "734fccfef8a4e31fa18626838599b39d43017d": null,
+          "c21eb664a4d42518f049d45429b2768d5b0bad": null
+        },
+        "8f": {
+          "3b55ec319395a9dfe5ffa779e239c14514fa78": null
+        },
+        "f3": {
+          "62533c611fa7357fd8f132a7fea3569f09de4a": null
+        },
+        "1f": {
+          "e83af20e00cf1b1fa91079bced8e48c81c05b4": null
+        },
+        "fa": {
+          "c5d8faaece8f423e3ba0abe0e64dc9037e4c6a": null
+        },
+        "0b": {
+          "e87020310dfb6a7fd9ed19426f3d4cbfb3d537": null,
+          "4296223b13ff905c1b894a96cb9f6940947f67": null
+        },
+        "a2": {
+          "1154c68711bf74df841dc3d33fe1eee15709a8": null
+        },
+        "e0": {
+          "2e031ecf13eff847221f7dfd193d6ec73a0d61": null
+        },
+        "36": {
+          "bc70f320af7d0d6df6c4695d9196a02844b042": null
+        },
+        "3b": {
+          "62f4f79420ee7fc557ad02df0ccc84996822dc": null
+        },
+        "57": {
+          "f78cbffaaa0101ae0448bbad51971835a704ef": null
+        },
+        "d9": {
+          "bf9369a5d74134b1e66c454846a309046fe62f": null
+        },
+        "dd": {
+          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null
+        },
+        "a9": {
+          "1765eb6c7560d6c299f8a2d0e616493ab84067": null
+        },
+        "74": {
+          "a74b9cf96ef67a19a152c2e93f8a84ac0f924b": null
+        },
+        "d8": {
+          "1b2138c62ec84b8cf8090630787795234215db": null
+        },
+        "75": {
+          "b6d594a0a0ad987bf2b2730cecb98153766a34": null,
+          "8dedc91fff8f8fa77afdef16fcf99e814557f9": null
+        },
+        "f0": {
+          "ddfb42a5d0246b64a176392e0f69e1953a5302": null
+        },
+        "c1": {
+          "b4a140b46633194a6d5d987ab04f8a8afab70d": null
+        },
+        "d0": {
+          "9d8a86f3198631d5cc646a54adecddeab2cbac": null
+        },
+        "d5": {
+          "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null
+        },
+        "pack": {},
+        "5a": {
+          "6912d4626b634f8e96b2cc8705d1b69fecc429": null
+        },
+        "4c": {
+          "21171bc1dd5abbdb6d97d46280ee045fb7cdaa": null
+        },
+        "1a": {
+          "912fb0e4558c513e8f99e86c866e9d6e344d08": null
+        },
+        "9b": {
+          "94b830f01520ae0c211fbcb3393d14c582ec56": null,
+          "9bb3b48ce11732224dc9c78a8cef85f2051050": null
+        },
+        "f6": {
+          "ee5be2d518c03afc222a10bf7839bd247a729f": null
+        },
+        "90": {
+          "e52c592e5861e8d072cd1b80f537acb31643f3": null
+        },
+        "2b": {
+          "394e1527d244ee840ef70fd51231749cb0d794": null
+        },
+        "1e": {
+          "32c5899667b2e06ecadf3d0ff0c1344affba0a": null
+        },
+        "a5": {
+          "c219f96e4cea3f3ed2874fdb6e2b3e64c34010": null
+        },
+        "42": {
+          "07a7a0500b3b82622941fc295187408987aeb6": null
+        },
+        "c5": {
+          "e3855c11a147b83c8d9ab0996b123408d65080": null
+        },
+        "cf": {
+          "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
+        },
+        "c4": {
+          "2bee5428c45844a2422052ab6917aaba425fe0": null
+        },
+        "3a": {
+          "d6af2649e21c1a1abea57b698877a7906637d5": null
+        }
+      }
+    },
+    "course_content": {
       "06_project": {
         "info.md": null,
         "overview": {
-          "main.md": null
-        }
-      },
-      "04_week_2": {
-        "info.md": null
-      },
-      "03_EX_1": {
-        "info.md": null
-      },
-      "02_week_1": {
-        "info.md": null,
-        "03_drawing_functions": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "01_flow_of_a_p5_program": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "04_the_drawing_stack": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "02_creating_the_canvas": {
-          "secondary.md": null,
-          "main.md": null
-        }
-      },
-      "01_intro": {
-        "info.md": null,
-        "01_overview": {
-          "secondary.md": null,
-          "main.md": null,
-          "picover.jpg": null
-        },
-        "02_creative_code_history": {
-          "secondary.md": null,
-          "main.md": null
-        },
-        "03_intro_to_p5js": {
-          "secondary.md": null,
           "main.md": null
         }
       },
@@ -59,219 +202,56 @@
         "overview": {
           "main.md": null
         }
+      },
+      "02_week_1": {
+        "info.md": null,
+        "04_the_drawing_stack": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "03_drawing_functions": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "01_flow_of_a_p5_program": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "02_creating_the_canvas": {
+          "secondary.md": null,
+          "main.md": null
+        }
+      },
+      "05_EX_2": {
+        "info.md": null
+      },
+      "01_intro": {
+        "info.md": null,
+        "02_creative_code_history": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "03_intro_to_p5js": {
+          "secondary.md": null,
+          "main.md": null
+        },
+        "01_overview": {
+          "secondary.md": null,
+          "main.md": null,
+          "picover.jpg": null
+        }
+      },
+      "03_EX_1": {
+        "info.md": null
+      },
+      "04_week_2": {
+        "info.md": null
       }
     },
     ".github": {
       "workflows": {
         "generate-directory-structure.yml": null
       }
-    },
-    "styles": {
-      "styles-item-cards.css": null,
-      "styles-main-layout.css": null,
-      "styles-media-queries.css": null,
-      "font-faces.css": null,
-      "styles-content-container.css": null,
-      "styles-side-container.css": null,
-      "styles.css": null,
-      "styles-sidebar.css": null,
-      "Zodiak_Complete": {
-        "Fonts": {
-          "TTF": {
-            "Zodiak-VariableItalic.ttf": null,
-            "Zodiak-Variable.ttf": null
-          },
-          "WEB": {
-            "README.md": null,
-            "fonts": {
-              "Zodiak-Regular.eot": null,
-              "Zodiak-ThinItalic.ttf": null,
-              "Zodiak-Italic.ttf": null,
-              "Zodiak-Light.eot": null,
-              "Zodiak-Italic.woff": null,
-              "Zodiak-Regular.ttf": null,
-              "Zodiak-Thin.ttf": null,
-              "Zodiak-Black.ttf": null,
-              "Zodiak-ThinItalic.woff2": null,
-              "Zodiak-VariableItalic.woff": null,
-              "Zodiak-Variable.woff2": null,
-              "Zodiak-Italic.woff2": null,
-              "Zodiak-VariableItalic.ttf": null,
-              "Zodiak-Extrabold.woff2": null,
-              "Zodiak-Variable.woff": null,
-              "Zodiak-Regular.woff2": null,
-              "Zodiak-Bold.woff": null,
-              "Zodiak-LightItalic.woff": null,
-              "Zodiak-BlackItalic.woff": null,
-              "Zodiak-Variable.eot": null,
-              "Zodiak-LightItalic.woff2": null,
-              "Zodiak-ExtraboldItalic.eot": null,
-              "Zodiak-Thin.woff": null,
-              "Zodiak-Light.woff": null,
-              "Zodiak-LightItalic.eot": null,
-              "Zodiak-BoldItalic.woff2": null,
-              "Zodiak-ThinItalic.eot": null,
-              "Zodiak-Italic.eot": null,
-              "Zodiak-Extrabold.ttf": null,
-              "Zodiak-BlackItalic.woff2": null,
-              "Zodiak-Extrabold.eot": null,
-              "Zodiak-Thin.eot": null,
-              "Zodiak-Black.woff": null,
-              "Zodiak-ExtraboldItalic.woff": null,
-              "Zodiak-Black.eot": null,
-              "Zodiak-Thin.woff2": null,
-              "Zodiak-ThinItalic.woff": null,
-              "Zodiak-BoldItalic.ttf": null,
-              "Zodiak-Bold.ttf": null,
-              "Zodiak-ExtraboldItalic.ttf": null,
-              "Zodiak-BlackItalic.eot": null,
-              "Zodiak-LightItalic.ttf": null,
-              "Zodiak-VariableItalic.eot": null,
-              "Zodiak-BlackItalic.ttf": null,
-              "Zodiak-BoldItalic.woff": null,
-              "Zodiak-Black.woff2": null,
-              "Zodiak-Regular.woff": null,
-              "Zodiak-VariableItalic.woff2": null,
-              "Zodiak-Bold.eot": null,
-              "Zodiak-ExtraboldItalic.woff2": null,
-              "Zodiak-Extrabold.woff": null,
-              "Zodiak-Light.ttf": null,
-              "Zodiak-Light.woff2": null,
-              "Zodiak-Variable.ttf": null,
-              "Zodiak-BoldItalic.eot": null,
-              "Zodiak-Bold.woff2": null
-            },
-            "css": {
-              "zodiak.css": null
-            }
-          },
-          "OTF": {
-            "Zodiak-Thin.otf": null,
-            "Zodiak-Extrabold.otf": null,
-            "Zodiak-BlackItalic.otf": null,
-            "Zodiak-Italic.otf": null,
-            "Zodiak-Regular.otf": null,
-            "Zodiak-Black.otf": null,
-            "Zodiak-ThinItalic.otf": null,
-            "Zodiak-ExtraboldItalic.otf": null,
-            "Zodiak-LightItalic.otf": null,
-            "Zodiak-Bold.otf": null,
-            "Zodiak-BoldItalic.otf": null,
-            "Zodiak-Light.otf": null
-          }
-        },
-        "License": {
-          "FFL.txt": null
-        }
-      },
-      "Synonym": {
-        "Fonts": {
-          "WEB": {
-            "README.md": null,
-            "fonts": {
-              "Synonym-Regular.woff2": null,
-              "Synonym-Regular.eot": null,
-              "Synonym-Regular.woff": null,
-              "Synonym-Regular.ttf": null
-            },
-            "css": {
-              "synonym.css": null
-            }
-          },
-          "OTF": {
-            "Synonym-Regular.otf": null
-          }
-        },
-        "License": {
-          "FFL.txt": null
-        }
-      },
-      "Amulya": {
-        "Fonts": {
-          "WEB": {
-            "README.md": null,
-            "fonts": {
-              "Amulya-Bold.ttf": null,
-              "Amulya-Bold.woff2": null,
-              "Amulya-Bold.woff": null,
-              "Amulya-Bold.eot": null
-            },
-            "css": {
-              "amulya.css": null
-            }
-          },
-          "OTF": {
-            "Amulya-Bold.otf": null
-          }
-        },
-        "License": {
-          "FFL.txt": null
-        }
-      }
-    },
-    "libs": {
-      "showdown-youtube.js": null,
-      "min.tilt.js": null
-    },
-    ".git": {
-      "config": null,
-      "index": null,
-      "HEAD": null,
-      "shallow": null,
-      "FETCH_HEAD": null,
-      "description": null,
-      "refs": {
-        "heads": {
-          "main": null
-        },
-        "tags": {},
-        "remotes": {
-          "origin": {
-            "main": null
-          }
-        }
-      },
-      "info": {
-        "exclude": null
-      },
-      "logs": {
-        "HEAD": null,
-        "refs": {
-          "heads": {
-            "main": null
-          },
-          "remotes": {
-            "origin": {
-              "main": null
-            }
-          }
-        }
-      },
-      "hooks": {
-        "update.sample": null,
-        "pre-rebase.sample": null,
-        "pre-commit.sample": null,
-        "fsmonitor-watchman.sample": null,
-        "applypatch-msg.sample": null,
-        "pre-applypatch.sample": null,
-        "post-update.sample": null,
-        "pre-merge-commit.sample": null,
-        "sendemail-validate.sample": null,
-        "prepare-commit-msg.sample": null,
-        "pre-receive.sample": null,
-        "push-to-checkout.sample": null,
-        "commit-msg.sample": null,
-        "pre-push.sample": null
-      },
-      "objects": {
-        "info": {},
-        "pack": {
-          "pack-e6082438a3b7fabaf4d8cf777187bc58cd6e4d34.rev": null,
-          "pack-e6082438a3b7fabaf4d8cf777187bc58cd6e4d34.pack": null,
-          "pack-e6082438a3b7fabaf4d8cf777187bc58cd6e4d34.idx": null
-        }
-      },
-      "branches": {}
     }
   }
 }

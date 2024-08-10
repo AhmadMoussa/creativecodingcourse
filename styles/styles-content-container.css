@@ -92,7 +92,6 @@ code {
   margin-bottom: 5px;
 }
 
-
 .syllabus-text-container {
   margin: 0;
 
@@ -104,7 +103,6 @@ code {
   font-family: Rubik;
 
   max-width: 680px;
-
 
   height: 100%;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -217,28 +215,5 @@ strong, b,
 }
 
 
-.toc-list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  align-items: end;
-  gap: 10px;
-}
 
-.toc-list-item {
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  background-color: #000;
-  margin-bottom: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-
-.toc-list-item:hover {
-  background-color: #e0e0e0;
-}
 

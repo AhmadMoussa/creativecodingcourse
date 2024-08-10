@@ -27,23 +27,78 @@
         "pre-rebase.sample": null
       },
       "objects": {
-        "f2": {
-          "3c287f5ebf8970f620e4c600ee252b6c350c40": null
+        "14": {
+          "c6df6161d1fdeaf84e2611fe5fd44cf0d99292": null
+        },
+        "bb": {
+          "b6e1556654d5b8cc09219071c3a2b86cf75d11": null
+        },
+        "4c": {
+          "21171bc1dd5abbdb6d97d46280ee045fb7cdaa": null
+        },
+        "2e": {
+          "27b13495c9776ee53871d7fc21079c001f84de": null
         },
         "6d": {
-          "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null
+          "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null,
+          "47a71e2903a6281ac2b6797ce849b4314e6d9a": null
         },
         "d5": {
+          "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null,
           "73c578b88c6f48c439d9dcf91f9cdce198d1a4": null
         },
-        "04": {
-          "4cac4944cda54354b9bd7b2e362c86b816807e": null
+        "e0": {
+          "2e031ecf13eff847221f7dfd193d6ec73a0d61": null
+        },
+        "3a": {
+          "d6af2649e21c1a1abea57b698877a7906637d5": null
+        },
+        "ef": {
+          "4c3a95dd54345f18f896a9c5e25973ffdafd79": null
+        },
+        "e6": {
+          "9de29bb2d1d6434b8b29ae775ad8c2e48c5391": null
         },
         "10": {
+          "4cc8300a4f6e3a98515cc6d3cbd7ff50ff0590": null,
           "11d19ee78402035812546f293fe4fee322744e": null
         },
-        "5e": {
-          "fed6f0234b53c52ee0700600cccfe03dba4f47": null
+        "5a": {
+          "6912d4626b634f8e96b2cc8705d1b69fecc429": null
+        },
+        "36": {
+          "bc70f320af7d0d6df6c4695d9196a02844b042": null
+        },
+        "74": {
+          "a74b9cf96ef67a19a152c2e93f8a84ac0f924b": null
+        },
+        "01": {
+          "6598336a4df7b649b99b1a7a54a4929b9fbc4f": null
+        },
+        "92": {
+          "11ae46c675a8210784f6f7320cf8aaa46bf9a3": null
+        },
+        "73": {
+          "3df87bebd3b42892171bc8983fc2bee039049d": null
+        },
+        "be": {
+          "d1693614a35f210c5d3318d6ee33e3e9efab06": null
+        },
+        "d8": {
+          "4200fc27e57e55a2fa27a5f12df4859aacee56": null
+        },
+        "e4": {
+          "84dc1ea4818b837b45263d7e7b421054e211db": null
+        },
+        "a5": {
+          "7ec22ba657c656ac04c35cf2d5d6e9230ac108": null
+        },
+        "42": {
+          "07a7a0500b3b82622941fc295187408987aeb6": null
+        },
+        "da": {
+          "116c053ec65d3cef0eb79c80e3e2f99b425a93": null,
+          "9e296d84fb43ff0c2204dfbdb8821947ef0d80": null
         },
         "fa": {
           "0cbe0d8b1b94b5091189bccd05ed0bb3e7be55": null
@@ -55,30 +110,132 @@
         "f3": {
           "62533c611fa7357fd8f132a7fea3569f09de4a": null
         },
+        "f1": {
+          "c6cc494309c3ed83f5e8ffe72715682c692c7f": null
+        },
+        "e2": {
+          "88c723d2e4926358ee740d357ced570f754f0f": null
+        },
+        "eb": {
+          "271fcbb6b5e0a195b1a54f5e626fcdb1d39e07": null
+        },
         "d3": {
           "f730269583701e8020a238791a1a505a1ba004": null
+        },
+        "1e": {
+          "32c5899667b2e06ecadf3d0ff0c1344affba0a": null
+        },
+        "31": {
+          "6df0e418151778cd443a534e3a6471b8e7d504": null
+        },
+        "f6": {
+          "ee5be2d518c03afc222a10bf7839bd247a729f": null
+        },
+        "f4": {
+          "d6da0cc2301b4baf58b91dad56ad7b3818cc72": null
+        },
+        "a2": {
+          "1154c68711bf74df841dc3d33fe1eee15709a8": null
+        },
+        "1a": {
+          "912fb0e4558c513e8f99e86c866e9d6e344d08": null
+        },
+        "75": {
+          "b6d594a0a0ad987bf2b2730cecb98153766a34": null
+        },
+        "57": {
+          "e80093278b4d056d00032c920b8140dec99122": null,
+          "f78cbffaaa0101ae0448bbad51971835a704ef": null
+        },
+        "dd": {
+          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null
         },
         "1d": {
           "179a3556e8831fc936fc34554e20fe125615ee": null
         },
+        "ed": {
+          "42e38e4651ac5090016ca3ee37737128f838d2": null
+        },
         "info": {},
+        "00": {
+          "d6e181f92c8de4d6cd00c73499b16055ad5b99": null,
+          "98abe34fb88d0627dd33d057b943d19bca8214": null
+        },
+        "cb": {
+          "717de09cb26aec74dcf42d548e3aaf1212ab96": null
+        },
+        "72": {
+          "43bbad8ae6a6d6fe9ac0d0e37279f04bef93ac": null
+        },
+        "cf": {
+          "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
+        },
         "8a": {
           "e426a3129a7c8dcef87044bb0fcab5bb94cc1c": null
+        },
+        "c1": {
+          "b4a140b46633194a6d5d987ab04f8a8afab70d": null
         },
         "b4": {
           "864860ec4b7245da50a442f8ddfc8714112b9d": null
         },
         "9b": {
+          "94b830f01520ae0c211fbcb3393d14c582ec56": null,
           "9bb3b48ce11732224dc9c78a8cef85f2051050": null
+        },
+        "07": {
+          "8282a2c2730e22330894b6351ee371ee05c6a4": null
+        },
+        "d7": {
+          "692b0153a48b3bcb79d70bf7db41b93dd35051": null
+        },
+        "d0": {
+          "9d8a86f3198631d5cc646a54adecddeab2cbac": null
+        },
+        "89": {
+          "443d9c0d5bbb76bc867d52bcd260f04becedaf": null
+        },
+        "c2": {
+          "7250f875e3b84991abd6242cdd0a1c0b57beab": null
+        },
+        "ce": {
+          "4e94197c5c6fb084276a6e625e5a3183b68981": null
+        },
+        "f0": {
+          "ddfb42a5d0246b64a176392e0f69e1953a5302": null
+        },
+        "c8": {
+          "8702e1a48e49b279028dbbc69adf99e8eb40d6": null
         },
         "7b": {
           "8fcae859d82270a8d5f77db82477dcfcd53b84": null
         },
+        "cd": {
+          "2c2eea3218547896436076d15bc2a7fd54584f": null
+        },
+        "90": {
+          "e52c592e5861e8d072cd1b80f537acb31643f3": null
+        },
         "61": {
+          "734fccfef8a4e31fa18626838599b39d43017d": null,
           "9b8c09385638d04f34d460f57cbb9ca69cc81d": null
+        },
+        "82": {
+          "622f749a24c22bb9dfa36e611436f6fc1c58df": null
         },
         "84": {
           "c62494dab6595c7dab2a2f048df082cc03da88": null
+        },
+        "a9": {
+          "1765eb6c7560d6c299f8a2d0e616493ab84067": null,
+          "a379ffefe58581ebc4522340495634e26aef80": null
+        },
+        "8f": {
+          "3b55ec319395a9dfe5ffa779e239c14514fa78": null
+        },
+        "0b": {
+          "e87020310dfb6a7fd9ed19426f3d4cbfb3d537": null,
+          "4296223b13ff905c1b894a96cb9f6940947f67": null
         },
         "pack": {},
         "c4": {
@@ -86,6 +243,13 @@
         },
         "ff": {
           "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
+        },
+        "19": {
+          "fd5d26256448567e029f5c84f47313fea389e3": null,
+          "69544f48fd816c3708387442d7be5a3d82075c": null
+        },
+        "ba": {
+          "5525f8c4393ae26d834d5c4cea76695b7c07a0": null
         }
       },
       "refs": {
@@ -130,6 +294,112 @@
     "libs": {
       "showdown-youtube.js": null,
       "min.tilt.js": null
+    },
+    "course_content": {
+      "01_intro": {
+        "info.md": null,
+        "info.json": null,
+        "03_intro_to_p5js": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "02_creative_code_history": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "01_overview": {
+          "picover.jpg": null,
+          "main.md": null,
+          "secondary.md": null
+        }
+      },
+      "07_project": {
+        "info.md": null,
+        "info.json": null,
+        "01_overview": {
+          "main.md": null,
+          "secondary.md": null
+        }
+      },
+      "08_gallery": {
+        "info.md": null,
+        "info.json": null,
+        "01_overview": {
+          "main.md": null
+        }
+      },
+      "06_interactivity": {
+        "info.md": null,
+        "info.json": null,
+        "02_examples": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "01_interactivity_functions": {
+          "main.md": null,
+          "secondary.md": null
+        }
+      },
+      "05_animation": {
+        "info.md": null,
+        "info.json": null,
+        "01_overview": {
+          "main.md": null,
+          "secondary.md": null
+        }
+      },
+      "04_packing": {
+        "info.md": null,
+        "info.json": null,
+        "01_explainer": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "02_variations": {
+          "main.md": null,
+          "secondary.md": null
+        }
+      },
+      "02_p5js": {
+        "info.md": null,
+        "info.json": null,
+        "04_the_drawing_stack": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "01_flow_of_a_p5_program": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "02_creating_the_canvas": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "03_drawing_functions": {
+          "main.md": null,
+          "secondary.md": null
+        }
+      },
+      "03_grids": {
+        "info.md": null,
+        "info.json": null,
+        "03_simple_grid": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "04_grid_variations": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "01_introduction": {
+          "main.md": null,
+          "secondary.md": null
+        },
+        "02_for_loops": {
+          "main.md": null,
+          "secondary.md": null
+        }
+      }
     },
     ".github": {
       "workflows": {

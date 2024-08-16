@@ -67,4 +67,4 @@ There's a bunch of cool things going on here that we'll cover in a later section
 
 <iframe src="https://editor.p5js.org/AhmadMoussa/full/NQTG0PUNo"></iframe>
 
-P5.js also provides other functions that are a little less important than setup() and draw(), but can be useful in certain scenarios. That covers the basic structure of a P5.JS program.
+P5.js also provides other functions that are a little less important than setup() and draw(), but can be useful in certain scenarios.

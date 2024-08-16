@@ -11,31 +11,31 @@ Coordinates are specified as `(x, y)`, where `x` is the horizontal position and 
 
 ### Primitive Shapes
 
-- **point(x, y)**: Draws a point at the specified coordinates `(x, y)`.
+- `point(x, y)`: Draws a point at the specified coordinates `(x, y)`.
 
 ```javascript
 point(100, 200); // Draws a point at (100, 200)
 ```
 
-- **line(x1, y1, x2, y2)**: Draws a line from `(x1, y1)` to `(x2, y2)`.
+- `line(x1, y1, x2, y2)`: Draws a line from `(x1, y1)` to `(x2, y2)`.
 
 ```javascript
 line(50, 50, 150, 150); // Draws a line from (50, 50) to (150, 150)
 ```
 
-- **rect(x, y, width, height)**: Draws a rectangle with the top-left corner at `(x, y)` and specified `width` and `height`.
+- `rect(x, y, width, height)`: Draws a rectangle with the top-left corner at `(x, y)` and specified `width` and `height`.
 
 ```javascript
 rect(50, 50, 100, 75); // Draws a rectangle at (50, 50) with width 100 and height 75
 ```
 
-- **ellipse(x, y, width, height)**: Draws an ellipse (or circle if `width` equals `height`) with its center at `(x, y)`.
+- `ellipse(x, y, width, height)`: Draws an ellipse (or circle if `width` equals `height`) with its center at `(x, y)`.
 
 ```javascript
 ellipse(200, 200, 100, 80); // Draws an ellipse at (200, 200) with width 100 and height 80
 ```
 
-- **arc(x, y, width, height, startAngle, stopAngle, mode)**: Draws an arc or a portion of an ellipse with the specified dimensions and angles.
+- `arc(x, y, width, height, startAngle, stopAngle, mode)`: Draws an arc or a portion of an ellipse with the specified dimensions and angles.
 
 ```javascript
 arc(300, 300, 100, 100, 0, PI); // Draws a half-circle at (300, 300) with radius 50
@@ -43,7 +43,7 @@ arc(300, 300, 100, 100, 0, PI); // Draws a half-circle at (300, 300) with radius
 
 ### Custom Shapes and Curves
 
-- **beginShape()** / **endShape()**: Defines and ends a series of vertices to create complex shapes or curves.
+- `beginShape()` / `endShape()`: Defines and ends a series of vertices to create complex shapes or curves.
 
 ```javascript
 beginShape();
@@ -53,9 +53,7 @@ vertex(150, 50);
 endShape(CLOSE); // Draws a triangle with vertices (50, 50), (100, 100), (150, 50)
 ```
 
-- **vertex(x, y)**: Specifies a vertex for use with `beginShape()`.
-- **curveVertex(x, y)**: Specifies a vertex for use with `beginShape()`.
+- `vertex(x, y)`: Specifies a vertex for use with `beginShape()`.
+- `curveVertex(x, y)`: Specifies a vertex for use with `beginShape()`.
 
-### Summary
-
-These drawing functions form the core of P5.js's capabilities, allowing you to create a wide range of visual effects and interactive elements in your sketches. By combining these functions with JavaScript logic and event handling, you can create dynamic and engaging visual experiences.
+These drawing functions form the core of P5.js's capabilities, allowing you to create a wide range of visual effects and interactive elements in your sketches - combining these functions with different kinds of algorithms you'll be able to express a wide range of visual ideas.

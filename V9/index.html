@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Creative Coding Course</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"
+    href="./styles/font-faces.css">
+  <link rel="stylesheet"
+    href="./styles/styles.css">
+  <link rel="stylesheet"
+    href="./styles/styles-sidebar.css">
+  <link rel="stylesheet"
+    href="./styles/styles-main-layout.css">
+  <link rel="stylesheet"
+    href="./styles/styles-content-container.css">
+  <link rel="stylesheet"
+    href="./styles/styles-item-cards.css">
+  <link rel="stylesheet"
+    href="./styles/styles-media-queries.css">
+  <link rel="stylesheet"
+    href="./styles/styles-side-container.css">
+  <link rel="stylesheet"
+    href="./styles/styles-toc-list.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/srcery.min.css">
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+
+  <script src="./libs/min.tilt.js"></script>
+  <script
+    src="./libs/showdown-youtube.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+</head>
+
+<body>
+
+  <div class="backdiv">
+
+  </div>
+  <div class="pageview">
+    <div class="sidebar">
+      <div class="topsidebar">
+        <div class="backbutton">
+          SCROLL
+        </div>
+      </div>
+      <div class="side-block" id="side-block">
+      </div>
+    </div>
+
+
+    <div class="overview">
+      <div class="overview-left">
+
+        <div class="container-syllabus">
+
+        </div>
+      </div>
+      <div class="overview-right">
+
+
+        <div class="container-homework backcol6">
+          <div
+            class="homework-title-container backcol6">
+            <h2 class="homework-title">Self Study
+            </h2>
+          </div>
+          <div class="homework-text"
+            id="homework-text"></div>
+        </div>
+
+
+        <div
+          class="info-container animated-background">
+          <p>Please view this page on a desktop
+            for a good experience - <b>not yet
+              mobile optimized!</b></p>
+
+          <p>A creative coding mini course made by
+            <b><a
+                href="https://www.gorillasun.de">Gorilla
+                Sun</a></b>, with love! <b>&copy;
+              2024 Gorilla Sun </b></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <script type="module" src="githubFetcher.js"></script> -->
+
+    <script type="text/javascript">
+
+      // you need to configure a github action that generates the directory structure
+
+      let courseContentFilePath = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/directory_structure.json"
+
+      async function getDirectoryStructure(filePath) {
+        return await fetch(filePath)
+          .then(response => {
+            if (!response.ok) {
+              console.log('response', response)
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(jsonFile => {
+
+            return jsonFile
+
+          })
+          .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+          });
+      }
+
+
+
+    </script>
+
+    <script type="text/javascript">
+
+
+
+      async function getMDFile(filePath) {
+        return await fetch(filePath)
+          .then(response => {
+            if (!response.ok) {
+              console.log('response', response)
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(markdown => {
+            // The markdown content is now stored in the `markdown` variable as a string
+
+            // You can now use the markdown content in your application
+            // For example, you could insert it into an element on your page
+
+            return markdown
+
+          })
+          .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+          });
+      }
+
+    </script>
+
+    <script type="text/javascript">
+
+      hljs.configure({ languages: ['javascript'], cssSelector: 'code' });;
+      var converter = new showdown.Converter({ extensions: ['youtube'] });
+
+      async function loadInterface() {
+
+        const relativeUrl = "https://raw.githubusercontent.com/AhmadMoussa/creativecodingcourse/main/"
+
+        let courseContent = JSON.parse(await getDirectoryStructure(courseContentFilePath))["."]["course_content"]
+        console.log(courseContent)
+      
+        let sideBlock = document.getElementById("side-block")
+        let courseItems = Object.keys(courseContent)
+
+        courseItems.sort((a, b) => {
+
+          let numA = parseInt(a.split('_')[0], 10);
+          let numB = parseInt(b.split('_')[0], 10);
+
+          return numA - numB;
+        });
+
+        let courseItemInfos = []
+        for (let item of courseItems) {
+          courseItemInfos.push(
+            await converter.makeHtml(
+              await getMDFile(relativeUrl + "course_content/" + item + "/info.md")
+            )
+          )
+        }
+
+        console.log(courseItemInfos)
+
+        const mainDiv = document.getElementsByClassName('container-syllabus')[0];
+        const mainDivText = document.getElementsByClassName('syllabus-text-container')[0];
+
+
+        displayContent = async function (item, content, n) {
+
+          let cont = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/main.md")
+          let contHTML = await converter.makeHtml(cont);
+
+          document.getElementsByClassName('syllabus-text-container')[0].innerHTML = contHTML;
+    
+          let cont2 = await getMDFile(relativeUrl + "course_content/" + item + "/" + content + "/secondary.md")
+          let contHTML2 = await converter.makeHtml(cont2);
+
+          document.getElementById('homework-text').innerHTML = contHTML2;
+
+
+          let replaceable = document.getElementsByClassName("toc-list")[0]
+
+          if (replaceable) {
+            replaceable.replaceWith()
+          }
+          const tocElement = document.createElement('div')
+          tocElement.classList.add("toc-list")
+
+
+          function addSmoothScrolling() {
+            document.querySelectorAll('.toc-list-item').forEach(item => {
+              item.addEventListener('click', () => {
+                const targetId = item.getAttribute('data-target');
+
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+              });
+            });
+          }
+
+
+          // Function to generate table of contents
+          function generateTOC(contentString) {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = contentString;
+
+            // Get all headings
+            const headings = tempDiv.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+            headings.forEach((heading, index) => {
+              // Create list item
+              const listItem = document.createElement('div');
+              listItem.className = 'toc-list-item';
+
+              // Create link
+              const link = document.createElement('a');
+              link.textContent = heading.textContent;
+
+              // Set id for the heading if it doesn't have one
+              if (!heading.id) {
+                heading.id = `heading-${index}`;
+              }
+
+              // Set data attribute for scrolling
+              listItem.setAttribute('data-target', heading.id);
+
+              // Set the height of the item based on the heading level
+              const headingLevel = parseInt(heading.tagName.charAt(1));
+
+
+              tocElement.appendChild(listItem);
+            });
+          }
+
+          generateTOC(contHTML);
+          document.getElementsByClassName('toc-side-container')[0].appendChild(tocElement)
+          console.log(tocElement)
+          addSmoothScrolling()
+
+          //courseContent[""+Object.keys(courseContent)[n]]["content"][content];
+          let q = ((n | 0) + 1) | 0
+
+          let otherElements = document.getElementsByClassName("syllabus-tag")
+          for (let el of otherElements) {
+            el.classList.remove('border' + q)
+          }
+          let highlightElement = document.getElementById(content)
+          highlightElement.classList.add('border' + q)
+
+
+          hljs.highlightAll()
+
+          //anchors.add();
+
+        }
+
+
+
+        for(let ii = 0; ii < courseItems.length; ii++){
+          
+          async function makeCourseItem (item, i) {
+            
+            console.log(relativeUrl + "course_content/" + item + "/info.json")
+            let type = await getMDFile(relativeUrl + "course_content/" + item + "/info.json")
+            console.log(type)
+
+            let courseItemElement = document.createElement('div')
+            courseItemElement.classList.add("week-element", "backcol" + (i + 1))
+            courseItemElement.innerHTML = `
+              <div class="week-element-number">${i + 1}</div>
+              <div class="title-tag-container">
+                <h2 class="week-element-h2 underline">${item.split("_").slice(1).join(" ").toUpperCase()}</h2>
+              </div>
+              <div class="divider"></div>
+              <div class="text-tag-container">
+                ${courseItemInfos[i]}
+              </div>
+              <div class="decoration"></div>
+            `
+
+            let contentTags = Object.keys(courseContent["" + item])
+            console.log("contentTags", contentTags)
+
+
+            function startsWithNumber(label) {
+              return /^\d+_/.test(label);
+            }
+
+            // Filter the array to include only labels that start with a leading number
+            contentTags = contentTags.filter(startsWithNumber);
+
+            contentTags.sort((a, b) => {
+              // Extract the leading numbers
+              let numA = parseInt(a.split('_')[0], 10);
+              let numB = parseInt(b.split('_')[0], 10);
+              // Compare the numbers
+              return numA - numB;
+            });
+
+
+            courseItemElement.addEventListener('click', function () {
+              mainDiv.innerHTML = `
+              <div class="syllabus-title-container">
+                <h2 class="syllabus-title">${item.split("_").slice(1).join(" ").toUpperCase()}</h2>
+                <div class="syllabus-decoration backcol${i + 1}">
+
+                </div>
+                <div class="syllabus-tags">
+                  ${contentTags.map(tag => `<div class="syllabus-tag backcolblack" style="cursor: pointer;" onclick="displayContent('${item}', '${tag}', '${i}')" id="${tag}">${tag.split("_").slice(1).join(" ").toUpperCase()}</div>`).join('')}
+                </div>
+
+              </div>
+              <div class="syllabus-container">
+                <div class="toc-side-container">
+
+                </div>
+                <div class="syllabus-text-container">
+
+                </div>
+              </div>
+              
+              `;
+
+              document.getElementsByClassName("syllabus-tag")[0].click()
+            });
+
+            sideBlock.append(courseItemElement)
+
+            if (i == 0) {
+              courseItemElement.click()
+              document.getElementsByClassName('syllabus-tag')[0].click()
+            }
+          }
+          
+          await makeCourseItem(courseItems[ii], ii)
+        };
+
+        VanillaTilt.init(document.querySelectorAll(".week-element"));
+      }
+
+      window.addEventListener("load", (event) => {
+        loadInterface()
+        
+      });
+      
+    </script>
+</body>
+
+</html>

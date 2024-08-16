@@ -27,89 +27,20 @@
         "pre-rebase.sample": null
       },
       "objects": {
-        "f2": {
-          "df4272cc39d86792b48b451d0536dcb3ffcba7": null
-        },
-        "14": {
-          "c6df6161d1fdeaf84e2611fe5fd44cf0d99292": null
-        },
-        "bb": {
-          "b6e1556654d5b8cc09219071c3a2b86cf75d11": null
-        },
-        "78": {
-          "69bdf4f8f899cedc42583d7287a7211057bf0f": null
-        },
-        "41": {
-          "4f96c7c31b12699d9bee9592de4a160866ee68": null
-        },
         "6d": {
           "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null
-        },
-        "27": {
-          "57f788bacc9a85fd0c2fd8eb160187c5c20b9c": null
         },
         "2b": {
           "7e41c2f5a0be74ae35a5497bb8106b226b150e": null
         },
         "d5": {
-          "bc2edf21d62cfc6e2ef833eab7fbbe1c08707a": null,
           "73c578b88c6f48c439d9dcf91f9cdce198d1a4": null
-        },
-        "e0": {
-          "2e031ecf13eff847221f7dfd193d6ec73a0d61": null
-        },
-        "3a": {
-          "722b514f1234babc5e08d218b22770f9cab48c": null,
-          "d6af2649e21c1a1abea57b698877a7906637d5": null
-        },
-        "ef": {
-          "4c3a95dd54345f18f896a9c5e25973ffdafd79": null
-        },
-        "e6": {
-          "9de29bb2d1d6434b8b29ae775ad8c2e48c5391": null
         },
         "10": {
           "11d19ee78402035812546f293fe4fee322744e": null
         },
-        "7e": {
-          "48dde817963af8e272442c0c7bef1509e9cf9a": null
-        },
-        "01": {
-          "6598336a4df7b649b99b1a7a54a4929b9fbc4f": null
-        },
         "92": {
-          "11ae46c675a8210784f6f7320cf8aaa46bf9a3": null,
-          "e35aa457e5ef75010312fbd115e55597c21f63": null
-        },
-        "ad": {
-          "c08f147fb80857361eea631b599a034cf8782a": null
-        },
-        "73": {
-          "3df87bebd3b42892171bc8983fc2bee039049d": null
-        },
-        "be": {
-          "7e599cb8f7f27cb54e2d276ddb0b95ceb6da7a": null
-        },
-        "d8": {
-          "4200fc27e57e55a2fa27a5f12df4859aacee56": null
-        },
-        "e4": {
-          "84dc1ea4818b837b45263d7e7b421054e211db": null
-        },
-        "51": {
-          "2605ae43e877f2c8cdf48bd0483edc44035a23": null
-        },
-        "a5": {
-          "7ec22ba657c656ac04c35cf2d5d6e9230ac108": null
-        },
-        "34": {
-          "d3fcbc1042c756fc78d4d57c3b1cb23be76ee1": null
-        },
-        "42": {
-          "07a7a0500b3b82622941fc295187408987aeb6": null
-        },
-        "da": {
-          "4d2e62afe2bffbae4bcb5a9d6524d5591a400b": null
+          "779c1ef0acf934e623a10f6ce6bd5c6c17e242": null
         },
         "09": {
           "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null,
@@ -118,150 +49,39 @@
         "f3": {
           "62533c611fa7357fd8f132a7fea3569f09de4a": null
         },
-        "43": {
-          "52d19126bd1ebad4647f0f66437368a699f16e": null
-        },
-        "f5": {
-          "a191d47c4715720b87cd73c15fb08c5454febb": null
-        },
-        "f1": {
-          "c6cc494309c3ed83f5e8ffe72715682c692c7f": null
-        },
-        "83": {
-          "9c09a7b1bca7067baa259c224dea2d854985c2": null
-        },
-        "e2": {
-          "88c723d2e4926358ee740d357ced570f754f0f": null
-        },
-        "eb": {
-          "271fcbb6b5e0a195b1a54f5e626fcdb1d39e07": null,
-          "feea6cdca73c63346b83509b60bc1511ab31dc": null
-        },
         "d3": {
           "f730269583701e8020a238791a1a505a1ba004": null
-        },
-        "1e": {
-          "32c5899667b2e06ecadf3d0ff0c1344affba0a": null,
-          "85c55cfb9304e0291fd512ccf7c0ab36817452": null
-        },
-        "31": {
-          "6df0e418151778cd443a534e3a6471b8e7d504": null
-        },
-        "f6": {
-          "ee5be2d518c03afc222a10bf7839bd247a729f": null
         },
         "f4": {
           "d395e62ceff16e2b71d7f2e7f5562126ff7e7a": null
         },
-        "a2": {
-          "1154c68711bf74df841dc3d33fe1eee15709a8": null
-        },
-        "75": {
-          "b6d594a0a0ad987bf2b2730cecb98153766a34": null
-        },
-        "57": {
-          "f78cbffaaa0101ae0448bbad51971835a704ef": null
-        },
-        "dd": {
-          "c23bde0a706657c7b75e159125ce6ce25ff0d6": null
-        },
-        "ed": {
-          "42e38e4651ac5090016ca3ee37737128f838d2": null,
-          "cd69564e249b647eb04c2240312af6493f7551": null,
-          "b693c301bf866d23759875240a28b71e3ad5f8": null
-        },
-        "af": {
-          "c0c3e36fbd7d9872b7102109c8e89da99dfa6b": null
-        },
         "info": {},
-        "6f": {
-          "36441b4a05c1d666c65233166094d5643858eb": null,
-          "10713d5a2d058bb8df8dd7f1aa86bd773c60fa": null
-        },
-        "00": {
-          "d6e181f92c8de4d6cd00c73499b16055ad5b99": null
-        },
-        "98": {
-          "977b5d384eecbb4ac4c2e45ba19ffb41e815e6": null
-        },
-        "cf": {
-          "9d70476ec4408c863e0af48c91a9ed2f046f8d": null
-        },
         "8a": {
           "e426a3129a7c8dcef87044bb0fcab5bb94cc1c": null
         },
         "b4": {
-          "d89c3a0c1abfe36a2b41f688cfa71b6e3a70f0": null,
           "864860ec4b7245da50a442f8ddfc8714112b9d": null
         },
         "9b": {
-          "94b830f01520ae0c211fbcb3393d14c582ec56": null,
-          "b2dc1b273099b763db5bcf57074605fadfceec": null,
           "9bb3b48ce11732224dc9c78a8cef85f2051050": null
-        },
-        "07": {
-          "8282a2c2730e22330894b6351ee371ee05c6a4": null
         },
         "b3": {
           "22c791b59e53a47406108f54374e65979fde15": null
         },
-        "c5": {
-          "7b0fcb8e1f25742fd81cd876ec608dda6c039f": null
-        },
-        "d7": {
-          "692b0153a48b3bcb79d70bf7db41b93dd35051": null
-        },
-        "7f": {
-          "9ae00d6a3b31b0cef08ab956edc65a226f30a9": null
-        },
-        "c2": {
-          "7250f875e3b84991abd6242cdd0a1c0b57beab": null
-        },
         "ce": {
-          "fa448fd4665108257fb1ad7de7485219a5b602": null,
-          "4e94197c5c6fb084276a6e625e5a3183b68981": null
+          "fa448fd4665108257fb1ad7de7485219a5b602": null
         },
-        "f0": {
-          "ddfb42a5d0246b64a176392e0f69e1953a5302": null
-        },
-        "c8": {
-          "8702e1a48e49b279028dbbc69adf99e8eb40d6": null
-        },
-        "0f": {
-          "f6af33cfc8095484bd3e5052ef8cbc094c8dc4": null,
-          "ef1936239d511bb10460c1b8b7ab2415c57a03": null
-        },
-        "cd": {
-          "2c2eea3218547896436076d15bc2a7fd54584f": null
-        },
-        "90": {
-          "e52c592e5861e8d072cd1b80f537acb31643f3": null
+        "24": {
+          "032cb353afb80f3ece2eeed11b18ff11af1df9": null
         },
         "b5": {
-          "bc37609580c4e5bb3e70aca256ca89cc059abd": null
+          "d595d73d5a6cefe8d8a87b2d46825632c3a1f1": null
         },
         "61": {
-          "734fccfef8a4e31fa18626838599b39d43017d": null,
           "9b8c09385638d04f34d460f57cbb9ca69cc81d": null
-        },
-        "82": {
-          "622f749a24c22bb9dfa36e611436f6fc1c58df": null
-        },
-        "db": {
-          "d4fd828cd6cb39ca16b671c272d8b8088ad18c": null
         },
         "84": {
           "c62494dab6595c7dab2a2f048df082cc03da88": null
-        },
-        "a9": {
-          "1765eb6c7560d6c299f8a2d0e616493ab84067": null,
-          "a379ffefe58581ebc4522340495634e26aef80": null
-        },
-        "8f": {
-          "3b55ec319395a9dfe5ffa779e239c14514fa78": null
-        },
-        "0b": {
-          "328304dd75690a35d5a26a5fe3e66359a0e051": null
         },
         "pack": {},
         "c4": {
@@ -269,15 +89,6 @@
         },
         "ff": {
           "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
-        },
-        "19": {
-          "69544f48fd816c3708387442d7be5a3d82075c": null
-        },
-        "ba": {
-          "5525f8c4393ae26d834d5c4cea76695b7c07a0": null
-        },
-        "3b": {
-          "413f2f2391be953c36513fc522fda82c9349c4": null
         }
       },
       "refs": {
@@ -323,125 +134,6 @@
     "libs": {
       "showdown-youtube.js": null,
       "min.tilt.js": null
-    },
-    "course_content": {
-      "01_intro": {
-        "info.md": null,
-        "info.json": null,
-        "03_intro_to_p5js": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "02_creative_code_history": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "01_overview": {
-          "picover.jpg": null,
-          "main.md": null,
-          "secondary.md": null
-        }
-      },
-      "07_project": {
-        "info.md": null,
-        "info.json": null,
-        "01_overview": {
-          "main.md": null,
-          "secondary.md": null
-        }
-      },
-      "06_interact": {
-        "info.md": null,
-        "info.json": null,
-        "02_examples": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "01_interactivity_functions": {
-          "main.md": null,
-          "secondary.md": null
-        }
-      },
-      "08_gallery": {
-        "info.md": null,
-        "info.json": null,
-        "01_example_submission_1": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "02_example_submission_2": {
-          "main.md": null,
-          "secondary.md": null
-        }
-      },
-      "05_motion": {
-        "info.md": null,
-        "info.json": null,
-        "01_animation_with_p5": {
-          "main.md": null,
-          "secondary.md": null
-        }
-      },
-      "04_packing": {
-        "info.md": null,
-        "info.json": null,
-        "01_explainer": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "02_variations": {
-          "main.md": null,
-          "secondary.md": null
-        }
-      },
-      "02_p5js": {
-        "info.md": null,
-        "info.json": null,
-        "05_text_and_image": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "01_flow_of_a_p5_program": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "02_creating_the_canvas": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "06_the_drawing_stack": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "04_styling_functions": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "03_drawing_functions": {
-          "main.md": null,
-          "secondary.md": null
-        }
-      },
-      "03_grids": {
-        "info.md": null,
-        "info.json": null,
-        "03_simple_grid": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "04_grid_variations": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "01_introduction": {
-          "main.md": null,
-          "secondary.md": null
-        },
-        "02_for_loops": {
-          "main.md": null,
-          "secondary.md": null
-        }
-      }
     },
     ".github": {
       "workflows": {

@@ -1,4 +1,4 @@
-This is an example of what a submission look like.
+This is an example of what a submission looks like.
 
 ### Lines and Circles
 

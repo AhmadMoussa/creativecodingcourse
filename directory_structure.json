@@ -27,11 +27,68 @@
         "pre-rebase.sample": null
       },
       "objects": {
+        "6d": {
+          "9c2bd5cef3fa040052953f7cdfe23a3881dec9": null
+        },
+        "2b": {
+          "7e41c2f5a0be74ae35a5497bb8106b226b150e": null
+        },
+        "d5": {
+          "73c578b88c6f48c439d9dcf91f9cdce198d1a4": null
+        },
+        "10": {
+          "11d19ee78402035812546f293fe4fee322744e": null
+        },
+        "09": {
+          "7c0a31f6ec9fdb50533c0bb0f71585b7ff64f5": null,
+          "391c471a6b2065906a1c8082d0c0dd9a6454b3": null
+        },
+        "f3": {
+          "62533c611fa7357fd8f132a7fea3569f09de4a": null
+        },
+        "d3": {
+          "f730269583701e8020a238791a1a505a1ba004": null
+        },
+        "5f": {
+          "cbe487eafa137779fecae459261e333b37ec23": null
+        },
+        "f4": {
+          "d395e62ceff16e2b71d7f2e7f5562126ff7e7a": null
+        },
         "info": {},
-        "pack": {
-          "pack-b58a1d26a3f6af9d604cf6fbfb57b3d88ea075ff.rev": null,
-          "pack-b58a1d26a3f6af9d604cf6fbfb57b3d88ea075ff.idx": null,
-          "pack-b58a1d26a3f6af9d604cf6fbfb57b3d88ea075ff.pack": null
+        "8a": {
+          "e426a3129a7c8dcef87044bb0fcab5bb94cc1c": null
+        },
+        "b4": {
+          "864860ec4b7245da50a442f8ddfc8714112b9d": null
+        },
+        "9b": {
+          "9bb3b48ce11732224dc9c78a8cef85f2051050": null
+        },
+        "b3": {
+          "22c791b59e53a47406108f54374e65979fde15": null
+        },
+        "ce": {
+          "fa448fd4665108257fb1ad7de7485219a5b602": null
+        },
+        "c8": {
+          "b3c9d7cce902d4b772df225c2821af2a9ee00e": null
+        },
+        "61": {
+          "9b8c09385638d04f34d460f57cbb9ca69cc81d": null
+        },
+        "84": {
+          "c62494dab6595c7dab2a2f048df082cc03da88": null
+        },
+        "ee": {
+          "3d48ac9521f4402183ca315a31ff57437b83dc": null
+        },
+        "pack": {},
+        "c4": {
+          "2bee5428c45844a2422052ab6917aaba425fe0": null
+        },
+        "ff": {
+          "9ec252b1fa8a3581586d1d10aeae8432b4d3a1": null
         }
       },
       "refs": {
@@ -81,146 +138,6 @@
     ".github": {
       "workflows": {
         "generate-directory-structure.yml": null
-      }
-    },
-    "V9": {
-      "index.html": null,
-      "styles": {
-        "styles-toc-list.css": null,
-        "styles.css": null,
-        "styles-side-container.css": null,
-        "styles-sidebar.css": null,
-        "styles-main-layout.css": null,
-        "styles-media-queries.css": null,
-        "styles-content-container.css": null,
-        "styles-item-cards.css": null
-      },
-      "libs": {
-        "showdown-youtube.js": null,
-        "min.tilt.js": null
-      },
-      "course_content": {
-        "01_intro": {
-          "info.md": null,
-          "info.json": null,
-          "03_intro_to_p5js": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "02_creative_code_history": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "01_overview": {
-            "picover.jpg": null,
-            "main.md": null,
-            "secondary.md": null
-          }
-        },
-        "07_project": {
-          "info.md": null,
-          "info.json": null,
-          "02_how_to_submit": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "01_overview": {
-            "main.md": null,
-            "secondary.md": null
-          }
-        },
-        "06_interact": {
-          "info.md": null,
-          "info.json": null,
-          "02_examples": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "01_interactivity_functions": {
-            "main.md": null,
-            "secondary.md": null
-          }
-        },
-        "08_gallery": {
-          "info.md": null,
-          "info.json": null,
-          "01_example_submission_1": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "02_example_submission_2": {
-            "main.md": null,
-            "secondary.md": null
-          }
-        },
-        "05_motion": {
-          "info.md": null,
-          "info.json": null,
-          "01_animation_with_p5": {
-            "main.md": null,
-            "secondary.md": null
-          }
-        },
-        "04_packing": {
-          "info.md": null,
-          "info.json": null,
-          "01_explainer": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "02_variations": {
-            "main.md": null,
-            "secondary.md": null
-          }
-        },
-        "02_p5js": {
-          "info.md": null,
-          "info.json": null,
-          "05_text_and_image": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "01_flow_of_a_p5_program": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "02_creating_the_canvas": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "06_the_drawing_stack": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "04_styling_functions": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "03_drawing_functions": {
-            "main.md": null,
-            "secondary.md": null
-          }
-        },
-        "03_grids": {
-          "info.md": null,
-          "info.json": null,
-          "03_simple_grid": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "04_grid_variations": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "01_introduction": {
-            "main.md": null,
-            "secondary.md": null
-          },
-          "02_for_loops": {
-            "main.md": null,
-            "secondary.md": null
-          }
-        }
       }
     }
   }
